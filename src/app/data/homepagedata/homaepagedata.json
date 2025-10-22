@@ -42,86 +42,120 @@
       "2560px": "/images/turqoise.jpeg"
     }
   },
-  "homepagecontainer": {
-    "tagtitle": "Introduction",
-    "LargeHeading": "Nemesis Asset Management",
-    "firstsectionparaone": "Nemesis is an independent fully regulated asset management company based in London and Monaco covering all aspects related to wealth and estate planning. These services include discretionary portfolio management, independent advisory and execution services, fund management for individuals, families, corporations, foundations and trusts.",
-    "secondsectionparatwo": "As an independent asset management company we manage and administer our clients existing banking relationships globally. We can also assist with the opening of new relationships with a wide number of international banks in various geographical locations.",
-    "sectionimagedata": {
-      "link": "/images/largesectionrightsidedimage.webp",
-      "alt": "large section image",
-      "width": "541",
-      "height": "520",
-      "title": "Striving hard for excellence"
+
+  "lineSection": {
+    "partOne": {
+      "tinyTag": "What We Do",
+      "largeHeading": "Transform Teaching & Learning Systems",
+      "description": "We blend storytelling, games, and hands-on experiences to teach children and families the building blocks of financial literacy — saving, spending, investing, and more — in ways that feel natural and fun.",
+      "accordions": [
+        { "title": "At Home", "content": "Lumhera makes financial literacy simple and joyful." },
+        { "title": "At School", "content": "A story-driven interactive experience about money." },
+        { "title": "Monaco Pilot", "content": "A story-driven interactive experience about money." }
+      ],
+      "ctaText": "LEARN MORE →",
+      "ctaLink": "/contact"
     },
-    "sectionbuttondata": {
-      "buttonname": "Get in Touch",
-      "buttonlink": "/ourlocation/London#londoncontact-form",
-      "buttontitle": "Come talk to us now"
+
+    "partTwo": {
+      "leftParagraphs": [
+        "Lumhera’s first interactive experience, Esther the Investor, turns financial learning into an immersive, story-driven adventure.",
+        "Children follow Esther, a curious 10-year-old, as she discovers how money shapes the world — guided by King Croesus and his cat Bucks."
+      ],
+      "ctaText": "LEARN MORE →",
+      "ctaLink": "/contact",
+      "rightTinyTag": "Our Tools",
+      "rightLargeHeading": "Esther the Investor The Beginning of the Journey"
+    },
+
+    "partThree": {
+      "tinyTag": "Our Values",
+      "largeHeading": "The Principles That Guide Everything We Do",
+      "accordions": [
+        { "title": "Freedom through Financial Confidence", "content": "Lumhera makes financial literacy simple and joyful." },
+        { "title": "Empowerment through Education", "content": "A story-driven interactive experience about money." },
+        { "title": "Equality and Inclusion", "content": "A story-driven interactive experience about money." },
+        { "title": "Agency over Anxiety", "content": "Lumhera makes financial literacy simple and joyful." },
+        { "title": "Evidence over Hype", "content": "A story-driven interactive experience about money." },
+        { "title": "Craft and Clarity", "content": "A story-driven interactive experience about money." }
+      ],
+      "ctaText": "LEARN MORE →",
+      "ctaLink": "/contact"
+    },
+
+    "ourMethod": {
+      "mainHeading": "Our Method",
+      "blocks": [
+        {
+          "side": "left",
+          "subheading": "Learning by Doing",
+          "paragraphs": [
+            "Children learn best when they experience what they’re learning. Lumhera turns money into a story — through choices, puzzles, and real consequences that make financial ideas tangible."
+          ],
+          "ctaText": "LEARN MORE →",
+          "ctaLink": "/contact"
+        },
+        {
+          "side": "right",
+          "subheading": "For Families and Schools",
+          "paragraphs": [
+            "Lumhera puts children at the center of learning — where financial confidence begins.",
+            "Through our interactive, story-driven tools, kids explore how money works in ways that feel natural, playful, and empowering."
+          ],
+          "ctaText": "LEARN MORE →",
+          "ctaLink": "/contact"
+        },
+        {
+          "side": "left",
+          "subheading": "Backed by Global Standards",
+          "paragraphs": [
+            "Our curriculum is built on the OECD/INFE Financial Competence Framework for Children & Youth, ensuring that every experience develops real-world financial skills"
+          ],
+          "ctaText": "LEARN MORE →",
+          "ctaLink": "/contact"
+        }
+      ],
+      "banner": {
+        "heading": "Start Your Journey",
+        "description": "Take the first step towards financial empowerment today!",
+        "buttonText": "CONTACT US"
+      }
     }
   },
-  "homepagegridsectioninfo": {
-    "homegridlargeheading": "Our Products",
-    "homegriddescription": "Nemesis team combines over 50 years of investment banking and asset management experience.",
-    "sectionbuttondata": {
-      "buttonname": "Learn More",
-      "buttonlink": "/ourproducts",
-      "buttontitle": "Find out more about our services"
-    },
-    "haomepageproductagrid": [
+
+  "bottomLearnSection": {
+    "tinyTitle": "Start Learning",
+    "largeHeading": "Learn With Us",
+    "cards": [
       {
-        "id": 1,
-        "link": "/images/Discretionary-portfolios-icon.png",
-        "alt": "large section image",
-        "width": "104",
-        "height": "104",
-        "cardtitle": "Discretionary Portfolios",
-        "title": "Striving hard for excellence"
+        "imageSrc": "/images/home.png",
+        "imageAlt": "About Page Header Image",
+        "width": 164,
+        "height": 164,
+        "heading": "Learn at Home",
+        "description": "Lumhera makes money talk easy and fun.Parents can explore the same chapters as their kids, follow progress, and open real conversations about saving, earning, or giving.",
+        "linkText": "LEARN MORE →",
+        "linkHref": "/contact"
       },
       {
-        "id": 2,
-        "link": "/images/portfolio-advisory-icon.png",
-        "alt": "large section image",
-        "width": "104",
-        "height": "104",
-        "cardtitle": "Portfolio Advisory",
-        "title": "Striving hard for excellence"
+        "imageSrc": "/images/school.png",
+        "imageAlt": "About Page Header Image",
+        "width": 164,
+        "height": 164,
+        "heading": "Learn at School",
+        "description": "Classroom-ready content and assessments Clear standards mapping (OECD/INFE) Inclusive storytelling that engages all learners Easy onboarding and teacher support",
+        "linkText": "LEARN MORE →",
+        "linkHref": "/contact"
       },
       {
-        "id": 3,
-        "link": "/images/execution-services-icon.png",
-        "alt": "large section image",
-        "width": "104",
-        "height": "104",
-        "cardtitle": "Execution Services",
-        "title": "Striving hard for excellence"
-      },
-      {
-        "id": 4,
-        "link": "/images/fund-structuring-icon.png",
-        "alt": "large section image",
-        "width": "104",
-        "height": "104",
-        "cardtitle": "Fund Structuring",
-        "title": "Striving hard for excellence"
-      },
-      {
-        "id": 5,
-        "link": "/images/portfolio-managers-platform-icon.png",
-        "alt": "large section image",
-        "width": "104",
-        "height": "104",
-        "cardtitle": "Portfolio Managers Platform",
-        "title": "Striving hard for excellence"
-      },
-      {
-        "id": 6,
-        "link": "/images/appointed-representative-services-icon.png",
-        "alt": "large section image",
-        "width": "104",
-        "height": "104",
-        "cardtitle": "Appointed Representative Services",
-        "title": "Striving hard for excellence"
+        "imageSrc": "/images/monaco.png",
+        "imageAlt": "About Page Header Image",
+        "width": 164,
+        "height": 164,
+        "heading": "Monaco Pilot",
+        "description": "Our first national pilot — with measurable results, rapid iteration, and a model ready to inspire other education systems worldwide.",
+        "linkText": "REQUEST A DEMO →",
+        "linkHref": "/contact"
       }
     ]
   }

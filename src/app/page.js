@@ -1,14 +1,18 @@
 import MainHeroSection from "./components/sharedcomponents/mainherosection/mainherosection";
-
 import HomePageContainer from "./components/pagecomponents/homepagecomponents/homepagecontainer/homepagecontainer";
 
-import Homepagedata from "@/app/data/homepagedata/homaepagedata.json";
+// ✅ point to the new JSON file (fix the old typo in path/name)
+import Homepagedata from "./data/homepagedata/homaepagedata.json";
 
-//--Hero section data----------------------------------
-let herotitle = Homepagedata.herosection.herotitle;
-let herotitlesize = Homepagedata.herosection.herotitlesize;
-let herobackgroundimage = Homepagedata.herosection.backgroundImages;
-let herotitlewidth = Homepagedata.herosection.herotitlewidth;
+// --Hero section data----------------------------------
+const herotitle = Homepagedata.herosection.herotitle;
+const herotitlesize = Homepagedata.herosection.herotitlesize;
+const herobackgroundimage = Homepagedata.herosection.backgroundImages;
+const herotitlewidth = Homepagedata.herosection.herotitlewidth;
+
+// --Homepage sections data-----------------------------
+const lineSectionData = Homepagedata.lineSection;
+const bottomLearnSectionData = Homepagedata.bottomLearnSection;
 
 export default function Home() {
   return (
@@ -19,7 +23,11 @@ export default function Home() {
         herotitlesize={herotitlesize}
         herotitlewidth={herotitlewidth}
       />
-      <HomePageContainer />
+
+      <HomePageContainer
+        lineSectionData={lineSectionData}
+        bottomLearnSectionData={bottomLearnSectionData}
+      />
     </>
   );
 }

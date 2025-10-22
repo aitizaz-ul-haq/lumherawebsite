@@ -1,1 +1,1 @@
-self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{},\"appUsingSizeAdjust\":false,\"pagesUsingSizeAdjust\":false}"
+self.__NEXT_FONT_MANIFEST="{\"pages\":{},\"app\":{\"/home/mos/code/lumherawebsite/src/app/layout\":[\"static/media/8e9860b6e62d6359-s.p.woff2\",\"static/media/d942298c51e8ff87-s.p.woff2\",\"static/media/403511e41efd5e81-s.p.woff2\",\"static/media/f0a6239bc4153746-s.p.woff2\"]},\"appUsingSizeAdjust\":true,\"pagesUsingSizeAdjust\":false}"
