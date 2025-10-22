@@ -1,7 +1,1 @@
-{
-  "/method/page": "app/method/page.js",
-  "/tools/page": "app/tools/page.js",
-  "/learn/page": "app/learn/page.js",
-  "/contact/page": "app/contact/page.js",
-  "/about/page": "app/about/page.js"
-}
+{}
