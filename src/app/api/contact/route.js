@@ -1,107 +1,119 @@
 import nodemailer from "nodemailer";
 import path from "path";
 
+export const runtime = "nodejs"; // ensure Node runtime (not Edge)
+export const dynamic = "force-dynamic";
+
+function isValidEmail(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email || "");
+}
+
 export async function POST(req) {
   try {
     const body = await req.json();
+    const { name, email, subject = "", message = "", phone = "", _hp = "" } = body || {};
 
-    // Destructure form data (new fields only)
-    const { name, email, subject, message } = body;
+    // Honeypot
+    if (_hp) {
+      return new Response(JSON.stringify({ success: true, message: "OK" }), { status: 200 });
+    }
 
-    // Create transporter
+    // Basic validation
+    if (!name || !email || !message) {
+      return new Response(
+        JSON.stringify({ success: false, message: "Missing required fields." }),
+        { status: 400 }
+      );
+    }
+    if (!isValidEmail(email)) {
+      return new Response(
+        JSON.stringify({ success: false, message: "Invalid email." }),
+        { status: 400 }
+      );
+    }
+
+    // Create transporter (Gmail with app password recommended)
     const transporter = nodemailer.createTransport({
-      service: "Gmail",
+      host: process.env.SMTP_HOST || "smtp.gmail.com",
+      port: Number(process.env.SMTP_PORT || 465),
+      secure: true, // 465
       auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
+        user: "nemesiswebmail@gmail.com",
+        pass: "uzis nrdp anel ejrs"
+      }
     });
 
     // Inline images (optional)
     const attachments = [
       {
-        filename: "website-logo-trans.png",
-        path: path.join(
-          process.cwd(),
-          "public/images",
-          "website-logo-trans.png"
-        ),
-        cid: "moslogo",
+        filename: "Lumhera_logo_no_background.png",
+        path: path.join(process.cwd(), "public/images", "Lumhera_logo_no_background.png"),
+        cid: "moslogo"
       },
       {
-        filename: "website-logo-trans.png",
-        path: path.join(
-          process.cwd(),
-          "public/images",
-          "website-logo-trans.png"
-        ),
-        cid: "mosfooterlogo",
-      },
+        filename: "Lumhera_logo_no_background.png",
+        path: path.join(process.cwd(), "public/images", "Lumhera_logo_no_background.png"),
+        cid: "mosfooterlogo"
+      }
     ];
 
     // Email to Admin/HR
     const hrMailOptions = {
-      from: `"${name}" <${email}>`,
-      to: "atz.softprgmr@gmail.com", // change to your email
-      subject: `Contact Form Submission: ${subject}`,
+      from: `Lumhera Team <${process.env.EMAIL_USER}>`,
+      replyTo: `"${name}" <${email}>`,
+      to: process.env.CONTACT_TO || "atz.softprgmr@gmail.com",
+      subject: `Contact Form Submission: ${subject || "No subject"}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
           <img src="cid:moslogo" alt="MOS Logo" style="height: 30px;" />
           <h2>New Contact Form Submission</h2>
           <p><strong>Name:</strong> ${name}</p>
           <p><strong>Email:</strong> ${email}</p>
-          <p><strong>Subject:</strong> ${subject}</p>
-          <p><strong>Message:</strong><br>${message}</p>
+          ${phone ? `<p><strong>Phone:</strong> ${phone}</p>` : ""}
+          <p><strong>Subject:</strong> ${subject || "No subject"}</p>
+          <p><strong>Message:</strong><br>${(message || "").replace(/\n/g, "<br>")}</p>
           <br />
           <img src="cid:mosfooterlogo" alt="MOS Footer Logo" style="height: 38px;" />
         </div>
       `,
-      attachments,
+      attachments
     };
 
     // Thank-you email to user
     const thankYouMailOptions = {
-      from: `Nemesis Asset Management <${process.env.EMAIL_USER}>`,
+      from: `Lumhera Team <${process.env.EMAIL_USER}>`,
       to: email,
       subject: "Thank You for Contacting Us!",
       html: `
-        <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #4B4B4B;background-color:#4B4B4B">
-          <!-- Header Section -->
+        <div style="font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto; border: 1px solid #602537;background-color:#fdfaf7">
           <table width="100%" style="border-collapse: collapse;">
             <tr>
               <td align="left">
-                 <img src="cid:moslogo" alt="Nemesis Asset Management" style="height: 100px">
+                 <img src="cid:moslogo" alt="Lumhera Team" style="height: 50px">
               </td>
-              <td align="right">
-                <!-- Empty right section -->
-              </td>
+              <td align="right"></td>
             </tr>
           </table>
-          
-          <!-- Middle Section -->
-          <h1 style="text-align: center; color: #ffffff; font-size: 24px; font-weight: 300; font-family:inter, serif">Thank You for contacting Nemesis Asset Management</h1>
-          <p style="font-size: 16px; color: #ffffff; text-align: center;">
-            We would like to inform you that we have recieved your email and a member of our team will get back to you as soon as possible
+          <h1 style="text-align: center; color: #602537; font-size: 24px; font-weight: 300; font-family:inter, serif">Thank You for contacting Lumhera</h1>
+          <p style="font-size: 16px; color: #602537; text-align: center;">
+            We would like to inform you that we have received your email and a member of our team will get back to you as soon as possible.
           </p>
-         
-          
-          <!-- Footer Section -->
           <hr style="border: none; border-top: 1px solid #ccc; margin: 20px 0;">
           <table width="100%" style="border-collapse: collapse;">
             <tr>
-              <td align="left" style="font-size:14px; color:#ffffff; font-weight:300;">
-                   <strong style="font-size:14px; color:#ffffff; font-weight:300;">Nemesis Asset Management</strong><br>
-                     <a href="#" style="color:#ffffff; text-decoration:none;">53 Davies Street,</a><br>
-                     <a href="#" style="color:#ffffff; text-decoration:none;">London W1K 5JH.</a><br>
-                    </td>
+              <td align="left" style="font-size:14px; color:#602537; font-weight:300;">
+                   <strong style="font-size:14px; color:#602537; font-weight:300;">Lumhera Team</strong><br>
+                     <a href="#" style="color:#602537; text-decoration:none;">14 Street,</a><br>
+                     <a href="#" style="color:#602537; text-decoration:none;">Monaco.</a><br>
+              </td>
               <td align="right">
-                <img src="cid:mosfooterlogo" alt="Mos Letter Logo" style="height: 70px;" />
+                <img src="cid:mosfooterlogo" alt="Mos Letter Logo" style="height: 30px;" />
               </td>
             </tr>
           </table>
         </div>
       `,
-      attachments,
+      attachments
     };
 
     // Send both mails

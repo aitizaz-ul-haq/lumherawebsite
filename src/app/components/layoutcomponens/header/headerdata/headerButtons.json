@@ -11,18 +11,18 @@
     "subpages": [
       {
         "name": "At Home",
-        "link": "/ourproducts/learn",
+        "link": "/learn",
         "iconSrc": "/images/menu-home.png"
       },
       {
         "name": "For Schools",
-        "link": "/ourproducts/learn",
+        "link": "/learn",
         "iconSrc": "/images/menu-school.png"
       },
 
       {
         "name": "Monaco Pilot",
-        "link": "/ourproducts/learn",
+        "link": "/learn",
         "iconSrc": "/images/menu-monaco.png"
       }
     ]
