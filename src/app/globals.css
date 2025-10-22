@@ -142,7 +142,7 @@ footer {
 
 .general-linkage {
   text-decoration: none;
-  display: inline-block; /* ensures padding applies to clickable area */
+  display: inline-block; 
   /* padding: 8px 12px;  */
   /* color: inherit; */
 }

@@ -162,6 +162,8 @@
   font-weight: 300;
   font-size: 14px;
   text-align: left;
+  /* padding-top: 0.6rem; */
+  padding-bottom: 0.6rem;
 }
 
 .footer-rights-line:hover {
@@ -212,6 +214,51 @@
   justify-content: flex-start;
   align-items: flex-start;
   gap: 1rem;
+}
+
+.footerlistcollection-container {
+  display: flex;
+  flex-direction: row;
+  gap: 5.2rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.listingfooter {
+  display: flex;
+  flex-direction: column;
+  gap: 2.6rem;
+  list-style: none;
+}
+
+.list-element {
+  text-decoration: none;
+  display: inline-block;
+  font-size: 22px;
+  font-weight: 400;
+  /* padding: 8px 12px;  */
+  /* color: inherit; */
+}
+
+.list-element:visited,
+.list-element:hover,
+.list-element:active,
+.list-element:focus {
+  /* color: inherit; */
+  text-decoration: none;
+}
+
+.list-element-color {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list-element-color:visited,
+.list-element-color:hover,
+.list-element-color:active,
+.list-element-color:focus {
+  color: inherit;
+  text-decoration: none;
 }
 /* Default styles (mobile-first approach) */
 

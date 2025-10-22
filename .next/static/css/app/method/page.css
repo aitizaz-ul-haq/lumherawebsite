@@ -1,0 +1,180 @@
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/components/sharedcomponents/headingandparas/styles/headingandparas.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.heading-and-paras-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: left;
+    gap: 2.5rem;
+    width: 50%;
+    margin-top: 4rem;
+}
+
+.heading-and-paras-heading {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    text-align: left;
+    color: var(--heading-color);
+    font-weight: 200;
+    font-size: 35px;
+}
+/*!****************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/components/pagecomponents/contactpagecomponents/styles/contactform.css ***!
+  \****************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.contact-form .form-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+  outline: none;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #999;
+}
+
+.contact-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.contact-form .btn-send {
+  align-self: center;
+  padding: 12px 22px;
+  border: none;
+  border-radius: 9999px;
+  cursor: pointer;
+  background: #602537;
+  color: #fff;
+  font: inherit;
+  margin-top: 0.8rem;
+}
+
+@media (max-width: 420px) {
+  .contact-form .btn-send {
+    width: 100%;
+  }
+}
+
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/components/sharedcomponents/headingandsubheadingwithparas/styles/headingandsubheadingwithparas.css ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.heading-and-subheading-with-paras-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+  gap: 3rem;
+  margin-top: 6rem;
+  width: 50%;
+}
+
+.heading-and-subheading-heading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  color: var(--heading-color);
+  font-weight: 200;
+  font-size: 35px;
+  /* margin-top: 2rem;
+  margin-bottom: 2rem; */
+}
+
+.heading-and-subheading-subheading {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: left;
+  color: var(--heading-color);
+  font-weight: 200;
+  font-size: 24px;
+  margin-bottom: 1.2rem;
+}
+
+/*!*****************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/components/pagecomponents/aboutpagecomponenets/quotesection/styles/quotesection.css ***!
+  \*****************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.quote-section-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: left;
+  gap: 1.7rem;
+  margin-top: 6rem;
+  width: 50%;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+}
+
+.quote-text {
+  font-size: 2rem;
+  color: black;
+  font-weight: 200;
+}
+
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[12].use[3]!./src/app/components/sharedcomponents/pagetemplate/styles/pagetemplate.css ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page-container {
+  /* position: fixed; */
+  margin-top: 8rem;
+  padding-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  border-top: 1px solid #edddd1; /* <-- add semicolon */
+  min-height: auto;
+  /* gap: 4rem; */
+}
+
+.page-header-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  gap: 3rem;
+  width: 50%;
+}
+
+.page-header-tiny-heading {
+  font-size: 18px;
+  color: #29202d;
+  font-weight: 400;
+}
+
+.page-header-large-heading {
+  font-size: 5rem;
+  color: #29202d;
+  font-weight: 400;
+}
+
