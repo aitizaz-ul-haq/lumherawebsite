@@ -1,1 +1,26 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Next.js build output
+.next/
+out/
+
+# Local env
+.env*
+!.env.example
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Tooling/misc
+.vercel/
+coverage/
+dist/
+.cache/
+turbo/
+.DS_Store
+.vscode/
+.idea/
