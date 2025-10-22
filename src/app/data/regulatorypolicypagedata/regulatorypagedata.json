@@ -1,0 +1,172 @@
+{
+  "herosection": {
+    "herotitle": "Regulatory Disclosure",
+    "herotitlesize": {
+      "320px": "60px",
+      "360px": "60px",
+      "375px": "60px",
+      "390px": "65px",
+      "430px": "65px",
+      "480px": "65px",
+      "600px": "80px",
+      "768px": "80px",
+      "1024px": "80px",
+      "1280px": "80px",
+      "1440px": "92px",
+      "1600px": "100px",
+      "1920px": "105px",
+      "2560px": "120px"
+    },
+    "herotitlewidth": {
+      "320px": "100%",
+      "768px": "80%",
+      "1024px": "80%",
+      "1280px": "80%",
+      "1440px": "70%",
+      "1920px": "65%"
+    },
+    "backgroundImages": {
+      "320px": "/images/OurPeople-hero.webp",
+      "360px": "/images/OurPeople-hero.webp",
+      "375px": "/images/OurPeople-hero.webp",
+      "390px": "/images/OurPeople-hero.webp",
+      "430px": "/images/OurPeople-hero.webp",
+      "480px": "/images/OurPeople-hero.webp",
+      "600px": "/images/OurPeople-hero.webp",
+      "768px": "/images/OurPeople-hero.webp",
+      "1024px": "/images/OurPeople-hero.webp",
+      "1280px": "/images/OurPeople-hero.webp",
+      "1440px": "/images/OurPeople-hero.webp",
+      "1600px": "/images/OurPeople-hero.webp",
+      "1920px": "/images/OurPeople-hero.webp",
+      "2560px": "/images/OurPeople-hero.webp"
+    }
+  },
+
+  "FirstSectionparas": [
+    {
+      "id": "1",
+      "firstheading": "UK Financial Reporting Council’s Stewardship Code",
+      "firstpara": "FCA COBS Rule 2.2.3R requires FCA authorised firms to disclose whether they conform to the requirements of the UK Financial Reporting Council’s Stewardship Code (the \"Code\"). Adherence to the Code is voluntary. The Firm pursues an active asset management strategy which involves a wide variety of investment products and timeframes. Therefore, while the Firm supports the principles of the Code, it does not consider it appropriate to conform to the Code at this time."
+    },
+    {
+      "id": "2",
+      "firstheading": "Shareholder Rights Directive",
+      "firstpara": "Nemesis Asset Management LLP is currently considering whether it will adopt an engagement policy pursuant to Article 3g of the amended EU Shareholder Rights Directive (Directive 2007/36/EC). When that decision has been made, this webpage will be updated accordingly."
+    }
+  ],
+
+  "SecondSectionparas": [
+    {
+      "id": "1",
+      "firstheading": "UK Financial Reporting Council’s Stewardship Code",
+      "firstpara": "FCA COBS Rule 2.2.3R requires FCA authorised firms to disclose whether they conform to the requirements of the UK Financial Reporting Council’s Stewardship Code (the \"Code\"). Adherence to the Code is voluntary. The Firm pursues an active asset management strategy which involves a wide variety of investment products and timeframes. Therefore, while the Firm supports the principles of the Code, it does not consider it appropriate to conform to the Code at this time."
+    },
+    {
+      "id": "2",
+      "firstheading": "Shareholder Rights Directive",
+      "firstpara": "Nemesis Asset Management LLP is currently considering whether it will adopt an engagement policy pursuant to Article 3g of the amended EU Shareholder Rights Directive (Directive 2007/36/EC). When that decision has been made, this webpage will be updated accordingly."
+    }
+  ],
+
+  "IFPRDisclosure": {
+    "title": "IFPR Disclosure Statement",
+    "asOfDate": "31 December 2024",
+    "intro": {
+      "sectionId": "I",
+      "heading": "Introduction to Nemesis Asset Management LLP",
+      "paragraphs": [
+        "This document is designed to meet the disclosure obligations of Nemesis Asset Management LLP (the \"Firm\").",
+        "The Firm is subject to the Investment Firms Prudential Regime (\"IFPR\"). The Firm is categorised as a small and non-interconnected investment firm (\"SNI Firm\").",
+        "The disclosures below are made pursuant to the Prudential Sourcebook for MiFID Investment Firms (\"MIFIDPRU\") of the Financial Conduct Authority (\"FCA\") handbook of rules and guidance (the \"FCA Handbook\"). This disclosure document has been prepared by the Firm in accordance with the requirements of Chapter 8.6 of MIFIDPRU. The Firm issues such disclosures at least annually."
+      ]
+    },
+    "remuneration": {
+      "sectionId": "II",
+      "heading": "Remuneration Disclosure Requirements",
+      "parts": [
+        {
+          "part": "A",
+          "title": "Qualitative Disclosures",
+          "items": [
+            {
+              "number": 1,
+              "heading": "Objectives of the Firm’s Financial Incentives",
+              "paragraph": "The Firm’s financial incentives aim to create a direct link between reward and performance and to incentivise staff in alignment with the Firm’s risk profile, including potential conflicts of interest. The Firm’s remuneration structure is evaluated regularly to ensure continued alignment with relevant regulatory requirements. The objective is to align individual and team contributions with performance objectives in a manner that:",
+              "bullets": [
+                "is consistent with and promotes sound and effective risk management;",
+                "does not encourage excessive risk taking;",
+                "includes measures to avoid conflicts of interest in accordance with the Firm’s policies, including the Integrity Policy; and",
+                "is in line with the Firm’s business strategy, regulatory obligations, objectives, values, and long-term interests."
+              ]
+            },
+            {
+              "number": 2,
+              "heading": "Fixed and Variable Remuneration",
+              "paragraph": "Total remuneration is determined considering multiple dimensions. The assessment of performance to determine variable remuneration considers financial as well as non-financial criteria.",
+              "subsections": {
+                "determinedBy": [
+                  "individual performance both commercially and with reference to the appraisal methods detailed in the Firm’s Remuneration Policy;",
+                  "the performance of the relevant business unit; and",
+                  "the results of the Firm as a whole."
+                ],
+                "nonFinancialCriteria": [
+                  "form a significant part of the performance assessment process;",
+                  "where appropriate, override financial criteria;",
+                  "consider the individual’s conduct and make up a substantial portion of the non-financial criteria; and",
+                  "evaluate the individual’s performance in relation to effective risk management and compliance with the Firm’s policies, including the Integrity Policy."
+                ],
+                "eligibilityNote": "All staff are eligible to receive variable remuneration."
+              }
+            },
+            {
+              "number": 3,
+              "heading": "Remuneration Governance and Decision-making Procedures",
+              "paragraphs": [
+                "The Firm has set up governance processes aimed at ensuring the oversight of rewards, management of any potential conflicts of interests, and the review of the alignment between reward and performance.",
+                "The Firm’s Remuneration Policy is reviewed and approved annually by the Firm’s Board. Additionally, the Remuneration Policy is subject to review and comment by the Firm’s senior manager for compliance oversight (\"SMF 16\") as well as representatives of Nemesis Asset Management LLP Human Resources and Finance departments.",
+                "Remuneration decisions are made by Nemesis Asset Management LLP following procedures implemented by the Human Resources department which include consultation with line managers of personnel and presentation and approval by senior leadership. Such remuneration decisions include application of relevant financial and non-financial criteria.",
+                "The Firm’s SMF 16 holds periodic meetings with Nemesis Asset Management LLP’s Chief Operating Officer to discuss compliance and conduct matters relevant to the Firm and/or specific personnel.",
+                "The Firm is an SNI Firm and does not have a remuneration committee."
+              ]
+            },
+            {
+              "number": 4,
+              "heading": "Key Characteristics of Remuneration Policies and Practices",
+              "paragraph": "The Firm has adopted a Remuneration Policy designed to ensure sound, prudent and compliant remuneration practices.",
+              "bullets": [
+                "Prepared in line with the Firm’s business strategy, objectives, values and interests, including consideration of risk appetite and strategy, culture and values, and long-term effects;",
+                "Designed to ensure the Firm maintains and applies a sound and prudent remuneration process which does not impair compliance with any obligations; and",
+                "Intended to identify and manage any conflicts of interest and promote sound and effective risk management and prudent risk taking."
+              ],
+              "categoriesOfRemuneration": [
+                { "type": "baseSalary", "label": "Base salary", "kind": "fixed" },
+                { "type": "discretionaryBonus", "label": "Discretionary bonuses", "kind": "variable" }
+              ],
+              "remunerationCriteria": {
+                "firmCriteria": [
+                  "the performance and profitability of the Firm;",
+                  "the Firm’s risk appetite and strategy;",
+                  "the Firm’s desire to identify and manage any conflicts of interest; and",
+                  "the Firm’s culture and values."
+                ],
+                "businessUnitCriteria": [
+                  "the performance and profitability of the relevant business unit;",
+                  "the objectives set for the relevant business unit;",
+                  "where applicable, the long-term effects of the investment recommendations made by the business unit;",
+                  "control function personnel will be compensated, amongst other factors, by reference to objectives linked to those functions (independent of the performance of the business areas they control)."
+                ],
+                "individualCriteria": [
+                  "the individual’s responsibilities and history with the Firm;",
+                  "performance in relation to the individual’s job description and terms of employment;",
+                  "the individual’s compliance with the Firm’s policies; and",
+                  "the individual’s adherence to the Firm’s culture and values."
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

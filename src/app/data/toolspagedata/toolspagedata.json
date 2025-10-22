@@ -1,0 +1,75 @@
+{
+  "homepageheader": {
+    "tinytitle": "Tools",
+    "LargeHeading": "Tools We Use"
+  },
+  "toolsfirstsection": {
+    "heading": "Esther the Investor — The Beginning of the Journey",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Lumhera’s first interactive experience, Esther the Investor, turns financial learning into an immersive, story-driven adventure."
+      },
+      {
+        "id": 2,
+        "content": "Children follow Esther, a curious 10-year-old, as she discovers how money shapes the world — guided by King Croesus and his cat Bucks."
+      }
+    ]
+  },
+
+  "toolssecondsection": {
+    "paragraphone": {
+      "content": "Lumhera’s first interactive experience, Esther the Investor, turns financial learning into an immersive, story-driven adventure."
+    },
+
+    "middlelist": [
+      {
+        "id": 1,
+        "content": "The origins and purpose of money."
+      },
+      {
+        "id": 2,
+        "content": "Saving, spending, and investing."
+      },
+      {
+        "id": 3,
+        "content": "Banks and entrepreneurship."
+      },
+      {
+        "id": 4,
+        "content": "Risk, reward, and sustainability."
+      }
+    ],
+
+    "paragraphtwo": {
+      "content": "Children follow Esther, a curious 10-year-old, as she discovers how money shapes the world — guided by King Croesus and his cat Bucks."
+    }
+  },
+
+  "toolsthirdsection": {
+    "paragraph": {
+      "content": "Because learning about money should feel like an adventure not an obligation."
+    }
+  },
+  "toolsfourthsection": {
+    "heading": "A Growing Universe of Learning",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Esther the Investor is just the first chapter in Lumhera’s mission to make financial literacy joyful, inclusive, and empowering."
+      },
+      {
+        "id": 2,
+        "content": "Soon, the world of Lumhera will expand with short family lessons, classroom resources, and digital dashboards — tools that connect what children learn in play to what they practice in life."
+      },
+      {
+        "id": 3,
+        "content": "One story today. A universe of confidence tomorrow."
+      }
+    ]
+  },
+  "toolsctaone": {
+    "text": "Because learning about money should feel like an adventure — not an obligation.",
+    "buttontext": "GET STARTED"
+  }
+}

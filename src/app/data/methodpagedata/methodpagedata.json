@@ -1,0 +1,123 @@
+{
+  "homepageheader": {
+    "tinytitle": "Method",
+    "LargeHeading": "What We Do"
+  },
+  "methodfirstsection": {
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "We blend storytelling, games, and hands-on experiences to teach children and families the building blocks of financial literacy — saving, spending, investing, and more — in ways that feel natural and fun."
+      },
+      {
+        "id": 2,
+        "content": "We turn learning into lasting confidence, and confidence into independence empowering every girl, every woman, and every family to shape their own future."
+      }
+    ]
+  },
+
+  "methodsecondsection": {
+    "heading": "Learning by Doing",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Children learn best when they experience what they’re learning.Lumhera turns money into a story — through choices, puzzles, and real consequences that make financial ideas tangible."
+      },
+      {
+        "id": 2,
+        "content": "Because the best way to understand money isn’t by memorizing facts — it’s by doing."
+      }
+    ]
+  },
+
+  "methodthirdsection": {
+    "heading": "For Families and Schools",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Lumhera puts children at the center of learning — where financial confidence begins."
+      },
+      {
+        "id": 2,
+        "content": "Through our interactive, story-driven tools, kids explore how money works in ways that feel natural, playful, and empowering."
+      },
+      {
+        "id": 3,
+        "content": "We bridge home and school so that children, families, and teachers can learn together — building real-world understanding, measurable progress, and lasting independence."
+      }
+    ]
+  },
+
+  "methodfoursection": {
+    "heading": "Backed by Global Standards",
+    "paragraphone": "Our curriculum is built on the OECD/INFE Financial Competence Framework for Children & Youth, ensuring that every experience develops real-world financial skills across four domains:",
+
+    "middlelist": [
+      {
+        "id": 1,
+        "content": "Money & Transactions"
+      },
+      {
+        "id": 2,
+        "content": "Planning & Managing Finances."
+      },
+      {
+        "id": 3,
+        "content": "Risk & Reward."
+      },
+      {
+        "id": 4,
+        "content": "Financial Landscape."
+      }
+    ],
+
+    "paragraphtwo": "This gives Lumhera global credibility and makes it easy to integrate into classrooms, family learning, or national programs."
+  },
+
+  "methodfivesection": {
+    "heading": "Why It Matters",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Financial literacy is one of the world’s most powerful equalizers — yet many young people reach adulthood without ever learning how to manage money."
+      },
+      {
+        "id": 2,
+        "content": "Lumhera bridges that gap by combining emotional storytelling with measurable outcomes, making finance both accessible and transformative."
+      },
+      {
+        "id": 3,
+        "content": "Inspired by Finland’s national model — where 91% of sixth-graders learn through real-world simulations — we bring that same immersive, practice-based approach to a digital, global, and inclusive audience."
+      }
+    ]
+  },
+
+  "methodsixsection": {
+    "heading": "Measuring What Matters",
+    "statementone": "We don’t just teach — we track change.",
+    "statementtwo": "Lumhera measures progress in three dimensions of empowerment:",
+    "subsection": [
+      {
+        "id": 1,
+        "subheading": "Confidence ",
+        "content": "Comfort in making money decisions."
+      },
+      {
+        "id": 2,
+        "subheading": "Knowledge ",
+        "content": "Understanding key financial ideas."
+      },
+      {
+        "id": 3,
+        "subheading": "Behavior ",
+        "content": "Applying new skills in real life."
+      }
+    ],
+    "paragraph": "Each learner’s journey is supported by reflection tools and dashboards, ensuring that growth is visible, meaningful, and lasting."
+  },
+
+  "Methodctatwo": {
+    "text": "Learning by doing is at the heart of Lumhera. Through our interactive game, children don’t just study money — they experience it, make decisions, and grow in confidence with every play.",
+    "buttontext": "CONTACT US"
+  }
+}

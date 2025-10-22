@@ -1,0 +1,103 @@
+{
+  "herosection": {
+    "herotitle": "Disclaimer",
+    "herotitlesize": {
+      "320px": "60px",
+      "360px": "60px",
+      "375px": "60px",
+      "390px": "65px",
+      "430px": "65px",
+      "480px": "65px",
+      "600px": "80px",
+      "768px": "80px",
+      "1024px": "80px",
+      "1280px": "80px",
+      "1440px": "92px",
+      "1600px": "100px",
+      "1920px": "105px",
+      "2560px": "120px"
+    },
+    "herotitlewidth": {
+      "320px": "100%",
+      "768px": "80%",
+      "1024px": "80%",
+      "1280px": "80%",
+      "1440px": "70%",
+      "1920px": "65%"
+    },
+    "backgroundImages": {
+      "320px": "/images/OurPeople-hero.webp",
+      "360px": "/images/OurPeople-hero.webp",
+      "375px": "/images/OurPeople-hero.webp",
+      "390px": "/images/OurPeople-hero.webp",
+      "430px": "/images/OurPeople-hero.webp",
+      "480px": "/images/OurPeople-hero.webp",
+      "600px": "/images/OurPeople-hero.webp",
+      "768px": "/images/OurPeople-hero.webp",
+      "1024px": "/images/OurPeople-hero.webp",
+      "1280px": "/images/OurPeople-hero.webp",
+      "1440px": "/images/OurPeople-hero.webp",
+      "1600px": "/images/OurPeople-hero.webp",
+      "1920px": "/images/OurPeople-hero.webp",
+      "2560px": "/images/OurPeople-hero.webp"
+    }
+  },
+
+  "sections": [
+    {
+      "id": "1",
+      "heading": "General legal terms of use:",
+      "paragraphs": [
+        "You declare by accessing our web site www.nemesisam.com to have carefully read and accepted the following terms and conditions for usage of our website."
+      ]
+    },
+    {
+      "id": "2",
+      "heading": "Copyright:",
+      "paragraphs": [
+        "The content of our website as well as any other material or content published by us or delivered by us via any way, including electronic means such as e-mail, telecommunication systems and social media (hereinafter solely the “Content”) is covered by copyright belonging to Nemesis Asset Management LLP which is the author of the publication. The Content and files are accessible solely for consultation.",
+        "Every reproduction of the Content written and/or electronic, is allowed solely upon prior written consent by us. No implied consent or tolerance is admissible."
+      ]
+    },
+    {
+      "id": "3",
+      "heading": "Trademarks and Images:",
+      "paragraphs": [
+        "Trademark, brands and images can be downloaded or copied but downloading, copying or saving any Content from this website does not confer any rights over the aforesaid material. Nemesis Asset Management LLP reserves all rights deriving from the copyright and the ownership of the related marks and/or all the material published on this website."
+      ]
+    },
+    {
+      "id": "4",
+      "heading": "No reliance:",
+      "paragraphs": [
+        "Any eventual opinion expressed within the Content is the opinion of Nemesis Asset Management LLP except in case we solely re-publish or tag opinion of other parties. We make our best effort to ensure the reliability of the Content published by us, but we do not guarantee the accuracy, reliability or the completeness of the Content and maybe subject to change without notice."
+      ]
+    },
+    {
+      "id": "5",
+      "heading": "No guarantee:",
+      "paragraphs": [
+        "We do not give any guarantee about the Content and about the functionality of the website. We do not give any guarantee about the fact that the website or the email sent by us do not contain any virus that may attack your system. We recommend you to scan the website and any email sent by us with suitable antivirus system. There is also a possibility for third parties access our IT system without authorisation to do so and amend the Contents.",
+        "We declines any liability for non-authorised access to our content management system platform."
+      ]
+    },
+    {
+      "id": "6",
+      "heading": "Exemption of liability:",
+      "paragraphs": [
+        "Nemesis Asset Management LLP is not responsible for any and all kinds of damages, direct or indirect, deriving from the usage of this website or following the inability to access it or make use of the Content."
+      ]
+    },
+    {
+      "id": "7",
+      "heading": "Information regarding investment risks:",
+      "paragraphs": [
+        "Nemesis Asset Management LLP is authorised and regulated by the Financial Conduct Authority with registration number 211205. No part of this website may be reproduced in any manner without the written permission of Nemesis Asset Management LLP.",
+        "This communication may contain information that is privileged and confidential and if you are not the intended recipient of this email you should inform the sender. Likewise, if you do not wish to receive such communications from Nemesis Asset Management LLP, please inform the sender.",
+        "This communication is not intended as an offer to buy or sell securities. It is not a trade confirmation of and is not investment research. All information provided, including market prices or data, has been obtained from sources believed to be reliable however, no representation or warranty, express or implied, is made as to its accuracy or completeness.",
+        "Any comments; statements or opinions expressed herein are subject to change without notice and do not necessarily reflect those of Nemesis Asset Management LLP. Investments referred to herein may not be suitable for you and if you have any doubt about this, you should contact your advisor for further advice. Past performance is not indicative of future results and the value of investments may go down as well as up.",
+        "©2025 Nemesis Asset Management LLP. For illustrative purposes only. Views and opinions expressed are for information purposes only and do not constitute a recommendation by Nemesis Asset Management LLP to buy, sell or hold any security. Views and opinions are current and may be subject to change. They should not be construed as investment advice. The value of your investments can go down as well as up and we stress that past performance is no guarantee for future performance."
+      ]
+    }
+  ]
+}

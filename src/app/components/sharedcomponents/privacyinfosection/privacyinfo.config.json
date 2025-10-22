@@ -1,0 +1,38 @@
+{
+  "entries": [
+    {
+      "paths": [
+        "/",
+        "/ourlocation/London",
+        "/about",
+        "/ourproducts",
+        "/ourinvestmentapproach/investmentphilosophy",
+        "/ourinvestmentapproach/investmentprocess",
+        "/ourinvestmentapproach/focusinvesting",
+        "/ourproducts/discretionaryportfolios",
+        "/ourproducts/portfolioadvisory",
+        "/ourproducts/executionservices",
+        "/ourproducts/fundstructuring",
+        "/ourproducts/portfoliomanagersplatform",
+        "/ourproducts/appointedrepresentativeservices",
+        "/ourpeople"
+      ],
+      "matchType": "startsWith",
+      "links": [
+        { "href": "/privacypolicy", "label": "Privacy Policy" },
+        { "href": "/disclaimer", "label": "Disclaimer" },
+        { "href": "/regulatorypolicy", "label": "Regulatory Disclosure" }
+      ],
+      "details": "Nemesis Asset Management LLP, a limited liability partnership incorporated in England and Wales under number OC301714 and is Authorised and Regulated by the Financial Conduct Authority under Firm Reference Number 211205."
+    },
+    {
+      "paths": ["/ourlocation/Monaco", "/monaco-overview"],
+      "matchType": "startsWith",
+      "links": [
+        { "href": "/privacypolicy", "label": "Privacy Policy" },
+        { "href": "/disclaimer", "label": "Disclaimer" }
+      ],
+      "details": "Nemesis SAM, Société Anonyme Monégasque au capital de 800 000€ – RCI N°08S04742 – DSEE 6630Z 12782 – IF N° FR 09 00007866 6 – Agrément CCAF n° SAF/2007-10/MOD1"
+    }
+  ]
+}

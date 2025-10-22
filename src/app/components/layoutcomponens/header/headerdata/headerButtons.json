@@ -1,0 +1,29 @@
+[
+  { "name": "Home", "link": "/", "title": "Back to homepage" },
+  { "name": "About", "link": "/about", "title": "Find out who we are" },
+  { "name": "Method", "link": "/method", "title": "Our method" },
+  { "name": "Tools", "link": "/tools", "title": "Our tools" },
+
+  {
+    "name": "Learn",
+    "link": "/learn",
+    "title": "Learn",
+    "subpages": [
+      {
+        "name": "For Schools",
+        "link": "/ourproducts/discretionaryportfolios",
+        "iconSrc": "/images/briefcase.png"
+      },
+      {
+        "name": "At Home",
+        "link": "/ourproducts/portfolioadvisory",
+        "iconSrc": "/images/portofolio.png"
+      },
+      {
+        "name": "Monaco Pilot",
+        "link": "/ourproducts/executionservices",
+        "iconSrc": "/images/refresh.png"
+      }
+    ]
+  }
+]

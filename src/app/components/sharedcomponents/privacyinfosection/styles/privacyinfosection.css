@@ -1,0 +1,35 @@
+.privacyinfosection-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 3rem;
+  padding: 2rem;
+  width: 100%;
+  background: #28282b;
+  color: var(--white-text-color);
+  /* text-decoration: none; */
+}
+
+.privacyinfosection-links-section {
+  margin-bottom: 0.6rem;
+}
+
+.privacyinfosection-link {
+  color: var(--white-text-color);
+}
+
+.privacyinfosection-location-info-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.privacyinfosection-location-info {
+  width: 40%;
+  font-size: 0.9rem;
+  color: var(--light-gray-text-color);
+}

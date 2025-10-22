@@ -1,0 +1,64 @@
+{
+  "homepageheader": {
+    "tinytitle": "About",
+    "LargeHeading": "Who We Are"
+  },
+  "aboutfirstsection": {
+    "heading": "About Lumhera",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Lumhera creates digital experiences that bring financial literacy to life. Through Esther the Investor, our interactive story-driven game, we combine global education standards with the power of storytelling to make money concepts simple, engaging, and empowering especially for the children who will shape tomorrow."
+      },
+      {
+        "id": 2,
+        "content": "“As a girl, I dreamed of having the freedom to make my own choices. Financial literacy gave me that freedom. Lumhera is my way of sharing it.” – Foundress"
+      }
+    ]
+  },
+  "aboutsecondsection": {
+    "heading": "What Guides Us : our values",
+    "subsection": [
+      {
+        "id": 1,
+        "subheading": "Empowerment through Education",
+        "content": "Knowledge is power. We believe financial education unlocks confidence, independence, and opportunity — especially for girls and women."
+      },
+      {
+        "id": 2,
+        "subheading": "Equality and Inclusion",
+        "content": "Every learner deserves the same tools to succeed. Our stories and characters reflect the diversity of real life — because representation creates belonging."
+      },
+      {
+        "id": 3,
+        "subheading": "Freedom through Financial Confidence",
+        "content": "Freedom begins with choice — and choice begins with understanding. We help learners see money not as a limit, but as a path to possibility."
+      },
+      {
+        "id": 4,
+        "subheading": "Agency over Anxiety",
+        "content": "We replace fear of finance with curiosity, discovery, and self-belief. Learning should empower, never intimidate."
+      },
+      {
+        "id": 5,
+        "subheading": "Evidence over Hype",
+        "content": "Everything we build is grounded in research and measurable impact. Progress isn’t a promise — it’s something we track."
+      },
+      {
+        "id": 6,
+        "subheading": "Craft and Clarity",
+        "content": "We believe learning should be joyful, beautifully designed, and easy to understand — no jargon, just clarity."
+      }
+    ]
+  },
+
+  "aboutthirdsection": {
+    "quotetextone": "Building a world of free, equal, and financially confident women — through education that empowers.",
+    "quotetexttwo": "True emancipation begins with understanding money, and true equality begins when every girl can decide her own future."
+  },
+
+  "aboutctaone": {
+    "text": "Request a free demo for your school.",
+    "buttontext": "CONTACT US"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "homepageheader": {
+    "tinytitle": "Learn",
+    "LargeHeading": "Learn With Us"
+  },
+  "learnfirstsection": {
+    "heading": "Learning Together",
+    "paragraphs": [
+      { "id": 1, "content": "Lumhera makes money talk easy and fun." },
+      {
+        "id": 2,
+        "content": "Parents can explore the same chapters as their kids, follow progress, and open real conversations about saving, earning, or giving."
+      }
+    ]
+  },
+
+  "learnsecondsection": {
+    "heading": "What Families Love",
+    "substatement": " ",
+    "middlelist": [
+      {
+        "id": 1,
+        "content": "Interactive, story-based learning that feels like play"
+      },
+      {
+        "id": 2,
+        "content": "Short sessions — perfect for family time"
+      },
+      {
+        "id": 3,
+        "content": "Progress tracking and practical tips"
+      },
+      {
+        "id": 4,
+        "content": "Empowering stories that feature strong, curious role models"
+      }
+    ]
+  },
+
+  "learnctaone": {
+    "text": "Start your family’s learning journey today.",
+    "buttontext": "CONTACT US"
+  },
+
+  "learnthirdsection": {
+    "heading": "For Schools",
+    "substatement": "Why Schools Choose Lumhera",
+    "middlelist": [
+      {
+        "id": 1,
+        "content": "Classroom-ready content and assessments."
+      },
+      {
+        "id": 2,
+        "content": "Clear standards mapping (OECD/INFE)."
+      },
+      {
+        "id": 3,
+        "content": "Inclusive storytelling that engages all learners."
+      },
+      {
+        "id": 4,
+        "content": "Easy onboarding and teacher support."
+      }
+    ]
+  },
+  "learnfourthsection": {
+    "heading": "Monaco Pilot",
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Our first national pilot — with measurable results, rapid iteration, and a model ready to inspire other education systems worldwide."
+      }
+    ]
+  },
+
+  "learnctatwo": {
+    "text": "Request a free demo for your school.",
+    "buttontext": "CONTACT US"
+  }
+}

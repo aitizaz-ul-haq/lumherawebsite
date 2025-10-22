@@ -1,0 +1,37 @@
+.page-container {
+  /* position: fixed; */
+  margin-top: 8rem;
+  padding-top: 5.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 20rem;
+  padding-right: 20rem;
+  border-top: 1px solid #edddd1; /* <-- add semicolon */
+  min-height: auto;
+  /* gap: 4rem; */
+}
+
+.page-header-section {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center;
+  align-items: center; */
+  text-align: center;
+  gap: 3rem;
+  width: 50%;
+}
+
+.page-header-tiny-heading {
+  font-size: 18px;
+  color: #29202d;
+  font-weight: 400;
+}
+
+.page-header-large-heading {
+  font-size: 5rem;
+  color: #29202d;
+  font-weight: 400;
+}

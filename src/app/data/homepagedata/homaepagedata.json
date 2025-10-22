@@ -1,0 +1,128 @@
+{
+  "herosection": {
+    "herotitle": "Finance lights the path, Empowerment takes its root, Freedom’s doors open.",
+    "herotitlesize": {
+      "320px": "31px",
+      "360px": "42px",
+      "375px": "46px",
+      "390px": "31px",
+      "430px": "35px",
+      "480px": "39px",
+      "600px": "50px",
+      "768px": "60px",
+      "1024px": "55px",
+      "1280px": "70px",
+      "1440px": "70px",
+      "1600px": "77px",
+      "1920px": "80px",
+      "2560px": "120px"
+    },
+    "herotitlewidth": {
+      "320px": "100%",
+      "768px": "100%",
+      "1024px": "70%",
+      "1280px": "70%",
+      "1440px": "62%",
+      "1920px": "62%"
+    },
+    "backgroundImages": {
+      "320px": "/images/turqoise.jpeg",
+      "360px": "/images/turqoise.jpeg",
+      "375px": "/images/turqoise.jpeg",
+      "390px": "/images/turqoise.jpeg",
+      "430px": "/images/turqoise.jpeg",
+      "480px": "/images/turqoise.jpeg",
+      "600px": "/images/turqoise.jpeg",
+      "768px": "/images/turqoise.jpeg",
+      "1024px": "/images/turqoise.jpeg",
+      "1280px": "/images/turqoise.jpeg",
+      "1440px": "/images/turqoise.jpeg",
+      "1600px": "/images/turqoise.jpeg",
+      "1920px": "/images/turqoise.jpeg",
+      "2560px": "/images/turqoise.jpeg"
+    }
+  },
+  "homepagecontainer": {
+    "tagtitle": "Introduction",
+    "LargeHeading": "Nemesis Asset Management",
+    "firstsectionparaone": "Nemesis is an independent fully regulated asset management company based in London and Monaco covering all aspects related to wealth and estate planning. These services include discretionary portfolio management, independent advisory and execution services, fund management for individuals, families, corporations, foundations and trusts.",
+    "secondsectionparatwo": "As an independent asset management company we manage and administer our clients existing banking relationships globally. We can also assist with the opening of new relationships with a wide number of international banks in various geographical locations.",
+    "sectionimagedata": {
+      "link": "/images/largesectionrightsidedimage.webp",
+      "alt": "large section image",
+      "width": "541",
+      "height": "520",
+      "title": "Striving hard for excellence"
+    },
+    "sectionbuttondata": {
+      "buttonname": "Get in Touch",
+      "buttonlink": "/ourlocation/London#londoncontact-form",
+      "buttontitle": "Come talk to us now"
+    }
+  },
+  "homepagegridsectioninfo": {
+    "homegridlargeheading": "Our Products",
+    "homegriddescription": "Nemesis team combines over 50 years of investment banking and asset management experience.",
+    "sectionbuttondata": {
+      "buttonname": "Learn More",
+      "buttonlink": "/ourproducts",
+      "buttontitle": "Find out more about our services"
+    },
+    "haomepageproductagrid": [
+      {
+        "id": 1,
+        "link": "/images/Discretionary-portfolios-icon.png",
+        "alt": "large section image",
+        "width": "104",
+        "height": "104",
+        "cardtitle": "Discretionary Portfolios",
+        "title": "Striving hard for excellence"
+      },
+      {
+        "id": 2,
+        "link": "/images/portfolio-advisory-icon.png",
+        "alt": "large section image",
+        "width": "104",
+        "height": "104",
+        "cardtitle": "Portfolio Advisory",
+        "title": "Striving hard for excellence"
+      },
+      {
+        "id": 3,
+        "link": "/images/execution-services-icon.png",
+        "alt": "large section image",
+        "width": "104",
+        "height": "104",
+        "cardtitle": "Execution Services",
+        "title": "Striving hard for excellence"
+      },
+      {
+        "id": 4,
+        "link": "/images/fund-structuring-icon.png",
+        "alt": "large section image",
+        "width": "104",
+        "height": "104",
+        "cardtitle": "Fund Structuring",
+        "title": "Striving hard for excellence"
+      },
+      {
+        "id": 5,
+        "link": "/images/portfolio-managers-platform-icon.png",
+        "alt": "large section image",
+        "width": "104",
+        "height": "104",
+        "cardtitle": "Portfolio Managers Platform",
+        "title": "Striving hard for excellence"
+      },
+      {
+        "id": 6,
+        "link": "/images/appointed-representative-services-icon.png",
+        "alt": "large section image",
+        "width": "104",
+        "height": "104",
+        "cardtitle": "Appointed Representative Services",
+        "title": "Striving hard for excellence"
+      }
+    ]
+  }
+}

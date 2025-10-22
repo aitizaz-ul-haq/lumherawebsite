@@ -1,0 +1,14 @@
+.multiple-para-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  gap: 2rem;
+  margin-top: 6rem;
+  width: 50%;
+}
+
+/* .multiple-para-text {
+
+} */
