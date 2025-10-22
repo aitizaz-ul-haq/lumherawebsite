@@ -5,14 +5,19 @@ import headerButtons from "../headerdata/headerButtons.json";
 import { useState } from "react";
 
 function slugify(str) {
-  return String(str).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
+  return String(str)
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/(^-|-$)/g, "");
 }
 
 /** Uses first path segment from button.link to derive a stable key */
 function menuKeyFor(button) {
   if (button?.link) {
     try {
-      const seg = new URL(button.link, "https://example.com").pathname.split("/").filter(Boolean)[0];
+      const seg = new URL(button.link, "https://example.com").pathname
+        .split("/")
+        .filter(Boolean)[0];
       if (seg) return seg; // "ourproducts", "ourinvestmentapproach", "ourlocation"
     } catch {}
   }
@@ -25,7 +30,8 @@ export default function HeaderRightSectionButtonSection() {
   return (
     <>
       {headerButtons.map((button, index) => {
-        const hasDropdown = Array.isArray(button.subpages) && button.subpages.length > 0;
+        const hasDropdown =
+          Array.isArray(button.subpages) && button.subpages.length > 0;
         const menuKey = hasDropdown ? menuKeyFor(button) : null;
 
         // Location menu → right icons; others → left icons
@@ -34,7 +40,9 @@ export default function HeaderRightSectionButtonSection() {
         return (
           <div
             key={index}
-            className={`header-button-wrapper ${menuKey ? `header-button-wrapper--${menuKey}` : ""}`}
+            className={`header-button-wrapper ${
+              menuKey ? `header-button-wrapper--${menuKey}` : ""
+            }`}
             data-menu={menuKey || undefined}
             onMouseEnter={() => hasDropdown && setHoveredIndex(index)}
             onMouseLeave={() => hasDropdown && setHoveredIndex(null)}
@@ -44,7 +52,9 @@ export default function HeaderRightSectionButtonSection() {
               className="header-nobackground-button"
               title={button.title}
               aria-haspopup={hasDropdown ? "true" : undefined}
-              aria-expanded={hasDropdown && hoveredIndex === index ? "true" : "false"}
+              aria-expanded={
+                hasDropdown && hoveredIndex === index ? "true" : "false"
+              }
             >
               {button.name}
             </Link>
@@ -61,7 +71,11 @@ export default function HeaderRightSectionButtonSection() {
 
                   const Icon = src ? (
                     <span
-                      className={`header-dropdown-item__icon ${iconSide === "right" ? "header-dropdown-item__icon--right" : ""}`}
+                      className={`header-dropdown-item__icon ${
+                        iconSide === "right"
+                          ? "header-dropdown-item__icon--right"
+                          : ""
+                      }`}
                       aria-hidden="true"
                     >
                       <Image
@@ -83,7 +97,9 @@ export default function HeaderRightSectionButtonSection() {
                       title={subpage.title}
                     >
                       {iconSide === "left" && Icon}
-                      <span className="header-dropdown-item__label">{subpage.name}</span>
+                      <span className="header-dropdown-item__label">
+                        {subpage.name}
+                      </span>
                       {iconSide === "right" && Icon}
                     </Link>
                   );

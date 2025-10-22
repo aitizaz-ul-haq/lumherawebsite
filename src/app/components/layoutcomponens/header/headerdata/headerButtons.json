@@ -10,19 +10,20 @@
     "title": "Learn",
     "subpages": [
       {
-        "name": "For Schools",
-        "link": "/ourproducts/discretionaryportfolios",
-        "iconSrc": "/images/briefcase.png"
+        "name": "At Home",
+        "link": "/ourproducts/learn",
+        "iconSrc": "/images/menu-home.png"
       },
       {
-        "name": "At Home",
-        "link": "/ourproducts/portfolioadvisory",
-        "iconSrc": "/images/portofolio.png"
+        "name": "For Schools",
+        "link": "/ourproducts/learn",
+        "iconSrc": "/images/menu-school.png"
       },
+
       {
         "name": "Monaco Pilot",
-        "link": "/ourproducts/executionservices",
-        "iconSrc": "/images/refresh.png"
+        "link": "/ourproducts/learn",
+        "iconSrc": "/images/menu-monaco.png"
       }
     ]
   }
