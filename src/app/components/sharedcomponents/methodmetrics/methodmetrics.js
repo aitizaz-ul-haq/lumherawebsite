@@ -1,5 +1,8 @@
-// components/sharedcomponents/methodmetrics/methodmetrics.jsx
-// import "./styles/methodmetrics.css"; 
+import MethodMetricsHeadingSection from "./subcomps/methodmetricsheadingsection";
+import MethodMetricsStatementOne from "./subcomps/methodmetricsstatementone";
+import MethodMetricsStatementTwo from "./subcomps/methodmetricsstatementtwo";
+import MethodMetricsMetricsSection from "./subcomps/methodmetricsmetricssection";
+import MethodMetricsClosingParagraph from "./subcomps/methodmetricsclosingparagraph";
 
 export default function MethodMetrics({
   heading = "",
@@ -10,43 +13,11 @@ export default function MethodMetrics({
 }) {
   return (
     <div className="heading-and-subheading-with-paras-container">
-      {heading ? (
-        <h2 className="heading-and-subheading-heading font-kaisei">{heading}</h2>
-      ) : null}
-
-      {statementOne ? (
-        <p className="heading-and-subheading-paragraph font-inter">
-          {statementOne}
-        </p>
-      ) : null}
-
-      {statementTwo ? (
-        <p className="heading-and-subheading-paragraph font-inter">
-          {statementTwo}
-        </p>
-      ) : null}
-
-      {Array.isArray(metrics) &&
-        metrics.map((m) => (
-          <div key={m.id ?? m.subheading}>
-            {m?.subheading ? (
-              <h3 className="heading-and-subheading-subheading font-kaisei">
-                {m.subheading}
-              </h3>
-            ) : null}
-            {m?.content ? (
-              <p className="heading-and-subheading-paragraph font-inter">
-                {m.content}
-              </p>
-            ) : null}
-          </div>
-        ))}
-
-      {closingParagraph ? (
-        <p className="heading-and-subheading-paragraph font-inter">
-          {closingParagraph}
-        </p>
-      ) : null}
+      <MethodMetricsHeadingSection heading={heading} />
+      <MethodMetricsStatementOne statementOne={statementOne} />
+      <MethodMetricsStatementTwo statementTwo={statementTwo} />
+      <MethodMetricsMetricsSection metrics={metrics} />
+      <MethodMetricsClosingParagraph closingParagraph={closingParagraph} />
     </div>
   );
 }

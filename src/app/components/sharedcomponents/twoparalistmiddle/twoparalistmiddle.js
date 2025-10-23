@@ -1,4 +1,7 @@
-// components/sharedcomponents/twoparalistmiddle/twoparalistmiddle.jsx
+import TwoParaListMiddleParaOne from "./subcomps/twoparalistmiddleparaone";
+import TwoParaListMiddleListItems from "./subcomps/twoparalistmiddlelistitems";
+import TwoParaListMiddleParaTwo from "./subcomps/twoparalistmiddleparatwo";
+
 export default function TwoParaListMiddle({
   paraOne = "",
   listItems = [],
@@ -6,21 +9,9 @@ export default function TwoParaListMiddle({
 }) {
   return (
     <div className="heading-and-paras-container">
-      {paraOne && (
-        <p className="heading-and-paras-paragraph font-inter">{paraOne}</p>
-      )}
-
-      {Array.isArray(listItems) && listItems.length > 0 && (
-        <ul className="section-listing font-inter">
-          {listItems.map((it) => (
-            <li key={it.id ?? it.content}>{it.content ?? String(it)}</li>
-          ))}
-        </ul>
-      )}
-
-      {paraTwo && (
-        <p className="heading-and-paras-paragraph font-inter">{paraTwo}</p>
-      )}
+      <TwoParaListMiddleParaOne paraOne={paraOne} />
+      <TwoParaListMiddleListItems listItems={listItems} />
+      <TwoParaListMiddleParaTwo paraTwo={paraTwo} />
     </div>
   );
 }

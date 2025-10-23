@@ -1,5 +1,7 @@
-// components/sharedcomponents/headinglistandparas/headinglistandparas.jsx
-// import "./styles/headinglistandparas.css"; 
+import HlpHeadingSection from "./subcomps/hlpheadingsection";
+import HlpParaOne from "./subcomps/hlpparaone";
+import HlpListSection from "./subcomps/hlplistsection";
+import HlpParaTwo from "./subcomps/hlpparatwo";
 
 export default function HeadingListAndParas({
   heading = "",
@@ -9,25 +11,10 @@ export default function HeadingListAndParas({
 }) {
   return (
     <div className="heading-and-paras-container">
-      {heading ? (
-        <h2 className="heading-and-paras-heading font-kaisei">{heading}</h2>
-      ) : null}
-
-      {paragraphOne ? (
-        <p className="heading-and-paras-paragraph font-inter">{paragraphOne}</p>
-      ) : null}
-
-      {Array.isArray(listItems) && listItems.length > 0 && (
-        <ul className="section-listing font-inter">
-          {listItems.map((it) => (
-            <li key={it.id ?? it.content}>{it.content ?? String(it)}</li>
-          ))}
-        </ul>
-      )}
-
-      {paragraphTwo ? (
-        <p className="heading-and-paras-paragraph font-inter">{paragraphTwo}</p>
-      ) : null}
+      <HlpHeadingSection heading={heading} />
+      <HlpParaOne paragraphOne={paragraphOne} />
+      <HlpListSection listItems={listItems} />
+      <HlpParaTwo paragraphTwo={paragraphTwo} />
     </div>
   );
 }
