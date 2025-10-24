@@ -56,7 +56,7 @@ export default function MainHeroSection({
         );
 
         // ===== NEW: Parallax (moves background at ~50% scroll speed) =====
-        const PARALLAX_SPEED = 0.2; // tweak 0.3–0.7 to taste
+        const PARALLAX_SPEED = 0.3; // tweak 0.3–0.7 to taste
         const parallaxY = y * PARALLAX_SPEED;
         containerRef.current.style.backgroundPosition = `center calc(50% + ${parallaxY}px)`;
 
