@@ -34,7 +34,7 @@
   align-items: center;
   text-align: center;
   /* overflow: hidden; */
-  will-change: background-position;  /* smoother animation */
+  will-change: background-position; /* smoother animation */
   /* background-attachment: fixed; */
 
   overflow: hidden; /* clip blur at the hero’s edges */
@@ -236,25 +236,38 @@
   .main-hero-section-container {
     background-image: var(--bg-375);
     /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6rem;
   }
 
   .main-hero-title-container {
-    width: var(--titlewidth-320); /* could be less than 100% */
-    padding: 0.4rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    width: var(--titlewidth-320);
+    padding: 0.4rem;
   }
 
   .main-hero-section-heading {
     font-size: var(--titlesize-375);
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-375); 
-  } */
+  .hero-second-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
+
+  .hero-second-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 86%;
+    gap: 3rem;
+    /* padding-top: 34rem; */
+    margin-bottom: 10rem;
+  }
 }
 
 /* iPhone 14, 15 (standard model) */
