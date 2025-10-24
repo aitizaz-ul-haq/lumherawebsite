@@ -19,7 +19,7 @@ export default function MainHeroSection({
     let ticking = false;
 
     // TUNE THESE:
-    const MAX_BLUR_PX = 19; // stronger blur (try 14–20)
+    const MAX_BLUR_PX = 17; // stronger blur (try 14–20)
     const MAX_TINT = 0.35; // 0..1 alpha for tint (0.35 ≈ 35%)
     const triggerDepth = window.innerHeight * 0.6; // how far before hitting max
 
@@ -31,11 +31,12 @@ export default function MainHeroSection({
 
       requestAnimationFrame(() => {
         const y = window.scrollY || 0;
-        const ratio = Math.max(0, Math.min(1, y / triggerDepth)); // clamp 0–1
 
-        // ease-out so initial blur/tint grow gently
+        // ===== existing blur/tint math =====
+        const ratio = Math.max(0, Math.min(1, y / triggerDepth)); // clamp 0–1
         const eased = 1 - Math.pow(1 - ratio, 1.6);
 
+        // blur + tint
         containerRef.current.style.setProperty(
           "--bg-blur",
           `${(eased * MAX_BLUR_PX).toFixed(2)}px`
@@ -45,18 +46,23 @@ export default function MainHeroSection({
           (eased * MAX_TINT).toFixed(3)
         );
 
+        // heading fade (1 → 0)
+        const FADE_MAX_AT = 0.4; // you already have this
         const fadeProgress = Math.max(0, Math.min(1, ratio / FADE_MAX_AT));
-        // const headingOpacity = (1 - fadeProgress).toFixed(3);
-        // containerRef.current.style.setProperty(
-        //   "--heading-opacity",
-        //   headingOpacity
-        // );
-
-        const headingFilter = (1 - fadeProgress).toFixed(3); // 1 → 0
+        const headingFilter = (1 - fadeProgress).toFixed(3);
         containerRef.current.style.setProperty(
           "--heading-filter",
           headingFilter
         );
+
+        // ===== NEW: Parallax (moves background at ~50% scroll speed) =====
+        const PARALLAX_SPEED = 0.2; // tweak 0.3–0.7 to taste
+        const parallaxY = y * PARALLAX_SPEED;
+        containerRef.current.style.backgroundPosition = `center calc(50% + ${parallaxY}px)`;
+
+        // OPTIONAL: slightly oversize to avoid edges when parallaxing
+        // containerRef.current.style.backgroundSize = "105%"; // or keep "cover"
+
         ticking = false;
       });
     };

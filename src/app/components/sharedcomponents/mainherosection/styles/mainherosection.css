@@ -25,7 +25,7 @@
   height: 180vh;
   min-height: calc(100vh - 104px);
   background-size: cover;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
@@ -34,8 +34,9 @@
   align-items: center;
   text-align: center;
   /* overflow: hidden; */
-  will-change: transform, opacity; /* smoother animation */
-  background-attachment: fixed;
+  will-change: background-position;  /* smoother animation */
+  /* background-attachment: fixed; */
+
   overflow: hidden; /* clip blur at the hero’s edges */
   isolation: isolate; /* keep filter effects from blending across sections */
   view-timeline-name: --hero; /* Chrome/Safari: element-based scroll timeline */
@@ -115,12 +116,12 @@
   align-items: center;
   text-align: left;
   width: 60%;
-  gap: 4rem;
+  gap: 3rem;
   /* padding-top: 34rem; */
 }
 
 .hero-second-text {
-  font-size: 42px;
+  font-size: 36px;
   font-weight: 600;
   color: var(--darkmaroon);
 }
@@ -482,7 +483,7 @@
   .main-hero-section-heading {
     font-size: var(--titlesize-1920);
     margin-bottom: 11rem;
-    margin-top: 33rem;
+    margin-top: 28rem;
   }
 
   /* .main-hero-section-container::after {
