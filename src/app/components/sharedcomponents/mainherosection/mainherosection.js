@@ -1,4 +1,7 @@
+"use client";
+
 import Head from "next/head";
+import { useEffect, useRef } from "react";
 import "./styles/mainherosection.css";
 
 export default function MainHeroSection({
@@ -8,6 +11,60 @@ export default function MainHeroSection({
   herotitlewidth,
 }) {
   const preloadImage = herobackgroundimage["1920px"];
+  const containerRef = useRef(null);
+
+  useEffect(() => {
+    if (!containerRef.current) return;
+
+    let ticking = false;
+
+    // TUNE THESE:
+    const MAX_BLUR_PX = 19; // stronger blur (try 14–20)
+    const MAX_TINT = 0.35; // 0..1 alpha for tint (0.35 ≈ 35%)
+    const triggerDepth = window.innerHeight * 0.6; // how far before hitting max
+
+    const FADE_MAX_AT = 0.4;
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+
+      requestAnimationFrame(() => {
+        const y = window.scrollY || 0;
+        const ratio = Math.max(0, Math.min(1, y / triggerDepth)); // clamp 0–1
+
+        // ease-out so initial blur/tint grow gently
+        const eased = 1 - Math.pow(1 - ratio, 1.6);
+
+        containerRef.current.style.setProperty(
+          "--bg-blur",
+          `${(eased * MAX_BLUR_PX).toFixed(2)}px`
+        );
+        containerRef.current.style.setProperty(
+          "--bg-tint",
+          (eased * MAX_TINT).toFixed(3)
+        );
+
+        const fadeProgress = Math.max(0, Math.min(1, ratio / FADE_MAX_AT));
+        // const headingOpacity = (1 - fadeProgress).toFixed(3);
+        // containerRef.current.style.setProperty(
+        //   "--heading-opacity",
+        //   headingOpacity
+        // );
+
+        const headingFilter = (1 - fadeProgress).toFixed(3); // 1 → 0
+        containerRef.current.style.setProperty(
+          "--heading-filter",
+          headingFilter
+        );
+        ticking = false;
+      });
+    };
+
+    onScroll(); // init
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   return (
     <>
@@ -37,6 +94,7 @@ export default function MainHeroSection({
       </Head>
 
       <div
+        ref={containerRef}
         className="main-hero-section-container fade-in-bg"
         style={{
           "--bg-320": `url(${herobackgroundimage["320px"]})`,
@@ -87,6 +145,21 @@ export default function MainHeroSection({
           >
             {herotitle}
           </h1>
+        </div>
+        <div className="hero-second-text-container">
+          <p className="hero-second-text font-kaisei">
+            At Lumhera, we empower girls and women through financial
+            literacy—giving them the skills, confidence, and agency to shape
+            their own futures.
+          </p>
+          <p className="hero-second-text font-kaisei">
+            We believe money should not be a source of anxiety, but a tool for
+            independence and opportunity.
+          </p>
+          <p className="hero-second-text font-kaisei">
+            And the best way to learn about money isn’t by memorizing facts—it’s
+            by doing.
+          </p>
         </div>
       </div>
     </>

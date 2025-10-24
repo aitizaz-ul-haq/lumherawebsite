@@ -13,37 +13,41 @@
 /* Heading fade + slide animation */
 @keyframes headingFadeUp {
   from {
-    opacity: 0;
-    transform: translateY(20px); /* slight slide from bottom */
+    transform: translateY(20px);
   }
   to {
-    opacity: 1;
     transform: translateY(0);
   }
 }
 
 .main-hero-section-container {
   width: 100%;
-  height: 157vh;
+  height: 180vh;
   min-height: calc(100vh - 104px);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   /* overflow: hidden; */
   will-change: transform, opacity; /* smoother animation */
   background-attachment: fixed;
+  overflow: hidden; /* clip blur at the hero’s edges */
+  isolation: isolate; /* keep filter effects from blending across sections */
+  view-timeline-name: --hero; /* Chrome/Safari: element-based scroll timeline */
+  view-timeline-axis: block;
+  --bg-blur: 0px; /* set by JS */
+  --bg-tint: 0; /* set by JS, 0..1 */
 }
 
 /* Apply animation only to background container */
 
 /* Overlay tint */
-.main-hero-section-container::before {
+/* .main-hero-section-container::before {
   content: "";
   position: absolute;
   left: 0;
@@ -53,7 +57,7 @@
   background-color: #ffffff;
   opacity: 40%;
   z-index: 1;
-}
+} */
 
 /* Hero content above overlay */
 .main-hero-section-container > * {
@@ -71,14 +75,106 @@
   text-align: center; */
 }
 
-.main-hero-section-heading {
+/* .main-hero-section-heading {
   color: var(--white-text-color);
   font-size: var(--titlesize-360);
   line-height: 1.07;
-  opacity: 0; /* hidden initially */
-  /* font-family: "__Work_Sans_c0f1a3"; */
   font-weight: 500;
+  opacity: var(--heading-opacity, 1);
+  will-change: transform, opacity;
+} */
+
+.main-hero-section-heading {
+  color: var(--white-text-color, #fff);
+  font-size: var(--titlesize-360);
+  line-height: 1.07;
+  font-weight: 500;
+
+  /* Intro animation on page load */
+  opacity: 0;
+  transform: translateY(20px);
+  animation: headingIntro 700ms ease-out forwards;
+
+  /* Scroll fade multiplier from JS (1 → 0) */
+  filter: opacity(var(--heading-filter, 1));
+
+  will-change: transform, opacity, filter;
 }
+
+@keyframes headingIntro {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-second-text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  width: 60%;
+  gap: 4rem;
+  /* padding-top: 34rem; */
+}
+
+.hero-second-text {
+  font-size: 42px;
+  font-weight: 600;
+  color: var(--darkmaroon);
+}
+
+/* Default blur variable */
+.main-hero-section-container {
+  --bg-blur: 0px; /* controlled via JS */
+}
+
+/* Blurred background overlay (keeps text sharp) */
+.main-hero-section-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* inherit background robustly (not shorthand) */
+  background-image: inherit;
+  background-size: inherit;
+  background-position: inherit;
+  background-repeat: inherit;
+  background-attachment: inherit;
+
+  filter: blur(var(--bg-blur));
+  will-change: filter;
+
+  z-index: 0; /* below tint & content */
+  pointer-events: none;
+}
+
+/* TINT layer (above blur, below text) */
+.main-hero-section-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  /* solid black tint; change to your color as needed */
+  background-color: rgba(255, 255, 255, var(--bg-tint));
+  /* or try a gradient for a stronger bottom focus:
+     background: linear-gradient(180deg,
+       rgba(0,0,0, calc(var(--bg-tint) * 0.7)) 0%,
+       rgba(0,0,0, var(--bg-tint)) 100%);
+  */
+
+  z-index: 1; /* above blur, below text */
+  pointer-events: none;
+}
+
+/* keep your heading/content above overlays */
+.main-hero-section-container > * {
+  position: relative;
+  z-index: 2;
+}
+
+/* ensure stacking: your existing ::before has z-index: 1, content has z-index: 2 (already set) */
 
 /* Default styles (mobile-first approach) */
 
@@ -100,10 +196,7 @@
   }
 
   .main-hero-section-heading {
-    color: var(--white-text-color);
     font-size: var(--titlesize-320);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -130,8 +223,6 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-360);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -158,8 +249,6 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-375);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -186,8 +275,8 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-390);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
+    /* animation: headingFadeUp 0.1s ease-out forwards;
+    animation-delay: 1s; */
   }
 
   /* .main-hero-section-container::after {
@@ -241,8 +330,6 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-480);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -270,8 +357,6 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-600);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -299,8 +384,6 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-768);
-    animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -310,12 +393,6 @@
 
 /* Medium laptops (>= 1024px) */
 @media (min-width: 1024px) {
-  .main-hero-section-container {
-    background-image: var(--bg-1024);
-    /* justify-content: flex-end; */
-    padding: 2rem;
-  }
-
   .main-hero-title-container {
     width: var(--titlewidth-1024); /* could be less than 100% */
     padding-left: 0.5rem; /* adds 64px left+right */
@@ -327,14 +404,12 @@
     text-align: left; */
   }
 
-  .fade-in-bg {
+  /* .fade-in-bg {
     animation: heroZoomFade 1s ease-out forwards;
-  }
+  } */
 
   .main-hero-section-heading {
     font-size: var(--titlesize-1024);
-    animation: headingFadeUp 0.4s ease-out forwards;
-    animation-delay: 1s;
   }
 
   /* .main-hero-section-container::after {
@@ -406,6 +481,8 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-1920);
+    margin-bottom: 11rem;
+    margin-top: 33rem;
   }
 
   /* .main-hero-section-container::after {
