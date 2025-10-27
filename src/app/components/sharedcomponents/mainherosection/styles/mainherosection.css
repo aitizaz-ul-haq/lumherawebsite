@@ -45,21 +45,6 @@
   --bg-tint: 0; /* set by JS, 0..1 */
 }
 
-/* Apply animation only to background container */
-
-/* Overlay tint */
-/* .main-hero-section-container::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  height: 55vh;
-  background-color: #ffffff;
-  opacity: 40%;
-  z-index: 1;
-} */
-
 /* Hero content above overlay */
 .main-hero-section-container > * {
   position: relative;
@@ -275,27 +260,38 @@
   .main-hero-section-container {
     background-image: var(--bg-390);
     /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6rem;
   }
 
   .main-hero-title-container {
-    width: var(--titlewidth-320); /* could be less than 100% */
-    padding: 0.4rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    width: var(--titlewidth-390);
+    padding: 0.4rem;
   }
 
   .main-hero-section-heading {
     font-size: var(--titlesize-390);
-    /* animation: headingFadeUp 0.1s ease-out forwards;
-    animation-delay: 1s; */
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-390); 
-  } */
+  .hero-second-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
+
+  .hero-second-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 86%;
+    gap: 3rem;
+    /* padding-top: 34rem; */
+    margin-bottom: 10rem;
+  }
 }
 
 /* iPhone 14 Pro, 15 Pro */
@@ -303,25 +299,38 @@
   .main-hero-section-container {
     background-image: var(--bg-430);
     /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6rem;
   }
 
   .main-hero-title-container {
-    width: var(--titlewidth-320); /* could be less than 100% */
-    padding: 0.4rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    width: var(--titlewidth-430);
+    padding: 0.4rem;
   }
 
   .main-hero-section-heading {
     font-size: var(--titlesize-430);
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-430); 
-  } */
+  .hero-second-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
+
+  .hero-second-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 86%;
+    gap: 3rem;
+    /* padding-top: 34rem; */
+    margin-bottom: 10rem;
+  }
 }
 
 /* Larger phones and phablets (>= 480px) */
@@ -329,26 +338,39 @@
   .main-hero-section-container {
     background-image: var(--bg-480);
     /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6rem;
   }
 
   .main-hero-title-container {
-    width: var(--titlewidth-320); /* could be less than 100% */
-    padding-left: 0.5rem; /* adds 64px left+right */
-    padding-right: 0.5rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    width: var(--titlewidth-480);
+    padding: 0.4rem;
   }
 
   .main-hero-section-heading {
     font-size: var(--titlesize-480);
+    margin-bottom: 4rem;
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-480); 
-  } */
+  .hero-second-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
+
+  .hero-second-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 86%;
+    gap: 3rem;
+    /* padding-top: 34rem; */
+    margin-bottom: 10rem;
+  }
 }
 
 /* Tablets (>= 600px) */
@@ -356,26 +378,38 @@
   .main-hero-section-container {
     background-image: var(--bg-600);
     /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 6rem;
   }
 
   .main-hero-title-container {
-    width: var(--titlewidth-320); /* could be less than 100% */
-    padding-left: 0.5rem; /* adds 64px left+right */
-    padding-right: 0.5rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    width: var(--titlewidth-600);
+    padding: 0.4rem;
   }
 
   .main-hero-section-heading {
     font-size: var(--titlesize-600);
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-600); 
-  } */
+  .hero-second-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
+
+  .hero-second-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    width: 86%;
+    gap: 3rem;
+    /* padding-top: 34rem; */
+    margin-bottom: 10rem;
+  }
 }
 
 /* Small laptops and larger tablets (>= 768px) */
@@ -383,26 +417,18 @@
   .main-hero-section-container {
     background-image: var(--bg-768);
     /* justify-content: center; */
+    gap: 18rem;
   }
 
   .main-hero-title-container {
     width: var(--titlewidth-320); /* could be less than 100% */
     padding-left: 0.5rem; /* adds 64px left+right */
-    padding-right: 0.5rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    text-align: center; */
+    padding-right: 0.5rem;
   }
 
   .main-hero-section-heading {
     font-size: var(--titlesize-768);
   }
-
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-768); 
-  } */
 }
 
 /* Medium laptops (>= 1024px) */
@@ -410,25 +436,22 @@
   .main-hero-title-container {
     width: var(--titlewidth-1024); /* could be less than 100% */
     padding-left: 0.5rem; /* adds 64px left+right */
-    padding-right: 0.5rem; /* adds 64px left+right */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    align-items: flex-start;
-    text-align: left; */
+    padding-right: 0.5rem;
   }
-
-  /* .fade-in-bg {
-    animation: heroZoomFade 1s ease-out forwards;
-  } */
 
   .main-hero-section-heading {
     font-size: var(--titlesize-1024);
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-1024); 
-  } */
+  .hero-second-text-container {
+    width: 68%;
+  }
+
+  .hero-second-text {
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
 }
 
 /* Large laptops and desktops (>= 1280px) */
@@ -445,9 +468,11 @@
     font-size: var(--titlesize-1280);
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-1280); 
-  } */
+  .hero-second-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
 }
 
 /* Extra-large desktops (>= 1440px) */
@@ -477,9 +502,11 @@
   .main-hero-section-heading {
     font-size: var(--titlesize-1600);
   }
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-1600); 
-  } */
+  .hero-second-text {
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
 }
 
 /* Ultra-wide screens (>= 1600px) */
@@ -495,13 +522,15 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-1920);
-    margin-bottom: 11rem;
-    margin-top: 28rem;
+    margin-bottom: 0rem;
+    margin-top: 32rem;
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-1920); 
-  } */
+  .hero-second-text {
+    font-size: 36px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
 }
 
 /* 4K screens (>= 1920px) */
@@ -512,11 +541,15 @@
 
   .main-hero-section-heading {
     font-size: var(--titlesize-2560);
+    margin-bottom: 17rem;
+    margin-top: 1rem;
   }
 
-  /* .main-hero-section-container::after {
-    background-image: var(--bg-2560); 
-  } */
+  .hero-second-text {
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--darkmaroon);
+  }
 }
 
 /* Iphone SE */

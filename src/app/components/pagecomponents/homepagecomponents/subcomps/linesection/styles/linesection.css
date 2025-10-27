@@ -240,18 +240,322 @@
 
 /* iPhone 14, 15 (standard model) */
 @media (min-width: 390px) {
+  .linesection-partone-leftpart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+    /* background-color: tomato; */
+  }
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    /* gap: 18rem; */
+  }
+
+  .linesection-partone-largeheading {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .linesection-partone-rightpart {
+    width: 100%;
+    padding-top: 1rem;
+    /* background-color: lightseagreen; */
+  }
+
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* gap: 18rem; */
+  }
+
+  .reverseal {
+    flex-direction: column-reverse;
+  }
+
+  .acc__trigger {
+    font-size: 16px;
+  }
+
+  .methodesection-banner-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .methodesection-banner {
+    width: 100%;
+    height: 37vh;
+  }
+
+  .methodesection-subheading {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .ourmethodsection-main-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .ourmethodsection-main-heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--newwhite);
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: 4rem;
+  }
 }
 
 /* iPhone 14 Pro, 15 Pro */
 @media (min-width: 430px) {
+  .linesection-partone-leftpart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+    /* background-color: tomato; */
+  }
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    /* gap: 18rem; */
+  }
+
+  .linesection-partone-largeheading {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .linesection-partone-rightpart {
+    width: 100%;
+    padding-top: 1rem;
+    /* background-color: lightseagreen; */
+  }
+
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* gap: 18rem; */
+  }
+
+  .reverseal {
+    flex-direction: column-reverse;
+  }
+
+  .acc__trigger {
+    font-size: 16px;
+  }
+
+  .methodesection-banner-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .methodesection-banner {
+    width: 100%;
+    height: 37vh;
+  }
+
+  .methodesection-subheading {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .ourmethodsection-main-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .ourmethodsection-main-heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--newwhite);
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: 4rem;
+  }
 }
 
 /* Larger phones and phablets (>= 480px) */
 @media (min-width: 480px) {
+  .linesection-partone-leftpart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+    /* background-color: tomato; */
+  }
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    /* gap: 18rem; */
+  }
+
+  .linesection-partone-largeheading {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .linesection-partone-rightpart {
+    width: 100%;
+    padding-top: 1rem;
+    /* background-color: lightseagreen; */
+  }
+
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* gap: 18rem; */
+  }
+
+  .reverseal {
+    flex-direction: column-reverse;
+  }
+
+  .acc__trigger {
+    font-size: 16px;
+  }
+
+  .methodesection-banner-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .methodesection-banner {
+    width: 100%;
+    height: 37vh;
+  }
+
+  .methodesection-subheading {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .ourmethodsection-main-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .ourmethodsection-main-heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--newwhite);
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: 4rem;
+  }
 }
 
 /* Tablets (>= 600px) */
 @media (min-width: 600px) {
+  .linesection-partone-leftpart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 100%;
+    /* background-color: tomato; */
+  }
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    /* gap: 18rem; */
+  }
+
+  .linesection-partone-largeheading {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .linesection-partone-rightpart {
+    width: 100%;
+    padding-top: 1rem;
+    /* background-color: lightseagreen; */
+  }
+
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    /* gap: 18rem; */
+  }
+
+  .reverseal {
+    flex-direction: column-reverse;
+  }
+
+  .acc__trigger {
+    font-size: 16px;
+  }
+
+  .methodesection-banner-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .methodesection-banner {
+    width: 100%;
+    height: 37vh;
+  }
+
+  .methodesection-subheading {
+    font-size: 24px;
+    font-weight: 300;
+  }
+
+  .ourmethodsection-main-heading {
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+  .ourmethodsection-main-heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--newwhite);
+    padding-bottom: 0rem;
+    padding-top: 0rem;
+    margin-top: 4rem;
+  }
 }
 
 /* Small laptops and larger tablets (>= 768px) */
@@ -260,10 +564,184 @@
 
 /* Medium laptops (>= 1024px) */
 @media (min-width: 1024px) {
+  .linesection-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 9rem;
+  }
+
+  .linesection-partone-leftpart {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    width: 40%;
+    /* background-color: tomato; */
+  }
+
+  .middle-case {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding-top: 1rem;
+  }
+
+  .linesection-partone-tinytag {
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .linesection-partone-largeheading {
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .linesection-partone-rightpart {
+    width: 40%;
+    /* background-color: lightseagreen; */
+    padding-top: 0rem;
+  }
+
+  .linesection-partone-accordians {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  /* Accordian styles */
+
+  .acc__trigger {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+    border-top: 1px solid #edddd1;
+    border-bottom: 1px solid #edddd1;
+    border-left: none;
+    border-right: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #29202d;
+  }
+
+  .acc__content {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .linesection-partone-link-button {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #29202d;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* text-align: left; */
+    color: #602537;
+    text-align: center;
+  }
+
+  .ourmethodsection-main-heading-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--newwhite);
+    padding: 4rem;
+  }
+
+  .ourmethodsection-main-heading {
+    font-size: 6rem;
+    font-weight: 100;
+  }
+
+  .methodesection-subheading {
+    font-size: 27px;
+    font-weight: 300;
+  }
+
+  .methodesection-banner {
+    width: 100%;
+    height: 60vh;
+    background-color: #f0e5dd;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* gap: 1.5rem; */
+  }
+
+  .methodesection-banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .methodesection-banner-heading {
+    font-size: 3rem;
+    font-weight: 100;
+  }
+
+  .methodesection-banner-button {
+    padding-left: 1.9rem;
+    padding-right: 1.9rem;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+    border-radius: 50px;
+    background-color: #602537;
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--newwhite);
+  }
 }
 
 /* Large laptops and desktops (>= 1280px) */
 @media (min-width: 1280px) {
+  .linesection-partone-largeheading {
+    font-size: 47px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .linesection-partone-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    gap: 9rem;
+  }
+
+  .methodesection-subheading {
+    font-size: 39px;
+    font-weight: 300;
+  }
+
+  .methodesection-banner-heading {
+    font-size: 6rem;
+    font-weight: 100;
+  }
 }
 
 /* Extra-large desktops (>= 1440px) */
@@ -276,6 +754,15 @@
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1920px) {
+  .linesection-partone-largeheading {
+    font-size: 53px;
+    font-weight: 200;
+    line-height: 1;
+  }
+
+  .acc__trigger {
+  font-size: 24px;
+}
 }
 
 /* 4K screens (>= 1920px) */

@@ -319,6 +319,7 @@
     padding-left: 0.7rem;
     padding-right: 0.7rem;
     height: 86px;
+    gap: 0rem;
   }
 
   .header-nobackground-button {
