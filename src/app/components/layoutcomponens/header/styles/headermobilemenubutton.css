@@ -170,12 +170,12 @@
 /* Standard small phones (<= 360px) */
 @media (max-width: 375px) {
   .mobile-menu a {
-    font-size: 2.2rem; /* Large text */
+    font-size: 1.8rem; /* Large text */
     font-weight: 500;
   }
 
   .submenu-toggle {
-    font-size: 2.2rem; /* Large text */
+     font-size: 1.8rem; /* Large text */
     font-weight: 500;
   }
 
