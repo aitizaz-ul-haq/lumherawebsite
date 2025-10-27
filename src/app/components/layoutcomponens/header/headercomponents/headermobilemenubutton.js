@@ -60,165 +60,67 @@ export default function HeaderMobileMenuButton() {
           </button>
           <div className="mobile-menu-imgcontainer">
             <Image
-              src="/images/nemesis-logo-mobile.png"
+              src="/images/Lumhera_logo_no_background.png"
               alt="Mobile Menu Icon"
-              width={158}
-              height={54}
+              width={220}
+              height={53}
               className="mobile-menu-logo"
             />
           </div>
 
           <ul>
-            <li className="font-poppins">
+            <li className="font-kaisei">
               <Link href="/" onClick={handleMenuItemClick}>
                 Home
               </Link>
             </li>
-            <li>
-              <button
-                onClick={() => handleSubMenuToggle("services")}
-                className="submenu-toggle font-poppins"
-              >
-                Our Products
-              </button>
-              <ul
-                className={`submenu ${
-                  activeSubMenu === "services" ? "active" : ""
-                }`}
-              >
-                {/* <li className="font-nunito">
-                  <Link href="/ourproducts" onClick={handleMenuItemClick} className="submenu-item-text">
-                    Products Overview
-                  </Link>
-                </li> */}
-                <li className="font-nunito">
-                  <Link
-                    href="/ourproducts/fundstructuring"
-                    onClick={handleMenuItemClick}
-                    className="submenu-item-text"
-                  >
-                    Fund Structuring
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourproducts/portfolioadvisory"
-                    onClick={handleMenuItemClick}
-                  >
-                    Portfolio Advisory
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourproducts/executionservices"
-                    onClick={handleMenuItemClick}
-                  >
-                    Execution Services
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourproducts/discretionaryportfolios"
-                    onClick={handleMenuItemClick}
-                  >
-                    Discretionary Portfolios
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourproducts/portfoliomanagersplatform"
-                    onClick={handleMenuItemClick}
-                  >
-                    Portfolio Managers Platform
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourproducts/appointedrepresentativeservices"
-                    onClick={handleMenuItemClick}
-                  >
-                    Appointed Representative Services
-                  </Link>
-                </li>
-              </ul>
+            <li className="font-kaisei">
+              <Link href="/about" onClick={handleMenuItemClick}>
+                About
+              </Link>
             </li>
-            <li>
-              <button
-                onClick={() => handleSubMenuToggle("approach")}
-                className="submenu-toggle font-poppins"
-              >
-                Our Investment Approach
-              </button>
-              <ul
-                className={`submenu ${
-                  activeSubMenu === "approach" ? "active" : ""
-                }`}
-              >
-                <li className="font-nunito">
-                  <Link
-                    href="/ourinvestmentapproach/focusinvesting"
-                    onClick={handleMenuItemClick}
-                  >
-                    Focus Investing
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourinvestmentapproach/investmentprocess"
-                    onClick={handleMenuItemClick}
-                  >
-                    Investment Process
-                  </Link>
-                </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourinvestmentapproach/investmentphilosophy"
-                    onClick={handleMenuItemClick}
-                  >
-                    Investment Philosophy
-                  </Link>
-                </li>
-              </ul>
+            <li className="font-kaisei">
+              <Link href="/method" onClick={handleMenuItemClick}>
+                Method
+              </Link>
             </li>
-
+            <li className="font-kaisei">
+              <Link href="/tools" onClick={handleMenuItemClick}>
+                Tools
+              </Link>
+            </li>
             <li>
               <button
                 onClick={() => handleSubMenuToggle("locations")}
-                className="submenu-toggle font-poppins"
+                className="submenu-toggle font-kaisei"
               >
-                Our Locations
+                Learn
               </button>
               <ul
                 className={`submenu ${
                   activeSubMenu === "locations" ? "active" : ""
                 }`}
               >
-                <li className="font-nunito">
-                  <Link
-                    href="/ourlocation/London"
-                    onClick={handleMenuItemClick}
-                  >
-                    London
+                <li className="font-kaisei">
+                  <Link href="/learn" onClick={handleMenuItemClick}>
+                    At Home
                   </Link>
                 </li>
-                <li className="font-nunito">
-                  <Link
-                    href="/ourlocation/Monaco"
-                    onClick={handleMenuItemClick}
-                  >
-                    Monaco
+                <li className="font-kaisei">
+                  <Link href="/learn" onClick={handleMenuItemClick}>
+                    For Schools
+                  </Link>
+                </li>
+                <li className="font-kaisei">
+                  <Link href="/learn" onClick={handleMenuItemClick}>
+                    Monaco Pilot
                   </Link>
                 </li>
               </ul>
             </li>
-            <li className="font-poppins">
-              <Link href="/ourpeople" onClick={handleMenuItemClick}>
-                Our People
-              </Link>
-            </li>
-            <li className="font-poppins">
-              <Link href="/about" onClick={handleMenuItemClick}>
-                About
+            <li className="font-kaisei">
+              <Link href="/contact" onClick={handleMenuItemClick}>
+                Contact
               </Link>
             </li>
           </ul>

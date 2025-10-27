@@ -281,6 +281,27 @@ footer {
     padding-right: 0.5rem;
     background-color: #fdfaf7;
   }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #edddd1;
+  }
+
+  .cta-button {
+    width: 52%;
+  }
+
+  .heading-and-list-container {
+    width: 100%;
+  }
 }
 
 /* iPhone 14, 15 (standard model) */

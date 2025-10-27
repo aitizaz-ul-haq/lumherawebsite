@@ -40,7 +40,7 @@
   right: 1rem;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--darkmaroon);
   font-size: 5.5rem;
   font-weight: bold;
   cursor: pointer;
@@ -53,7 +53,7 @@
   left: 1rem;
   background: none;
   border: none;
-  color: #ffffff;
+  color: var(--darkmaroon);
   font-size: 6rem;
   font-weight: bold;
   cursor: pointer;
@@ -61,7 +61,7 @@
 }
 
 .mobile-menu-close-button:hover {
-  color: black;
+  color: var(--darkmaroon);
   transform: scale(1.2);
 }
 
@@ -79,7 +79,7 @@
 
 .mobile-menu a {
   text-decoration: none; /* Remove underline */
-  color: black;
+  color: var(--darkmaroon);
   font-size: 2rem; /* Large text */
   font-family: var(--font-playfair);
   font-weight: 200;
@@ -88,7 +88,7 @@
 
 .submenu-toggle {
   text-decoration: none; /* Remove underline */
-  color: black;
+  color: var(--darkmaroon);
   font-size: 2.5rem; /* Large text */
   font-family: var(--font-playfair);
   font-weight: 200;
@@ -170,12 +170,13 @@
 /* Standard small phones (<= 360px) */
 @media (max-width: 375px) {
   .mobile-menu a {
-    font-size: 1.5rem; /* Large text */
+    font-size: 2.2rem; /* Large text */
+    font-weight: 500;
   }
 
   .submenu-toggle {
-    font-size: 1.5rem;
-    font-weight: 200;
+    font-size: 2.2rem; /* Large text */
+    font-weight: 500;
   }
 
   .submenu-item {
