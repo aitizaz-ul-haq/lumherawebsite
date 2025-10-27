@@ -69,17 +69,6 @@ footer {
   margin-left: 1rem;
 }
 
-.heading-and-list-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* align-items: center; */
-  text-align: left;
-  gap: 0.5rem;
-  width: 50%;
-  margin-top: 4rem;
-}
-
 .cta-container {
   display: flex;
   flex-direction: column;
@@ -298,10 +287,6 @@ footer {
   .cta-button {
     width: 52%;
   }
-
-  .heading-and-list-container {
-    width: 100%;
-  }
 }
 
 /* iPhone 14, 15 (standard model) */
@@ -444,10 +429,6 @@ footer {
   .cta-button {
     width: 32%;
   }
-
-  .heading-and-list-container {
-    width: 40%;
-  }
 }
 
 /* Ultra-wide screens (>= 1600px) */
@@ -472,10 +453,6 @@ footer {
 
   .cta-button {
     width: 32%;
-  }
-
-  .heading-and-list-container {
-    width: 30%;
   }
 }
 

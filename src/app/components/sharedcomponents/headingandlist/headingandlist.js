@@ -2,6 +2,8 @@ import HandLHeadingSection from "./subcomps/handlheadingsection";
 import HandLSubstatementSection from "./subcomps/handlsubstatementsection";
 import HandLListingSection from "./subcomps/handllistingsection";
 
+import "./styles/headingandlist.css";
+
 export default function HeadingAndList({
   heading = "",
   substatement = "",
