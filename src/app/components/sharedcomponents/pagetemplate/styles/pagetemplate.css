@@ -66,6 +66,20 @@
 
 /* iPhone 14, 15 (standard model) */
 @media (min-width: 390px) {
+  .page-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 5rem;
+  }
+
+  .page-header-section {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .page-header-large-heading {
+    font-size: 3rem;
+  }
 }
 
 /* iPhone 14 Pro, 15 Pro */
@@ -86,6 +100,20 @@
 
 /* Medium laptops (>= 1024px) */
 @media (min-width: 1024px) {
+  .page-container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 7rem;
+  }
+
+  .page-header-section {
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .page-header-large-heading {
+    font-size: 4rem;
+  }
 }
 
 /* Large laptops and desktops (>= 1280px) */

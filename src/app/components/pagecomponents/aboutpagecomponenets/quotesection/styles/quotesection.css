@@ -45,6 +45,18 @@
 
 /* iPhone 14, 15 (standard model) */
 @media (min-width: 390px) {
+  .quote-section-container {
+    gap: 1.7rem;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .quote-text {
+    font-size: 1.6rem;
+    color: black;
+    font-weight: 200;
+  }
 }
 
 /* iPhone 14 Pro, 15 Pro */
@@ -65,6 +77,18 @@
 
 /* Medium laptops (>= 1024px) */
 @media (min-width: 1024px) {
+  .quote-section-container {
+    gap: 1.7rem;
+    width: 50%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .quote-text {
+    font-size: 1.9rem;
+    color: black;
+    font-weight: 200;
+  }
 }
 
 /* Large laptops and desktops (>= 1280px) */
@@ -77,10 +101,34 @@
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1600px) {
+  .quote-section-container {
+    gap: 1.7rem;
+    width: 40%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .quote-text {
+    font-size: 1.9rem;
+    color: black;
+    font-weight: 200;
+  }
 }
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1920px) {
+  .quote-section-container {
+    gap: 1.7rem;
+    width: 30%;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+  }
+
+  .quote-text {
+    font-size: 1.9rem;
+    color: black;
+    font-weight: 200;
+  }
 }
 
 /* 4K screens (>= 1920px) */

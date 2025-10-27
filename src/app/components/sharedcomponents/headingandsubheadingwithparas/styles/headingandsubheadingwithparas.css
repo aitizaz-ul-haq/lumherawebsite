@@ -61,6 +61,17 @@
 
 /* iPhone 14, 15 (standard model) */
 @media (min-width: 390px) {
+  .heading-and-subheading-with-paras-container {
+    width: 100%;
+  }
+
+  .heading-and-subheading-heading {
+    font-size: 26px;
+  }
+
+  .heading-and-subheading-subheading {
+    font-size: 19px;
+  }
 }
 
 /* iPhone 14 Pro, 15 Pro */
@@ -81,6 +92,17 @@
 
 /* Medium laptops (>= 1024px) */
 @media (min-width: 1024px) {
+  .heading-and-subheading-with-paras-container {
+    width: 50%;
+  }
+
+  .heading-and-subheading-heading {
+    font-size: 28px;
+  }
+
+  .heading-and-subheading-subheading {
+    font-size: 22px;
+  }
 }
 
 /* Large laptops and desktops (>= 1280px) */
@@ -89,14 +111,43 @@
 
 /* Extra-large desktops (>= 1440px) */
 @media (min-width: 1440px) {
+  .heading-and-subheading-heading {
+    font-size: 32px;
+  }
+
+  .heading-and-subheading-subheading {
+    font-size: 24px;
+  }
 }
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1600px) {
+  .heading-and-subheading-with-paras-container {
+    width: 40%;
+  }
+
+  .heading-and-subheading-heading {
+    font-size: 35px;
+  }
+
+  .heading-and-subheading-subheading {
+    font-size: 25px;
+  }
 }
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1920px) {
+  .heading-and-subheading-with-paras-container {
+    width: 30%;
+  }
+
+  .heading-and-subheading-heading {
+    font-size: 36px;
+  }
+
+  .heading-and-subheading-subheading {
+    font-size: 25px;
+  }
 }
 
 /* 4K screens (>= 1920px) */

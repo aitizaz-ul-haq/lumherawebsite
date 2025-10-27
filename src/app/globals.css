@@ -312,6 +312,23 @@ footer {
     padding-right: 0.7rem;
     background-color: #fdfaf7;
   }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    /* text-align: center; */
+    gap: 0.5rem;
+    width: 100%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #edddd1;
+  }
+
+  .cta-button {
+    width: 52%;
+  }
 }
 
 /* iPhone 14 Pro, 15 Pro */
@@ -365,6 +382,21 @@ footer {
     padding-top: 8rem;
     padding-right: 2rem;
   }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 50%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #edddd1;
+  }
+
+  .cta-button {
+    width: 32%;
+  }
 }
 
 /* Large laptops and desktops (>= 1280px) */
@@ -397,6 +429,25 @@ footer {
     padding-top: 6rem;
     padding-right: 5rem;
   }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 40%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #edddd1;
+  }
+
+  .cta-button {
+    width: 32%;
+  }
+
+  .heading-and-list-container {
+    width: 40%;
+  }
 }
 
 /* Ultra-wide screens (>= 1600px) */
@@ -406,6 +457,25 @@ footer {
     padding-top: 8rem;
     padding-right: 7rem;
     margin-top: 6rem;
+  }
+
+  .cta-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 30%;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #edddd1;
+  }
+
+  .cta-button {
+    width: 32%;
+  }
+
+  .heading-and-list-container {
+    width: 30%;
   }
 }
 
