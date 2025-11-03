@@ -18,14 +18,14 @@ export default function ContactForm() {
       email: formData.get("email")?.toString().trim() || "",
       phone: formData.get("phone")?.toString().trim() || "",
       subject: formData.get("subject")?.toString().trim() || "",
-      message: formData.get("message")?.toString().trim() || ""
+      message: formData.get("message")?.toString().trim() || "",
     };
 
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload)
+        body: JSON.stringify(payload),
       });
 
       const data = await res.json();
@@ -33,17 +33,30 @@ export default function ContactForm() {
         throw new Error(data?.message || "Failed to send.");
       }
 
-      setStatus({ loading: false, ok: true, msg: "Message sent. We’ll reply soon." });
+      setStatus({
+        loading: false,
+        ok: true,
+        msg: "Message sent. We’ll reply soon.",
+      });
       form.reset();
     } catch (err) {
-      setStatus({ loading: false, ok: false, msg: err.message || "Something went wrong." });
+      setStatus({
+        loading: false,
+        ok: false,
+        msg: err.message || "Something went wrong.",
+      });
     }
   }
 
   return (
     <>
       {/* Native validation is ON (no `noValidate`) */}
-      <form className="contact-form" action="#" method="post" onSubmit={onSubmit}>
+      <form
+        className="contact-form"
+        action="#"
+        method="post"
+        onSubmit={onSubmit}
+      >
         <div className="form-grid">
           <input
             className="form-field font-kaisei"
@@ -91,11 +104,19 @@ export default function ContactForm() {
           />
         </div>
 
-        <button className="btn-send font-kaisei" type="submit" disabled={status.loading}>
+        <button
+          className="btn-send font-kaisei"
+          type="submit"
+          disabled={status.loading}
+        >
           {status.loading ? "SENDING..." : "SEND"}
         </button>
 
-        <div aria-live="polite" className="font-kaisei" style={{ marginTop: 8 }}>
+        <div
+          aria-live="polite"
+          className="font-kaisei"
+          style={{ marginTop: 8 }}
+        >
           {status.msg && (status.ok ? "✅ " : "❌ ")}
           {status.msg}
         </div>
