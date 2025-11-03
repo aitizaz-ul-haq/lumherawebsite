@@ -7,6 +7,8 @@ import LearnSection from "../../pagecomponents/templatepagecomponents/learnsecti
 import "./styles/pagetemplate.css";
 
 export default function PageTemplate({
+  
+  // Header
   headerdata,
   showImage = true,
 
@@ -46,6 +48,8 @@ export default function PageTemplate({
 }) {
   return (
     <div className="page-container">
+
+      {/* PAGE HEADER */}
       <PageHeaderSection
         tinytitle={headerdata?.tinytitle || ""}
         largeheading={headerdata?.LargeHeading || ""}
