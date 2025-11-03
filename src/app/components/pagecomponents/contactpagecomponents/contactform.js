@@ -12,7 +12,6 @@ export default function ContactForm() {
 
     const form = e.currentTarget;
     const formData = new FormData(form);
-
     const payload = {
       name: formData.get("fullName")?.toString().trim() || "",
       email: formData.get("email")?.toString().trim() || "",
@@ -27,12 +26,10 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(payload),
       });
-
       const data = await res.json();
       if (!res.ok || !data?.success) {
         throw new Error(data?.message || "Failed to send.");
       }
-
       setStatus({
         loading: false,
         ok: true,
