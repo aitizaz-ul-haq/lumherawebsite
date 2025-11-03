@@ -9,6 +9,9 @@ const herotitle = Homepagedata.herosection.herotitle;
 const herotitlesize = Homepagedata.herosection.herotitlesize;
 const herobackgroundimage = Homepagedata.herosection.backgroundImages;
 const herotitlewidth = Homepagedata.herosection.herotitlewidth;
+const heroparaone = Homepagedata.herosection.heroparaone;
+const heroparatwo = Homepagedata.herosection.heroparatwo;
+const heroparathree = Homepagedata.herosection.heroparathree;
 
 // --Homepage sections data-----------------------------
 const lineSectionData = Homepagedata.lineSection;
@@ -22,6 +25,9 @@ export default function Home() {
         herobackgroundimage={herobackgroundimage}
         herotitlesize={herotitlesize}
         herotitlewidth={herotitlewidth}
+        heroparaone={heroparaone}
+        heroparatwo={heroparatwo}
+        heroparathree={heroparathree}
       />
 
       <HomePageContainer

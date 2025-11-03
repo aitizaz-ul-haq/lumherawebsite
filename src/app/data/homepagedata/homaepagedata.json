@@ -40,7 +40,10 @@
       "1600px": "/images/turqoise.jpeg",
       "1920px": "/images/turqoise.jpeg",
       "2560px": "/images/turqoise.jpeg"
-    }
+    },
+    "heroparaone": "At Lumhera, we empower girls and women through financial literacy—giving them the skills, confidence, and agency to shape their own futures.",
+    "heroparatwo": "We believe money should not be a source of anxiety, but a tool for independence and opportunity.",
+    "heroparathree": "And the best way to learn about money isn’t by memorizing facts—it’s by doing."
   },
 
   "lineSection": {
@@ -49,9 +52,18 @@
       "largeHeading": "Transform Teaching & Learning Systems",
       "description": "We blend storytelling, games, and hands-on experiences to teach children and families the building blocks of financial literacy — saving, spending, investing, and more — in ways that feel natural and fun.",
       "accordions": [
-        { "title": "At Home", "content": "Lumhera makes financial literacy simple and joyful." },
-        { "title": "At School", "content": "A story-driven interactive experience about money." },
-        { "title": "Monaco Pilot", "content": "A story-driven interactive experience about money." }
+        {
+          "title": "At Home",
+          "content": "Lumhera makes financial literacy simple and joyful."
+        },
+        {
+          "title": "At School",
+          "content": "A story-driven interactive experience about money."
+        },
+        {
+          "title": "Monaco Pilot",
+          "content": "A story-driven interactive experience about money."
+        }
       ],
       "ctaText": "LEARN MORE →",
       "ctaLink": "/contact"
@@ -72,12 +84,30 @@
       "tinyTag": "Our Values",
       "largeHeading": "The Principles That Guide Everything We Do",
       "accordions": [
-        { "title": "Freedom through Financial Confidence", "content": "Lumhera makes financial literacy simple and joyful." },
-        { "title": "Empowerment through Education", "content": "A story-driven interactive experience about money." },
-        { "title": "Equality and Inclusion", "content": "A story-driven interactive experience about money." },
-        { "title": "Agency over Anxiety", "content": "Lumhera makes financial literacy simple and joyful." },
-        { "title": "Evidence over Hype", "content": "A story-driven interactive experience about money." },
-        { "title": "Craft and Clarity", "content": "A story-driven interactive experience about money." }
+        {
+          "title": "Freedom through Financial Confidence",
+          "content": "Lumhera makes financial literacy simple and joyful."
+        },
+        {
+          "title": "Empowerment through Education",
+          "content": "A story-driven interactive experience about money."
+        },
+        {
+          "title": "Equality and Inclusion",
+          "content": "A story-driven interactive experience about money."
+        },
+        {
+          "title": "Agency over Anxiety",
+          "content": "Lumhera makes financial literacy simple and joyful."
+        },
+        {
+          "title": "Evidence over Hype",
+          "content": "A story-driven interactive experience about money."
+        },
+        {
+          "title": "Craft and Clarity",
+          "content": "A story-driven interactive experience about money."
+        }
       ],
       "ctaText": "LEARN MORE →",
       "ctaLink": "/contact"

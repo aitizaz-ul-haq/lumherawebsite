@@ -9,6 +9,9 @@ export default function MainHeroSection({
   herobackgroundimage,
   herotitlesize,
   herotitlewidth,
+  heroparaone,
+  heroparatwo,
+  heroparathree,
 }) {
   const preloadImage = herobackgroundimage["1920px"];
   const containerRef = useRef(null);
@@ -153,19 +156,9 @@ export default function MainHeroSection({
           </h1>
         </div>
         <div className="hero-second-text-container">
-          <p className="hero-second-text font-kaisei">
-            At Lumhera, we empower girls and women through financial
-            literacy—giving them the skills, confidence, and agency to shape
-            their own futures.
-          </p>
-          <p className="hero-second-text font-kaisei">
-            We believe money should not be a source of anxiety, but a tool for
-            independence and opportunity.
-          </p>
-          <p className="hero-second-text font-kaisei">
-            And the best way to learn about money isn’t by memorizing facts—it’s
-            by doing.
-          </p>
+          <p className="hero-second-text font-kaisei">{heroparaone}</p>
+          <p className="hero-second-text font-kaisei">{heroparatwo}</p>
+          <p className="hero-second-text font-kaisei">{heroparathree}</p>
         </div>
       </div>
     </>
