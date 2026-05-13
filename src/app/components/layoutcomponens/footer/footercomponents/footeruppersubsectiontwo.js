@@ -12,9 +12,11 @@ export default function FooterUpperSubsectionTwo() {
       </div>
 
       <div className="footermidbutton-container">
-        <button className="footermidbutton-button font-inter">
-          CONTACT US FOR MORE DETAILS →
-        </button>
+        <Link href="/contact" className="general-linkage">
+          <button className="footermidbutton-button font-inter">
+            CONTACT US FOR MORE DETAILS →
+          </button>
+        </Link>
       </div>
 
       <div className="footerlistcollection-container">

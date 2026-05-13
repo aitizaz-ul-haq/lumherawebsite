@@ -3,11 +3,11 @@ import AboutSection from "../../pagecomponents/templatepagecomponents/aboutsecti
 import MethodSection from "../../pagecomponents/templatepagecomponents/methodsection/methodsection";
 import ToolsSection from "../../pagecomponents/templatepagecomponents/toolssection/toolssection";
 import LearnSection from "../../pagecomponents/templatepagecomponents/learnsection/learnsection";
+import PrivacySection from "../../pagecomponents/templatepagecomponents/privacysection/privacysection";
 
 import "./styles/pagetemplate.css";
 
 export default function PageTemplate({
-  
   // Header
   headerdata,
   showImage = true,
@@ -45,10 +45,22 @@ export default function PageTemplate({
   learnThirdSection = null,
   learnFourthSection = null,
   learnCtaTwo = null,
+
+  // Privacy
+  showPrivacy = false,
+  privacyFirstSection = null,
+  privacySecondSection = null,
+  privacyThirdSection = null,
+  privacyFourSection = null,
+  privacyFiveSection = null,
+  privacySixSection = null,
+  privacySevenSection = null,
+  privacyEightSection = null,
+  privacyNineSection = null,
+
 }) {
   return (
     <div className="page-container">
-
       {/* PAGE HEADER */}
       <PageHeaderSection
         tinytitle={headerdata?.tinytitle || ""}
@@ -96,6 +108,20 @@ export default function PageTemplate({
         learnThirdSection={learnThirdSection}
         learnFourthSection={learnFourthSection}
         learnCtaTwo={learnCtaTwo}
+      />
+
+      {/* PRIVACY */}
+      <PrivacySection
+        showPrivacy={showPrivacy}
+        privacyFirstSection={privacyFirstSection}
+        privacySecondSection={privacySecondSection}
+        privacyThirdSection={privacyThirdSection}
+        privacyFourSection={privacyFourSection}
+        privacyFiveSection={privacyFiveSection}
+        privacySixSection={privacySixSection}
+        privacySevenSection={privacySevenSection}
+        privacyEightSection={privacyEightSection}
+        privacyNineSection={privacyNineSection}
       />
     </div>
   );
