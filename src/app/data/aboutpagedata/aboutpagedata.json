@@ -8,11 +8,15 @@
     "paragraphs": [
       {
         "id": 1,
-        "content": "Lumhera creates digital experiences that bring financial literacy to life. Through Esther the Investor, our interactive story-driven game, we combine global education standards with the power of storytelling to make money concepts simple, engaging, and empowering especially for the children who will shape tomorrow."
+        "content": "Lumhera creates digital experiences that bring financial literacy to life.Through Esther the Investor, our interactive story-driven game, we combine global education standards with the power of storytelling to make money concepts simple, engaging, and empowering especially for the children who will shape tomorrow."
       },
       {
         "id": 2,
-        "content": "“As a girl, I dreamed of having the freedom to make my own choices. Financial literacy gave me that freedom. Lumhera is my way of sharing it.” – Foundress"
+        "content": "“Building a world of free, equal, and financially confident women — through education that empowers."
+      },
+      {
+        "id": 3,
+        "content": "True emancipation begins with understanding money, and true equality begins when every girl can decide her own future.”"
       }
     ]
   },
@@ -21,44 +25,45 @@
     "subsection": [
       {
         "id": 1,
-        "subheading": "Empowerment through Education",
-        "content": "Knowledge is power. We believe financial education unlocks confidence, independence, and opportunity — especially for girls and women."
+        "subheading": "Freedom through Financial Confidence",
+        "content": "When children understand how money works, they gain the confidence to make decisions and shape their own path. Financial knowledge becomes a foundation for independence."
       },
       {
         "id": 2,
-        "subheading": "Equality and Inclusion",
-        "content": "Every learner deserves the same tools to succeed. Our stories and characters reflect the diversity of real life — because representation creates belonging."
+        "subheading": "Empowerment through Education",
+        "content": "Education unlocks potential. By making financial concepts accessible and engaging, we give children the tools to act, decide, and grow with confidence."
       },
       {
         "id": 3,
-        "subheading": "Freedom through Financial Confidence",
-        "content": "Freedom begins with choice — and choice begins with understanding. We help learners see money not as a limit, but as a path to possibility."
+        "subheading": "Equality and Inclusion",
+        "content": "Every child deserves access to financial education. We are especially committed to empowering girls, ensuring they see themselves as capable decision-makers from an early age."
       },
       {
         "id": 4,
-        "subheading": "Agency over Anxiety",
-        "content": "We replace fear of finance with curiosity, discovery, and self-belief. Learning should empower, never intimidate."
+        "subheading": "Control over Anxiety",
+        "content": "Money should feel understandable, not overwhelming. By building clarity and confidence step by step, we help children replace uncertainty with a sense of control."
       },
       {
         "id": 5,
-        "subheading": "Evidence over Hype",
-        "content": "Everything we build is grounded in research and measurable impact. Progress isn’t a promise — it’s something we track."
+        "subheading": "Evidence Over Trends",
+        "content": "Our approach is grounded in real-world experience and aligned with proven frameworks. Every element is designed to deliver meaningful and lasting learning."
       },
       {
         "id": 6,
-        "subheading": "Craft and Clarity",
-        "content": "We believe learning should be joyful, beautifully designed, and easy to understand — no jargon, just clarity."
+        "subheading": "Clarity Unlocks Complexity",
+        "content": "Simple, intuitive experiences make complex financial ideas accessible. Through play and exploration, understanding becomes natural and engaging."
       }
     ]
   },
 
   "aboutthirdsection": {
-    "quotetextone": "Building a world of free, equal, and financially confident women — through education that empowers.",
-    "quotetexttwo": "True emancipation begins with understanding money, and true equality begins when every girl can decide her own future."
+    "quotetextone": "”As a girl, I dreamed of having the freedom to make my own choices.",
+    "quotetexttwo": "Financial literacy gave me that freedom. Lumhera is my way of sharing it.”",
+    "quotetextthree": "Founder"
   },
 
   "aboutctaone": {
-    "text": "Request a free demo for your school.",
+    "text": "Born from a personal journey toward independence, built to share that freedom with others.",
     "buttontext": "CONTACT US"
   }
 }

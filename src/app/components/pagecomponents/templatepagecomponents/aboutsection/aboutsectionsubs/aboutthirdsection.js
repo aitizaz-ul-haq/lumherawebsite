@@ -7,6 +7,7 @@ export default function AboutThirdSection({ aboutThirdSection }) {
         <QuoteSection
           quoteTextOne={aboutThirdSection.quotetextone || ""}
           quoteTextTwo={aboutThirdSection.quotetexttwo || ""}
+          quoteTextThree={aboutThirdSection.quotetextthree || ""}
         />
       )}
     </>
