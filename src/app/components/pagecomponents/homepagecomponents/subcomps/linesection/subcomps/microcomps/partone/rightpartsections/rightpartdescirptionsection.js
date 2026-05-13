@@ -1,7 +1,14 @@
 export default function RightPartDescriptionSection({ partOne }) {
   return (
-    <p className="linesection-partone-description font-inter">
-      {partOne.description}
-    </p>
+    <div className="linesection-partone-description-wrapper">
+      {partOne.description.map((item) => (
+        <p
+          key={item.id}
+          className="linesection-partone-para font-inter"
+        >
+          {item.paragraph}
+        </p>
+      ))}
+    </div>
   );
 }

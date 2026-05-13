@@ -40,6 +40,7 @@
 
 .linesection-partone-rightpart {
   width: 40%;
+  
   /* background-color: lightseagreen; */
 }
 
@@ -147,6 +148,11 @@
   font-weight: 200;
   color: var(--newwhite);
 }
+
+.linesection-partone-para {
+  margin-top: 1rem;
+}
+
 
 /* Default styles (mobile-first approach) */
 
@@ -761,8 +767,8 @@
   }
 
   .acc__trigger {
-  font-size: 24px;
-}
+    font-size: 24px;
+  }
 }
 
 /* 4K screens (>= 1920px) */

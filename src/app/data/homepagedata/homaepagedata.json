@@ -41,28 +41,41 @@
       "1920px": "/images/turqoise.jpeg",
       "2560px": "/images/turqoise.jpeg"
     },
-    "heroparaone": "At Lumhera, we empower girls and women through financial literacy—giving them the skills, confidence, and agency to shape their own futures.",
-    "heroparatwo": "We believe money should not be a source of anxiety, but a tool for independence and opportunity.",
-    "heroparathree": "And the best way to learn about money isn’t by memorizing facts—it’s by doing."
+    "heroparaone": "At Lumhera, we bring financial literacy to life through Esther the Investor : an interactive game where children learn by doing, with a special focus on empowering girls.",
+    "heroparatwo": "Because the best way to understand money is by experiencing, exploring, and making decisions.",
+    "heroparathree": "We believe money should be a tool for independence and opportunity. We equip the next generation with the skills, confidence, and agency to shape their own futures."
   },
 
   "lineSection": {
     "partOne": {
       "tinyTag": "What We Do",
       "largeHeading": "Transform Teaching & Learning Systems",
-      "description": "We blend storytelling, games, and hands-on experiences to teach children and families the building blocks of financial literacy — saving, spending, investing, and more — in ways that feel natural and fun.",
+      "description": [
+        {
+          "id": 1,
+          "paragraph": "We blend storytelling, games, and hands-on experiences to teach children and families the building blocks of financial literacy — saving, spending, investing, and more — in ways that feel natural and fun."
+        },
+        {
+          "id": 2,
+          "paragraph": "Through interactive learning, Lumhera helps children understand money by making decisions, exploring consequences, and building confidence step by step."
+        },
+        {
+          "id": 3,
+          "paragraph": "Our approach supports families, schools, and learning communities with accessible tools that make financial education engaging, practical, and age appropriate."
+        }
+      ],
       "accordions": [
         {
-          "title": "At Home",
-          "content": "Lumhera makes financial literacy simple and joyful."
+          "title": "Story",
+          "content": "Children follow a guided journey that introduces financial concepts in context, making them intuitive and meaningful."
         },
         {
-          "title": "At School",
-          "content": "A story-driven interactive experience about money."
+          "title": "Play",
+          "content": "Interactive games, challenges, and quizzes turn each concept into action—allowing children to make decisions, test outcomes, and learn through experience."
         },
         {
-          "title": "Monaco Pilot",
-          "content": "A story-driven interactive experience about money."
+          "title": "Foundations",
+          "content": "Grounded in real-world banking experience and aligned with OECD financial literacy frameworks, combining practical insight with academic rigor."
         }
       ],
       "ctaText": "LEARN MORE →",
@@ -86,27 +99,27 @@
       "accordions": [
         {
           "title": "Freedom through Financial Confidence",
-          "content": "Lumhera makes financial literacy simple and joyful."
+          "content": "When children understand how money works, they gain the confidence to make decisions and shape their own path. Financial knowledge becomes a foundation for independence."
         },
         {
           "title": "Empowerment through Education",
-          "content": "A story-driven interactive experience about money."
+          "content": "Education unlocks potential. By making financial concepts accessible and engaging, we give children the tools to act, decide, and grow with confidence."
         },
         {
           "title": "Equality and Inclusion",
-          "content": "A story-driven interactive experience about money."
+          "content": "Every child deserves access to financial education. We are especially committed to empowering girls, ensuring they see themselves as capable decision-makers from an early age."
         },
         {
-          "title": "Agency over Anxiety",
-          "content": "Lumhera makes financial literacy simple and joyful."
+          "title": "Control over Anxiety",
+          "content": "Money should feel understandable, not overwhelming. By building clarity and confidence step by step, we help children replace uncertainty with a sense of control."
         },
         {
-          "title": "Evidence over Hype",
-          "content": "A story-driven interactive experience about money."
+          "title": "Evidence Over Trends",
+          "content": "Our approach is grounded in real-world experience and aligned with proven frameworks. Every element is designed to deliver meaningful and lasting learning."
         },
         {
-          "title": "Craft and Clarity",
-          "content": "A story-driven interactive experience about money."
+          "title": "Clarity Unlocks Complexity",
+          "content": "Simple, intuitive experiences make complex financial ideas accessible. Through play and exploration, understanding becomes natural and engaging."
         }
       ],
       "ctaText": "LEARN MORE →",

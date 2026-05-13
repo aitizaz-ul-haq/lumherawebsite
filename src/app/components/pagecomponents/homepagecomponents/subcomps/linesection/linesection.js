@@ -16,11 +16,11 @@ export default function LineSection({
   return (
     <div className="main-page-bckground">
       <div className="linesection-container">
-        {/* Part One */}
-        <PartOne partOne={partOne} />
-
         {/* Part Two */}
         <PartTwo partTwo={partTwo} />
+
+        {/* Part One */}
+        <PartOne partOne={partOne} />
 
         {/* Part Three */}
         <PartThree partThree={partThree} />
