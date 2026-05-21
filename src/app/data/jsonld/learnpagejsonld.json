@@ -1,0 +1,104 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.lumhera.com/#website",
+      "url": "https://www.lumhera.com",
+      "name": "Lumhera",
+      "description": "Lumhera provides interactive, story based financial learning for families, children and schools.",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://www.lumhera.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.lumhera.com/#organization",
+      "name": "Lumhera",
+      "url": "https://www.lumhera.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.lumhera.com/images/lumhera-logo.webp",
+        "width": 600,
+        "height": 600
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.lumhera.com/learn#webpage",
+      "url": "https://www.lumhera.com/learn",
+      "name": "Learn With Us | Lumhera",
+      "description": "Explore Lumhera’s interactive financial learning for families and schools, including story based chapters, progress tracking, classroom ready content, OECD INFE aligned learning and teacher support.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://www.lumhera.com/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Financial literacy"
+        },
+        {
+          "@type": "Thing",
+          "name": "Family learning"
+        },
+        {
+          "@type": "Thing",
+          "name": "School financial education"
+        },
+        {
+          "@type": "Thing",
+          "name": "Financial education for children"
+        }
+      ],
+      "audience": [
+        {
+          "@type": "Audience",
+          "audienceType": "Families"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "teacher"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "parent"
+        }
+      ],
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.lumhera.com/images/learn-preview.webp",
+        "width": 1200,
+        "height": 630,
+        "caption": "Lumhera - Learn With Us"
+      },
+      "publisher": {
+        "@id": "https://www.lumhera.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.lumhera.com/learn#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lumhera.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Learn",
+          "item": "https://www.lumhera.com/learn"
+        }
+      ]
+    }
+  ]
+}
