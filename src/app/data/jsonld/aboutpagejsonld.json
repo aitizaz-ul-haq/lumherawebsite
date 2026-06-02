@@ -1,0 +1,108 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.lumhera.com/#website",
+      "url": "https://www.lumhera.com",
+      "name": "Lumhera",
+      "description": "Lumhera provides interactive, story based financial learning for families, children and schools.",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://www.lumhera.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.lumhera.com/#organization",
+      "name": "Lumhera",
+      "url": "https://www.lumhera.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.lumhera.com/images/Lumhera_logo_no_background.png",
+        "width": 600,
+        "height": 600
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "AboutPage",
+      "@id": "https://www.lumhera.com/about#webpage",
+      "url": "https://www.lumhera.com/about",
+      "name": "Who We Are | Lumhera",
+      "description": "Learn about Lumhera — a mission-driven company creating digital experiences that bring financial literacy to life. Discover our values, our founder's story, and our commitment to empowering every girl and family through financial education.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://www.lumhera.com/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Financial literacy mission"
+        },
+        {
+          "@type": "Thing",
+          "name": "Financial empowerment for girls"
+        },
+        {
+          "@type": "Thing",
+          "name": "Financial education values"
+        },
+        {
+          "@type": "Thing",
+          "name": "Esther the Investor"
+        },
+        {
+          "@type": "Thing",
+          "name": "Financial confidence for children"
+        }
+      ],
+      "audience": [
+        {
+          "@type": "Audience",
+          "audienceType": "Families"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "parent"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "teacher"
+        },
+        {
+          "@type": "Audience",
+          "audienceType": "Policymakers"
+        }
+      ],
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.lumhera.com/images/aboutpage-preview.webp",
+        "width": 1200,
+        "height": 630,
+        "caption": "Lumhera — Who We Are"
+      },
+      "publisher": {
+        "@id": "https://www.lumhera.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.lumhera.com/about#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lumhera.com"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://www.lumhera.com/about"
+        }
+      ]
+    }
+  ]
+}

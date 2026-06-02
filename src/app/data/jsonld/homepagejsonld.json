@@ -1,0 +1,98 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://www.lumhera.com/#website",
+      "url": "https://www.lumhera.com",
+      "name": "Lumhera",
+      "description": "Lumhera provides interactive, story based financial learning for families, children and schools.",
+      "inLanguage": "en-GB",
+      "publisher": {
+        "@id": "https://www.lumhera.com/#organization"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://www.lumhera.com/#organization",
+      "name": "Lumhera",
+      "url": "https://www.lumhera.com",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.lumhera.com/images/Lumhera_logo_no_background.png",
+        "width": 600,
+        "height": 600
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://www.lumhera.com/#webpage",
+      "url": "https://www.lumhera.com",
+      "name": "Financial Literacy for Children & Families | Lumhera",
+      "description": "Lumhera brings financial literacy to life through Esther the Investor — an interactive, story-driven game where children learn by doing. Empowering families, schools, and every girl to shape their own financial future.",
+      "inLanguage": "en-GB",
+      "isPartOf": {
+        "@id": "https://www.lumhera.com/#website"
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Financial literacy"
+        },
+        {
+          "@type": "Thing",
+          "name": "Interactive financial education"
+        },
+        {
+          "@type": "Thing",
+          "name": "Financial empowerment for girls"
+        },
+        {
+          "@type": "Thing",
+          "name": "Family financial learning"
+        }
+      ],
+      "audience": [
+        {
+          "@type": "Audience",
+          "audienceType": "Families"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "student"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "parent"
+        },
+        {
+          "@type": "EducationalAudience",
+          "educationalRole": "teacher"
+        }
+      ],
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://www.lumhera.com/images/homepage_preview.webp",
+        "width": 1200,
+        "height": 630,
+        "caption": "Lumhera — Financial Literacy for Children & Families"
+      },
+      "publisher": {
+        "@id": "https://www.lumhera.com/#organization"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://www.lumhera.com/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.lumhera.com"
+        }
+      ]
+    }
+  ]
+}
