@@ -36,7 +36,7 @@ export const metadata = {
     siteName: "Lumhera",
     images: [
       {
-        url: "https://www.lumhera.com/images/learn-preview.webp",
+        url: "https://www.lumhera.com/images/learpage_preview.webp",
         width: 1200,
         height: 630,
         alt: "Lumhera — Learn With Us",
@@ -50,7 +50,7 @@ export const metadata = {
     title: "Learn With Us | Lumhera",
     description:
       "Interactive financial learning for families, children, and schools.",
-    images: ["https://www.lumhera.com/images/learn-preview.webp"],
+    images: ["https://www.lumhera.com/images/learpage_preview.webp"],
   },
   icons: {
     icon: [
@@ -66,7 +66,7 @@ export const metadata = {
     ],
     shortcut: [{ url: "/images/favicon.ico", type: "image/x-icon" }],
   },
-  manifest: "/manifest.webmanifest",
+  manifest: "/images/site.webmanifest",
   robots: {
     index: true,
     follow: true,

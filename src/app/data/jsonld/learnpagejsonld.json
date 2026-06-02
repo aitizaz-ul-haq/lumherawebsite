@@ -19,7 +19,7 @@
       "url": "https://www.lumhera.com",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.lumhera.com/images/lumhera-logo.webp",
+        "url": "https://www.lumhera.com/images/Lumhera_logo_no_background.png",
         "width": 600,
         "height": 600
       },
@@ -73,7 +73,7 @@
       ],
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://www.lumhera.com/images/learn-preview.webp",
+        "url": "https://www.lumhera.com/images/learpage_preview.webp",
         "width": 1200,
         "height": 630,
         "caption": "Lumhera - Learn With Us"
