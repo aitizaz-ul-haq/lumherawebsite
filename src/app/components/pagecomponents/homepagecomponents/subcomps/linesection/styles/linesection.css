@@ -36,7 +36,7 @@
   font-size: 52px;
   font-weight: 200;
   line-height: 1;
-  color: #6E6C6F;
+  color: #6e6c6f;
 }
 
 .linesection-partone-rightpart {
@@ -104,11 +104,13 @@
 .ourmethodsection-main-heading {
   font-size: 6rem;
   font-weight: 100;
+  color: #6e6c6f;
 }
 
 .methodesection-subheading {
   font-size: 37px;
   font-weight: 300;
+  color: #602537;
 }
 
 .methodesection-banner {
@@ -136,6 +138,7 @@
 .methodesection-banner-heading {
   font-size: 6rem;
   font-weight: 100;
+  color: #6e6c6f;
 }
 
 .methodesection-banner-button {
@@ -153,10 +156,30 @@
 .linesection-partone-para {
   margin-top: 1rem;
   font-size: 18px;
+  color: #602537;
 }
 
 .linesection-partone-description {
   font-size: 18px;
+  color: #602537;
+}
+
+.bottomlearnsection-card-description {
+  font-size: 18px;
+  color: #602537;
+}
+
+.bottomlearnsection-card-heading {
+  color: #602537;
+}
+
+.methodesection-banner-description {
+  font-size: 18px;
+  color: #602537;
+}
+
+.bottomlearnsection-large-heading {
+  color: #6e6c6f;
 }
 
 /* Default styles (mobile-first approach) */
