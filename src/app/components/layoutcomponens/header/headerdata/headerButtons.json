@@ -26,5 +26,6 @@
         "iconSrc": "/images/menu-monaco.png"
       }
     ]
-  }
+  },
+  { "name": "Privacy", "link": "/privacyanddisclaimer", "title": "Privacy and Disclaimer" }
 ]

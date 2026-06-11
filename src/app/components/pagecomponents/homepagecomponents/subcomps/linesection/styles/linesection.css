@@ -36,11 +36,12 @@
   font-size: 52px;
   font-weight: 200;
   line-height: 1;
+  color: #6E6C6F;
 }
 
 .linesection-partone-rightpart {
   width: 40%;
-  
+
   /* background-color: lightseagreen; */
 }
 
@@ -151,8 +152,12 @@
 
 .linesection-partone-para {
   margin-top: 1rem;
+  font-size: 18px;
 }
 
+.linesection-partone-description {
+  font-size: 18px;
+}
 
 /* Default styles (mobile-first approach) */
 
