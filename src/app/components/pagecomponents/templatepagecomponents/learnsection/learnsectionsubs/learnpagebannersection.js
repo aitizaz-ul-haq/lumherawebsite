@@ -10,7 +10,7 @@ export default function LearnPageBannerSection({ banner }) {
         aria-label={banner?.alt || "Banner advertisement"}
       >
         <Image
-          src={banner?.image || "/images/learnbanner.jpeg"}
+          src={banner?.image || "/images/learnbanner.jpg"}
           alt={banner?.alt || "Banner advertisement"}
           fill
           priority
