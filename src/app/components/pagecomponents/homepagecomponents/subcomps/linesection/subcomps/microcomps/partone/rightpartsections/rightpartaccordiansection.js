@@ -27,7 +27,7 @@ export default function RightPartAccordianSection({partOne}) {
                 </Accordion.Trigger>
               </Accordion.Header>
               <Accordion.Content className="acc__content font-inter">
-                {item.content}
+                <div className="acc__content-inner">{item.content}</div>
               </Accordion.Content>
             </Accordion.Item>
           ))}
