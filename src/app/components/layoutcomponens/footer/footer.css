@@ -1008,6 +1008,11 @@
     /* height: 250px; */
   }
 
+  /* Bypass the font-inter utility font-size for the intro paragraph */
+  .services-listing .footer-list-item {
+    font-size: 2rem;
+  }
+
   .services-listing {
     display: flex;
     flex-direction: row;

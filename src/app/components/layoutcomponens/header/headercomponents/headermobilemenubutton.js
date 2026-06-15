@@ -102,18 +102,21 @@ export default function HeaderMobileMenuButton() {
                 }`}
               >
                 <li className="font-kaisei">
-                  <Link href="/learn" onClick={handleMenuItemClick}>
+                  <Link href="/learn#at-home" onClick={handleMenuItemClick}>
                     At Home
                   </Link>
                 </li>
                 <li className="font-kaisei">
-                  <Link href="/learn" onClick={handleMenuItemClick}>
+                  <Link href="/learn#for-schools" onClick={handleMenuItemClick}>
                     For Schools
                   </Link>
                 </li>
                 <li className="font-kaisei">
-                  <Link href="/learn" onClick={handleMenuItemClick}>
-                    Monaco Pilot
+                  <Link
+                    href="/learn#looking-ahead"
+                    onClick={handleMenuItemClick}
+                  >
+                    Looking Ahead
                   </Link>
                 </li>
               </ul>

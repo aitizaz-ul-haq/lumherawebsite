@@ -5,7 +5,16 @@ export default function LearnSevenSection({ learnSevenSection }) {
   return (
     <>
       {learnSevenSection && (
-        <>
+        <div
+          id="looking-ahead"
+          style={{
+            scrollMarginTop: "120px",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            width: "100%",
+          }}
+        >
           <HeadingAndList
             heading={learnSevenSection.heading || ""}
             substatement={learnSevenSection.substatement || ""}
@@ -15,7 +24,7 @@ export default function LearnSevenSection({ learnSevenSection }) {
             // heading={learnSevenSection.heading || ""}
             paragraphs={learnSevenSection.paragraphs || []}
           />
-        </>
+        </div>
       )}
     </>
   );

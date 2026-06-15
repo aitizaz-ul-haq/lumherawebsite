@@ -176,9 +176,9 @@
         "width": 164,
         "height": 164,
         "heading": "Learn at Home",
-        "description": "Lumhera makes money talk easy and fun.Parents can explore the same chapters as their kids, follow progress, and open real conversations about saving, earning, or giving.",
+        "description": "Esther the Investor gives children the opportunity to explore financial concepts at their own pace, independently or alongside their families. The experience encourages curiosity, sparks conversations about money, and helps transform everyday situations into meaningful learning moments.",
         "linkText": "LEARN MORE →",
-        "linkHref": "/contact"
+        "linkHref": "/learn#at-home"
       },
       {
         "imageSrc": "/images/school.png",
@@ -186,9 +186,9 @@
         "width": 164,
         "height": 164,
         "heading": "Learn at School",
-        "description": "Classroom-ready content and assessments Clear standards mapping (OECD/INFE) Inclusive storytelling that engages all learners Easy onboarding and teacher support",
+        "description": "Esther the Investor can complement classroom learning by providing an engaging way to introduce financial concepts and encourage discussion. Through shared experiences and challenges, students develop a deeper understanding of how money influences individuals, businesses, and society.",
         "linkText": "LEARN MORE →",
-        "linkHref": "/contact"
+        "linkHref": "/learn#for-schools"
       },
       {
         "imageSrc": "/images/monaco.png",
@@ -196,8 +196,8 @@
         "width": 164,
         "height": 164,
         "heading": "Monaco Pilot",
-        "description": "Our first national pilot — with measurable results, rapid iteration, and a model ready to inspire other education systems worldwide.",
-        "linkText": "REQUEST A DEMO →",
+        "description": "Monaco will serve as the first pilot for Esther the Investor and the broader Lumhera vision. By working with families, educators, and local stakeholders, we aim to demonstrate how experiential financial education can build confidence, understanding, and long-term financial capability in the next generation. The lessons learned from Monaco will help shape future deployments in schools and communities around the world.",
+        "linkText": "CONTACT US →",
         "linkHref": "/contact"
       }
     ]

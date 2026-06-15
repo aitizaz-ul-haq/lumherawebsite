@@ -26,12 +26,13 @@ export default function LearnSection({
     <>
       {showLearn && (
         <>
-          <LearnFirstSection learnFirstSection={learnFirstSection} />
-          <LearnSecondSection learnSecondSection={learnSecondSection} />
+          {/* <LearnFirstSection learnFirstSection={learnFirstSection} /> */}
+          {/* <LearnSecondSection learnSecondSection={learnSecondSection} /> */}
+          
+          {/* <LearnThirdSection learnThirdSection={learnThirdSection} /> */}
+          <LearnFourthSection learnFourthSection={learnFourthSection} />
           <LearnPageBannerSection />
           <LearnCtaOne learnCtaOne={learnCtaOne} />
-          <LearnThirdSection learnThirdSection={learnThirdSection} />
-          <LearnFourthSection learnFourthSection={learnFourthSection} />
           <LearnFiveSection learnFiveSection={learnFiveSection} />
           <LearnSixSection learnSixSection={learnSixSection} />
           <LearnSevenSection learnSevenSection={learnSevenSection} />

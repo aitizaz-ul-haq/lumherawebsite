@@ -97,6 +97,14 @@ footer {
   margin-bottom: 2rem;
 }
 
+/* Keep red rounded CTA buttons' text white, even when the font-inter
+   utility class tries to apply its dark-maroon color. */
+button.cta-button,
+.cta-button.font-inter {
+  color: white;
+  font-size: 15px;
+}
+
 .site-main {
   background-color: #0a0a0a;
 }
