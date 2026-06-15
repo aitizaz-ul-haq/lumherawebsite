@@ -4,72 +4,163 @@
     "LargeHeading": "Learn With Us"
   },
   "learnfirstsection": {
-    "heading": "Learning Together",
+    "heading": "Esther the Investor — The Beginning of the Journey",
     "paragraphs": [
-      { "id": 1, "content": "Lumhera makes money talk easy and fun." },
+      {
+        "id": 1,
+        "content": "Esther the Investor is Lumhera's first interactive learning experience, bringing financial literacy to life through an immersive, story-driven adventure."
+      },
       {
         "id": 2,
-        "content": "Parents can explore the same chapters as their kids, follow progress, and open real conversations about saving, earning, or giving."
+        "content": "Children follow Esther, a curious and determined 12-year-old, as she explores how money shapes the world around her. Guided by King Croesus and his loyal companion Bucks, she embarks on a journey filled with discoveries, challenges, and opportunities to learn."
+      },
+      {
+        "id": 3,
+        "content": "Through storytelling, interactive mini-games, puzzles, and real-world decisions, players explore essential financial concepts including:"
       }
     ]
   },
 
   "learnsecondsection": {
-    "heading": "What Families Love",
-    "substatement": " ",
+    "heading": "",
+    "substatement": "",
     "middlelist": [
       {
         "id": 1,
-        "content": "Interactive, story-based learning that feels like play"
+        "content": "The origins and purpose of money"
       },
       {
         "id": 2,
-        "content": "Short sessions — perfect for family time"
+        "content": "Saving, spending, and budgeting"
       },
       {
         "id": 3,
-        "content": "Progress tracking and practical tips"
+        "content": "Banks, loans, and entrepreneurship"
       },
       {
         "id": 4,
-        "content": "Empowering stories that feature strong, curious role models"
+        "content": "Currencies and global trade"
+      },
+      {
+        "id": 5,
+        "content": "Companies, investing, and value creation"
+      },
+      {
+        "id": 6,
+        "content": "Risk, reward, and long-term thinking"
+      }
+    ],
+    "paragraphs": [
+      { "id": 1, "content": "For: Ages 10–16 • Families • Schools" },
+      {
+        "id": 2,
+        "content": "Why it works: Storytelling creates context. Mini-games create practice. Decision-making creates understanding."
+      },
+      {
+        "id": 3,
+        "content": "The result is financial literacy that feels engaging, meaningful, and memorable."
       }
     ]
   },
 
   "learnctaone": {
-    "text": "Start your family’s learning journey today.",
-    "buttontext": "CONTACT US"
+    "text": "Start your learning journey today.",
+    "buttontext": "Play Now"
   },
 
   "learnthirdsection": {
-    "heading": "For Schools",
-    "substatement": "Why Schools Choose Lumhera",
-    "middlelist": [
+    "heading": "A Growing Universe of Learning",
+    "paragraphs": [
       {
         "id": 1,
-        "content": "Classroom-ready content and assessments."
+        "content": "Esther the Investor is the first step in Lumhera's mission to make financial literacy accessible, engaging, and empowering for every child, with a special focus on girls."
       },
       {
         "id": 2,
-        "content": "Clear standards mapping (OECD/INFE)."
+        "content": "As Esther's journey continues, new chapters and learning experiences will expand her world, helping children build the knowledge, confidence, and habits needed to navigate an increasingly complex financial future."
       },
       {
         "id": 3,
-        "content": "Inclusive storytelling that engages all learners."
+        "content": "One story today. A lifetime of confidence tomorrow."
       },
       {
         "id": 4,
-        "content": "Easy onboarding and teacher support."
+        "content": "Because learning about money should feel like an adventure — not an obligation."
       }
     ]
   },
   "learnfourthsection": {
-    "heading": "Monaco Pilot",
+    "heading": "Learn with Esther the Investor",
+    "substatement": "Financial literacy for children, at home and at school.",
+    "middlelist": [],
     "paragraphs": [
       {
         "id": 1,
-        "content": "Our first national pilot — with measurable results, rapid iteration, and a model ready to inspire other education systems worldwide."
+        "content": "Children encounter money every day. Learning how it works should be just as natural."
+      },
+      {
+        "id": 2,
+        "content": "Esther the Investor helps families and educators introduce financial concepts in a way that is engaging, accessible, and age-appropriate. Through Esther's journey, children explore topics ranging from money and budgeting to companies, investing, and decision-making."
+      }
+    ]
+  },
+
+  "learnfivesection": {
+    "heading": "",
+    "substatement": "At Home",
+    "middlelist": [],
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Learning continues far beyond the classroom."
+      },
+      {
+        "id": 2,
+        "content": "Esther the Investor gives children the opportunity to explore financial concepts at their own pace, independently or alongside their families. The experience encourages curiosity, sparks conversations about money, and helps transform everyday situations into meaningful learning moments."
+      },
+      {
+        "id": 3,
+        "content": "By following Esther's adventures, children gradually build confidence and familiarity with concepts that will accompany them throughout their lives."
+      }
+    ]
+  },
+
+  "learnsixsection": {
+    "heading": "",
+    "substatement": "At School",
+    "middlelist": [],
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Financial literacy is becoming an increasingly important life skill."
+      },
+      {
+        "id": 2,
+        "content": "Esther the Investor can complement classroom learning by providing an engaging way to introduce financial concepts and encourage discussion. Through shared experiences and challenges, students develop a deeper understanding of how money influences individuals, businesses, and society."
+      },
+      {
+        "id": 3,
+        "content": "The experience supports educators by making complex topics accessible, relatable, and memorable."
+      }
+    ]
+  },
+
+  "learnsevensection": {
+    "heading": "",
+    "substatement": "Looking Ahead",
+    "middlelist": [],
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Esther the Investor is the first step in Lumhera's mission to make financial literacy accessible, engaging, and empowering for every child, with a special focus on girls."
+      },
+      {
+        "id": 2,
+        "content": "As Esther's journey continues, new chapters and learning experiences will expand her world, helping more children build the knowledge, confidence, and skills needed to navigate an increasingly complex financial future."
+      },
+      {
+        "id": 3,
+        "content": "Because learning about money should feel like an adventure — not an obligation."
       }
     ]
   },

@@ -85,7 +85,7 @@
     "partTwo": {
       "leftParagraphs": [
         "Lumhera’s first interactive experience, Esther the Investor, turns financial learning into an immersive, story-driven adventure.",
-        "Children follow Esther, a curious 10-year-old, as she discovers how money shapes the world — guided by King Croesus and his cat Bucks."
+        "Children follow Esther, a curious 12 year old, as she discovers how money shapes the world — guided by King Croesus and his cat Bucks."
       ],
       "ctaText": "LEARN MORE →",
       "ctaLink": "/contact",
@@ -161,7 +161,7 @@
       "banner": {
         "heading": "Start Your Journey",
         "description": "Take the first step towards financial empowerment today!",
-        "buttonText": "CONTACT US"
+        "buttonText": "Play Now"
       }
     }
   },

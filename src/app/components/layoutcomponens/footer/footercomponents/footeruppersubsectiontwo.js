@@ -84,7 +84,7 @@ export default function FooterUpperSubsectionTwo() {
           </ul>
         </div>
 
-        <div className="footerlist">
+        {/* <div className="footerlist">
           <ul className="listingfooter">
             <li className="list-element font-inter">
               {" "}
@@ -114,9 +114,9 @@ export default function FooterUpperSubsectionTwo() {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
-        <div className="footerlist">
+        {/* <div className="footerlist">
           <ul className="listingfooter">
             <li className="list-element font-inter">
               {" "}
@@ -128,9 +128,9 @@ export default function FooterUpperSubsectionTwo() {
               </Link>
             </li>
           </ul>
-        </div>
+        </div> */}
 
-        <div className="footerlist">
+        {/* <div className="footerlist">
           <ul className="listingfooter">
             <li className="list-element font-inter general-linkage list-element-color">
               Instagram
@@ -148,7 +148,7 @@ export default function FooterUpperSubsectionTwo() {
               Linkdin
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </div>
   );

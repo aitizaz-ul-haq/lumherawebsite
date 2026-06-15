@@ -83,6 +83,9 @@ const learnSecondSection = Learnpagedata.learnsecondsection;
 const learnCtaOne = Learnpagedata.learnctaone;
 const learnThirdSection = Learnpagedata.learnthirdsection;
 const learnFourthSection = Learnpagedata.learnfourthsection;
+const learnFiveSection = Learnpagedata.learnfivesection;
+const learnSixSection = Learnpagedata.learnsixsection;
+const learnSevenSection = Learnpagedata.learnsevensection;
 const learnCtaTwo = Learnpagedata.learnctatwo;
 
 export default function Learn() {
@@ -106,6 +109,9 @@ export default function Learn() {
         learnCtaOne={learnCtaOne}
         learnThirdSection={learnThirdSection}
         learnFourthSection={learnFourthSection}
+        learnFiveSection={learnFiveSection}
+        learnSixSection={learnSixSection}
+        learnSevenSection={learnSevenSection}
         learnCtaTwo={learnCtaTwo}
       />
     </>

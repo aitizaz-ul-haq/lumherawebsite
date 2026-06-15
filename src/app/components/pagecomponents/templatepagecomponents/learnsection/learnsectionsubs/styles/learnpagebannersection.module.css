@@ -5,6 +5,7 @@
   /* Responsive height that scales with viewport while keeping a banner ratio */
   aspect-ratio: 1200 / 480;
   overflow: hidden;
+  margin-top: 3rem;
 }
 
 .bannerLink {

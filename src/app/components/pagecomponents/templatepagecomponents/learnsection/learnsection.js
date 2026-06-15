@@ -5,6 +5,10 @@ import LearnThirdSection from "./learnsectionsubs/learnthirdsection";
 import LearnFourthSection from "./learnsectionsubs/learnfourthsection";
 import LearnCtaTwo from "./learnsectionsubs/learnctatwo";
 import LearnPageBannerSection from "./learnsectionsubs/learnpagebannersection";
+import LearnFiveSection from "./learnsectionsubs/learnfivesection";
+import LearnSixSection from "./learnsectionsubs/learnsixsection";
+import LearnSevenSection from "./learnsectionsubs/learnsevensection";
+import Learn from "@/app/learn/page";
 
 export default function LearnSection({
   showLearn,
@@ -14,6 +18,9 @@ export default function LearnSection({
   learnThirdSection,
   learnFourthSection,
   learnCtaTwo,
+  learnFiveSection,
+  learnSixSection,
+  learnSevenSection,
 }) {
   return (
     <>
@@ -21,10 +28,13 @@ export default function LearnSection({
         <>
           <LearnFirstSection learnFirstSection={learnFirstSection} />
           <LearnSecondSection learnSecondSection={learnSecondSection} />
-          <LearnCtaOne learnCtaOne={learnCtaOne} />
           <LearnPageBannerSection />
+          <LearnCtaOne learnCtaOne={learnCtaOne} />
           <LearnThirdSection learnThirdSection={learnThirdSection} />
           <LearnFourthSection learnFourthSection={learnFourthSection} />
+          <LearnFiveSection learnFiveSection={learnFiveSection} />
+          <LearnSixSection learnSixSection={learnSixSection} />
+          <LearnSevenSection learnSevenSection={learnSevenSection} />
           <LearnCtaTwo learnCtaTwo={learnCtaTwo} />
         </>
       )}

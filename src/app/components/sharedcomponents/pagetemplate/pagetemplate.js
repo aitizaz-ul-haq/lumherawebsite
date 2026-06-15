@@ -44,6 +44,9 @@ export default function PageTemplate({
   learnCtaOne = null,
   learnThirdSection = null,
   learnFourthSection = null,
+  learnFiveSection = null,
+  learnSixSection = null,
+  learnSevenSection = null,
   learnCtaTwo = null,
 
   // Privacy
@@ -107,6 +110,9 @@ export default function PageTemplate({
         learnCtaOne={learnCtaOne}
         learnThirdSection={learnThirdSection}
         learnFourthSection={learnFourthSection}
+        learnFiveSection={learnFiveSection}
+        learnSixSection={learnSixSection}
+        learnSevenSection={learnSevenSection}
         learnCtaTwo={learnCtaTwo}
       />
 
