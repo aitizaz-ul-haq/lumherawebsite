@@ -39,7 +39,7 @@ export default function MethodSection({
           <MethodSixSection methodSixSection={methodSixSection} />
 
           {/* CTA */}
-          <MethodCtaTwo methodCtaTwo={methodCtaTwo} />
+          {/* <MethodCtaTwo methodCtaTwo={methodCtaTwo} /> */}
         </>
       )}
     </>

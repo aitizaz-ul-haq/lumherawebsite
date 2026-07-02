@@ -59,7 +59,7 @@ export default function HeaderRightSectionButtonSection() {
               {button.name}
             </Link>
 
-            {hasDropdown && hoveredIndex === index && (
+            {/* {hasDropdown && hoveredIndex === index && (
               <div
                 className={`header-dropdown-menu header-dropdown-menu--${menuKey}`}
                 data-menu={menuKey}
@@ -105,7 +105,7 @@ export default function HeaderRightSectionButtonSection() {
                   );
                 })}
               </div>
-            )}
+            )} */}
           </div>
         );
       })}

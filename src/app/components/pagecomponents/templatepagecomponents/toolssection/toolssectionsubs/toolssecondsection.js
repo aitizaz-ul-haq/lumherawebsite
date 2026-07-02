@@ -8,6 +8,8 @@ export default function ToolsSecondSection({ toolsSecondSection }) {
           paraOne={toolsSecondSection.paragraphone?.content || ""}
           listItems={toolsSecondSection.middlelist || []}
           paraTwo={toolsSecondSection.paragraphtwo?.content || ""}
+          paraThree={toolsSecondSection.paragraphthree?.content || ""}
+          paraFour={toolsSecondSection.paragraphfour?.content || ""}
         />
       )}
     </>

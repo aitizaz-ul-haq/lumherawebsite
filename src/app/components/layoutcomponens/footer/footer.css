@@ -258,6 +258,12 @@
   /* color: inherit; */
 }
 
+li.list-element {
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+}
+
 .list-element:visited,
 .list-element:hover,
 .list-element:active,

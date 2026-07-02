@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function FooterUpperSubsectionTwo() {
   return (
@@ -79,6 +80,41 @@ export default function FooterUpperSubsectionTwo() {
                 className="list-element font-inter general-linkage list-element-color"
               >
                 Contact
+              </Link>
+            </li>
+
+            <li
+              className="list-element font-inter"
+              style={{ display: "flex", alignItems: "center", gap: "12px" }}
+            >
+              <Link
+                href="https://www.linkedin.com/"
+                className="general-linkage list-element-color"
+                aria-label="Linkedin"
+                style={{ display: "inline-flex", alignItems: "center" }}
+              >
+                <Image
+                  src="/images/linkedin-lumhera.png"
+                  alt="Linkedin"
+                  width={32}
+                  height={32}
+                  style={{ width: "32px", height: "32px", display: "block" }}
+                />
+              </Link>
+
+              <Link
+                href="https://www.instagram.com/"
+                className="general-linkage list-element-color"
+                aria-label="Instagram"
+                style={{ display: "inline-flex", alignItems: "center" }}
+              >
+                <Image
+                  src="/images/instagram-lumhera.png"
+                  alt="Instagram"
+                  width={32}
+                  height={32}
+                  style={{ width: "32px", height: "32px", display: "block" }}
+                />
               </Link>
             </li>
           </ul>
