@@ -425,7 +425,7 @@ li.list-element {
   }
 
   .listingfooter {
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
   }
 
@@ -453,6 +453,12 @@ li.list-element {
     /* display: contents; */
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .footermidbutton-button {
+    padding: 0.4rem 1.5rem;
+    width: 100%;
+    font-size: 1rem !important;
   }
 }
 
@@ -519,8 +525,9 @@ li.list-element {
   }
 
   .listingfooter {
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
+    /* width: 30%; */
   }
 
   .list-element {
@@ -529,11 +536,6 @@ li.list-element {
     font-size: 14px;
   }
 
-  .footermidbutton-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-  }
 
   .footer-rights-line {
     font-size: 11px;
@@ -543,7 +545,7 @@ li.list-element {
   .footermidbutton-container {
     margin-top: 4rem;
     margin-bottom: 2rem;
-    padding-left: 1rem;
+    /* padding-left: 1rem; */
     /* display: contents; */
     display: flex;
     flex-direction: column-reverse;
@@ -613,7 +615,7 @@ li.list-element {
   }
 
   .listingfooter {
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
   }
 
@@ -707,7 +709,7 @@ li.list-element {
   }
 
   .listingfooter {
-    flex-direction: row;
+    flex-direction: column;
     gap: 1rem;
   }
 
@@ -717,11 +719,7 @@ li.list-element {
     font-size: 14px;
   }
 
-  .footermidbutton-container {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-  }
+ 
 
   .footer-rights-line {
     font-size: 11px;
@@ -735,6 +733,12 @@ li.list-element {
     /* display: contents; */
     display: flex;
     flex-direction: column-reverse;
+  }
+
+  .footermidbutton-button {
+    padding: 0.9rem 1.5rem;
+    width: 100%;
+    font-size: 1rem !important;
   }
 }
 
@@ -803,7 +807,7 @@ li.list-element {
 
   .listingfooter {
     flex-direction: row;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   .list-element {
@@ -941,7 +945,7 @@ li.list-element {
     /* keep your styles */
     color: var(--white-text-color);
     width: 100%;
-    padding-top: 1rem;
+    padding-top: 3rem;
     padding-left: 3rem;
     padding-right: 3rem;
     background: #36384c;
@@ -1057,6 +1061,7 @@ li.list-element {
     text-decoration: none;
     color: var(--white-text-color);
     font-weight: 200;
+    font-size: 1.4rem !important;
   }
 
   .footer-list-item:hover {
@@ -1230,7 +1235,7 @@ li.list-element {
   .footer-list-item {
     text-align: left;
     margin-bottom: 0.2rem;
-    font-size: 29px;
+    font-size: 2rem !important;
   }
 
   .footer-uppersection {
