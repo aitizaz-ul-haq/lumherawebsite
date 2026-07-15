@@ -3,7 +3,7 @@ import PartOneRightPart from "./microcomps/partone/partonerightpart";
 
 export default function PartOne({ partOne }) {
   return (
-    <div className="linesection-partone-container">
+    <div className="linesection-partone-container reverseal">
       <PartOneRightPart partOne={partOne} />
       <PartOneLeftPart partOne={partOne} />
     </div>
