@@ -373,7 +373,7 @@ button.cta-button,
 @media (min-width: 1024px) {
   .main-page-bckground {
     min-height: 100dvh;
-    background: url("/images/home-background.png") center / cover no-repeat;
+    background: url("/images/home-background.webp") center / cover no-repeat;
     padding-left: 3rem;
     padding-top: 8rem;
     padding-right: 2rem;
@@ -411,7 +411,7 @@ button.cta-button,
 @media (min-width: 1440px) {
   .main-page-bckground {
     min-height: 100dvh;
-    background: url("/images/home-background.png") center / cover no-repeat;
+    background: url("/images/home-background.webp") center / cover no-repeat;
     padding-left: 3rem;
     padding-top: 8rem;
     padding-right: 4rem;

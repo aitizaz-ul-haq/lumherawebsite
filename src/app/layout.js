@@ -38,6 +38,22 @@ const kaiseiDecol = Kaisei_Decol({
   display: "swap",
 });
 
+export const metadata = {
+  metadataBase: new URL("https://www.lumhera.com"),
+  title: {
+    default: "Financial Literacy for Children & Families | Lumhera",
+    template: "%s | Lumhera",
+  },
+  description:
+    "Lumhera brings financial literacy to life through interactive, story-driven learning for families, children, and schools.",
+  applicationName: "Lumhera",
+  robots: {
+    index: true,
+    follow: true,
+  },
+  manifest: "/images/site.webmanifest",
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

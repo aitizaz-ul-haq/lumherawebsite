@@ -26,20 +26,20 @@
       "1920px": "62%"
     },
     "backgroundImages": {
-      "320px": "/images/turqoise.jpeg",
-      "360px": "/images/turqoise.jpeg",
-      "375px": "/images/turqoise.jpeg",
-      "390px": "/images/turqoise.jpeg",
-      "430px": "/images/turqoise.jpeg",
-      "480px": "/images/turqoise.jpeg",
-      "600px": "/images/turqoise.jpeg",
-      "768px": "/images/turqoise.jpeg",
-      "1024px": "/images/turqoise.jpeg",
-      "1280px": "/images/turqoise.jpeg",
-      "1440px": "/images/turqoise.jpeg",
-      "1600px": "/images/turqoise.jpeg",
-      "1920px": "/images/turqoise.jpeg",
-      "2560px": "/images/turqoise.jpeg"
+      "320px": "/images/turqoise.webp",
+      "360px": "/images/turqoise.webp",
+      "375px": "/images/turqoise.webp",
+      "390px": "/images/turqoise.webp",
+      "430px": "/images/turqoise.webp",
+      "480px": "/images/turqoise.webp",
+      "600px": "/images/turqoise.webp",
+      "768px": "/images/turqoise.webp",
+      "1024px": "/images/turqoise.webp",
+      "1280px": "/images/turqoise.webp",
+      "1440px": "/images/turqoise.webp",
+      "1600px": "/images/turqoise.webp",
+      "1920px": "/images/turqoise.webp",
+      "2560px": "/images/turqoise.webp"
     },
     "heroparaone": "At Lumhera, we bring financial literacy to life through Esther the Investor: an interactive game where children learn by doing, with a special focus on empowering girls.",
     "heroparatwo": "Because the best way to understand money is by experiencing, exploring, and making decisions.",
@@ -191,7 +191,7 @@
         "linkHref": "/learn#for-schools"
       },
       {
-        "imageSrc": "/images/monaco.png",
+        "imageSrc": "/images/monaco.webp",
         "imageAlt": "About Page Header Image",
         "width": 164,
         "height": 164,

@@ -4,7 +4,7 @@ export default function FrontFace() {
   return (
     <div className="coin__face coin__face--front">
       <Image
-        src="/images/page-coin.png"
+        src="/images/page-coin.webp"
         alt="Coin front"
         width={160}
         height={160}

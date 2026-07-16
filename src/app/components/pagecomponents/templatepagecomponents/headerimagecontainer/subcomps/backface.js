@@ -4,7 +4,7 @@ export default function BackFace() {
   return (
     <div className="coin__face coin__face--back">
       <Image
-        src="/images/page-coin.png"
+        src="/images/page-coin.webp"
         alt="Coin back"
         width={160}
         height={160}
