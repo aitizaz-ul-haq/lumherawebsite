@@ -81,14 +81,19 @@
   transform: translateY(0);
 }
 
-/* Tablets and below (< 1024px): full-bleed banner, edge to edge, auto height */
+/* Tablets and below (< 1024px): full-bleed banner, edge to edge, auto height.
+   Uses symmetric negative margins (calc) instead of margin-left + translateX
+   so the full-bleed centering is immune to the parent's flex alignment
+   (e.g. .page-container uses align-items: center, which broke the old
+   translateX trick and shifted the banner off to the left). */
 @media (max-width: 1023px) {
   .videobanner-section {
     width: 100vw;
     max-width: 100vw;
-    margin-left: 50%;
-    margin-right: 0;
-    transform: translateX(-50%);
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    transform: none;
+    align-self: center;
     margin-top: 4rem;
     border-radius: 0;
   }

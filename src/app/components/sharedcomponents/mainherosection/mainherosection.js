@@ -14,10 +14,11 @@ export default function MainHeroSection({
   heroparathree,
 }) {
   const preloadImage = herobackgroundimage["1920px"];
-  const containerRef = useRef(null);
+  const wrapperRef = useRef(null);
+  const bgRef = useRef(null);
 
   useEffect(() => {
-    if (!containerRef.current) return;
+    if (!wrapperRef.current) return;
 
     let ticking = false;
 
@@ -40,11 +41,11 @@ export default function MainHeroSection({
         const eased = 1 - Math.pow(1 - ratio, 1.6);
 
         // blur + tint
-        containerRef.current.style.setProperty(
+        wrapperRef.current.style.setProperty(
           "--bg-blur",
           `${(eased * MAX_BLUR_PX).toFixed(2)}px`
         );
-        containerRef.current.style.setProperty(
+        wrapperRef.current.style.setProperty(
           "--bg-tint",
           (eased * MAX_TINT).toFixed(3)
         );
@@ -53,18 +54,10 @@ export default function MainHeroSection({
         const FADE_MAX_AT = 0.4; // you already have this
         const fadeProgress = Math.max(0, Math.min(1, ratio / FADE_MAX_AT));
         const headingFilter = (1 - fadeProgress).toFixed(3);
-        containerRef.current.style.setProperty(
+        wrapperRef.current.style.setProperty(
           "--heading-filter",
           headingFilter
         );
-
-        // ===== NEW: Parallax (moves background at ~50% scroll speed) =====
-        const PARALLAX_SPEED = 0.3; // tweak 0.3–0.7 to taste
-        const parallaxY = y * PARALLAX_SPEED;
-        containerRef.current.style.backgroundPosition = `center calc(50% + ${parallaxY}px)`;
-
-        // OPTIONAL: slightly oversize to avoid edges when parallaxing
-        // containerRef.current.style.backgroundSize = "105%"; // or keep "cover"
 
         ticking = false;
       });
@@ -102,9 +95,9 @@ export default function MainHeroSection({
         />
       </Head>
 
-      <div
-        ref={containerRef}
-        className="main-hero-section-container fade-in-bg"
+      <section
+        ref={wrapperRef}
+        className="main-hero"
         style={{
           "--bg-320": `url(${herobackgroundimage["320px"]})`,
           "--bg-360": `url(${herobackgroundimage["360px"]})`,
@@ -122,8 +115,10 @@ export default function MainHeroSection({
           "--bg-2560": `url(${herobackgroundimage["2560px"]})`,
         }}
       >
-        <div
-          className="main-hero-title-container"
+        <div ref={bgRef} className="main-hero-bg" aria-hidden="true" />
+        <div className="main-hero-section-container fade-in-bg">
+          <div
+            className="main-hero-title-container"
           style={{
             "--titlewidth-320": herotitlewidth["320px"],
             "--titlewidth-768": herotitlewidth["768px"],
@@ -152,7 +147,15 @@ export default function MainHeroSection({
               "--titlesize-2560": herotitlesize["2560px"],
             }}
           >
-            {herotitle}
+            {herotitle
+              .split(/,\s*/)
+              .filter(Boolean)
+              .map((segment, index, segments) => (
+                <span key={index} className="hero-title-line">
+                  {index < segments.length - 1 ? `${segment},` : segment}
+                  {index < segments.length - 1 ? " " : null}
+                </span>
+              ))}
           </h1>
         </div>
         <div className="hero-second-text-container">
@@ -160,7 +163,8 @@ export default function MainHeroSection({
           <p className="hero-second-text font-kaisei">{heroparatwo}</p>
           <p className="hero-second-text font-kaisei">{heroparathree}</p>
         </div>
-      </div>
+        </div>
+      </section>
     </>
   );
 }

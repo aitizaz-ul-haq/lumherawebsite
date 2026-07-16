@@ -22,27 +22,59 @@
 
 .main-hero-section-container {
   width: 100%;
-  height: 180vh;
+  height: 160vh;
   min-height: calc(100vh - 104px);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* overflow: hidden; */
-  will-change: background-position; /* smoother animation */
-  /* background-attachment: fixed; */
-
-  overflow: hidden; /* clip blur at the hero’s edges */
   isolation: isolate; /* keep filter effects from blending across sections */
   view-timeline-name: --hero; /* Chrome/Safari: element-based scroll timeline */
   view-timeline-axis: block;
+}
+
+/* Outer wrapper: holds the sticky background layer and the (overlaying)
+   content container. Custom properties for the background images and the
+   JS-driven blur/tint/heading vars live here so both children inherit them.
+   `overflow: clip` prevents the sticky background from painting past the
+   hero's bottom edge onto the next section (Esther the Investor), while —
+   unlike overflow:hidden — it does NOT create a scroll container, so the
+   sticky background keeps sticking to the viewport correctly. */
+.main-hero {
+  position: relative;
+  width: 100%;
+  overflow: clip;
   --bg-blur: 0px; /* set by JS */
   --bg-tint: 0; /* set by JS, 0..1 */
+  --bg-pos-y: 50%; /* vertical framing of the image; tuned per breakpoint */
+}
+
+/* Full-viewport background layer.
+   Sticks to the top of the viewport for the whole hero so the image always
+   covers the visible screen, and is sized against the viewport (100svh) — not
+   the tall content container — so `cover` no longer over-zooms on small
+   screens. Result: full image height stays visible, only the sides are
+   cropped, and the girl-looking-at-the-computer stays framed.
+   The negative margin removes it from flow so the content container overlays,
+   keeping the image pinned behind the content for the whole hero. */
+.main-hero-bg {
+  position: sticky;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  margin-bottom: -100vh;
+  margin-bottom: -100svh;
+  background-image: var(--bg-375); /* fallback; overridden per breakpoint */
+  background-size: cover;
+  background-position: center var(--bg-pos-y);
+  background-repeat: no-repeat;
+  overflow: hidden; /* clip blur at the hero's edges */
+  isolation: isolate;
+  pointer-events: none;
 }
 
 /* Hero content above overlay */
@@ -117,7 +149,7 @@
 }
 
 /* Blurred background overlay (keeps text sharp) */
-.main-hero-section-container::after {
+.main-hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -137,18 +169,13 @@
 }
 
 /* TINT layer (above blur, below text) */
-.main-hero-section-container::before {
+.main-hero-bg::before {
   content: "";
   position: absolute;
   inset: 0;
 
-  /* solid black tint; change to your color as needed */
+  /* solid white tint; grows as you scroll */
   background-color: rgba(255, 255, 255, var(--bg-tint));
-  /* or try a gradient for a stronger bottom focus:
-     background: linear-gradient(180deg,
-       rgba(0,0,0, calc(var(--bg-tint) * 0.7)) 0%,
-       rgba(0,0,0, var(--bg-tint)) 100%);
-  */
 
   z-index: 1; /* above blur, below text */
   pointer-events: none;
@@ -166,8 +193,11 @@
 
 /* Small phones (<= 320px) */
 @media (max-width: 320px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-320);
+  }
+
+  .main-hero-section-container {
     /* justify-content: center; */
   }
 
@@ -192,8 +222,11 @@
 
 /* Standard small phones (<= 360px) */
 @media (max-width: 360px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-360);
+  }
+
+  .main-hero-section-container {
     /* justify-content: center; */
   }
 
@@ -216,11 +249,13 @@
   } */
 }
 
-/* Standard small phones (<= 360px) */
+/* Standard small phones (<= 375px) */
 @media (max-width: 375px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-375);
-    /* justify-content: center; */
+  }
+
+  .main-hero-section-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -257,9 +292,11 @@
 
 /* iPhone 14, 15 (standard model) */
 @media (min-width: 390px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-390);
-    /* justify-content: center; */
+  }
+
+  .main-hero-section-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -296,9 +333,11 @@
 
 /* iPhone 14 Pro, 15 Pro */
 @media (min-width: 430px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-430);
-    /* justify-content: center; */
+  }
+
+  .main-hero-section-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -335,9 +374,11 @@
 
 /* Larger phones and phablets (>= 480px) */
 @media (min-width: 480px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-480);
-    /* justify-content: center; */
+  }
+
+  .main-hero-section-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -375,9 +416,11 @@
 
 /* Tablets (>= 600px) */
 @media (min-width: 600px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-600);
-    /* justify-content: center; */
+  }
+
+  .main-hero-section-container {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -414,10 +457,12 @@
 
 /* Small laptops and larger tablets (>= 768px) */
 @media (min-width: 768px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-768);
-    /* justify-content: center; */
-    gap: 18rem;
+  }
+
+  .main-hero-section-container {
+    gap: 6rem;
   }
 
   .main-hero-title-container {
@@ -456,7 +501,7 @@
 
 /* Large laptops and desktops (>= 1280px) */
 @media (min-width: 1280px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-1280);
   }
 
@@ -477,7 +522,7 @@
 
 /* Extra-large desktops (>= 1440px) */
 @media (min-width: 1440px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-1440);
   }
 
@@ -496,7 +541,7 @@
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1600px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-1600);
   }
   .main-hero-section-heading {
@@ -511,8 +556,11 @@
 
 /* Ultra-wide screens (>= 1600px) */
 @media (min-width: 1920px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-1920);
+  }
+
+  .main-hero-section-container {
     padding: 3rem;
   }
 
@@ -535,7 +583,7 @@
 
 /* 4K screens (>= 1920px) */
 @media (min-width: 2560px) {
-  .main-hero-section-container {
+  .main-hero-bg {
     background-image: var(--bg-2560);
   }
 
@@ -610,4 +658,121 @@
 
 /* Nest Hub Max */
 @media (width: 1280px) and (height: 800px) {
+}
+
+/* =====================================================================
+   HERO LAYOUT (applied last so it wins on every breakpoint)
+   Two-frame design:
+   - FRAME 1 (first screen): the hero title sits centred at the bottom.
+   - FRAME 2 (scroll down):  the "At Lumhera…" intro paragraphs, centred.
+   The background image is pinned behind BOTH frames, so it extends all the
+   way behind and under the paragraphs, then scrolls away cleanly at the
+   hero's bottom edge (no band overlapping the Esther the Investor section).
+   ===================================================================== */
+
+.main-hero-section-container {
+  height: auto;
+  min-height: 200vh; /* two stacked frames */
+  gap: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  justify-content: flex-start;
+}
+
+/* FRAME 1 — title container fills the first screen; title anchored to the
+   horizontal centre and the bottom of that frame. */
+.main-hero-title-container {
+  min-height: 100vh;
+  min-height: 100svh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-top: 0;
+  padding-bottom: 8vh;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Remove the oversized margins that pushed the heading around
+   (e.g. margin-top: 32rem on 1920px, margin-bottom: 17rem on 2560px). */
+.main-hero-section-heading {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* FRAME 2 — the intro paragraphs fill the second screen and sit centred. */
+.hero-second-text-container {
+  min-height: 100vh;
+  min-height: 100svh;
+  justify-content: center;
+  gap: 2.75rem;
+  margin-bottom: 0;
+  padding-top: 4vh;
+  padding-bottom: 8vh;
+}
+
+/* Background pinned behind the WHOLE hero (both frames), so it stays behind
+   and under the paragraphs. `overflow: clip` on .main-hero clips it to the
+   hero's edges so it never overlaps the next section. */
+.main-hero-bg {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100svh;
+  margin-bottom: -100vh;
+  margin-bottom: -100svh;
+}
+
+/* Push the background image down on larger screens so the girl's head sits
+   below the fixed header instead of behind it. */
+@media (min-width: 1024px) {
+  .main-hero {
+    --bg-pos-y: 22%;
+  }
+}
+
+/* Title phrases: natural inline wrapping on small screens. */
+.hero-title-line {
+  display: inline;
+}
+
+/* On large screens (>=1024px) force each comma-phrase onto its own line so
+   the title always reads as three clean lines and "open" never drops alone.
+   Widen the container so the lines have room to breathe. */
+@media (min-width: 1024px) {
+  .hero-title-line {
+    display: block;
+  }
+
+  .main-hero-title-container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1280px) {
+  .main-hero-title-container {
+    width: 82%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .main-hero {
+    --bg-pos-y: 18%;
+  }
+
+  .main-hero-title-container {
+    width: 78%;
+  }
+}
+
+@media (min-width: 1920px) {
+  .main-hero {
+    --bg-pos-y: 15%;
+  }
+
+  .main-hero-title-container {
+    width: 72%;
+  }
 }
