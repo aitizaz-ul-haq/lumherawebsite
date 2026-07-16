@@ -61,7 +61,7 @@ export async function POST(req) {
     const hrMailOptions = {
       from: `Lumhera Team <${process.env.EMAIL_USER}>`,
       replyTo: `"${name}" <${email}>`,
-      to: process.env.CONTACT_TO || "atz.softprgmr@gmail.com",
+      to: "belqis@lumhera.com",
       subject: `Contact Form Submission: ${subject || "No subject"}`,
       html: `
         <div style="font-family: Arial, sans-serif; padding: 20px;">
