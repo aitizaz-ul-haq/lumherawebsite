@@ -9,7 +9,6 @@ import LearnFiveSection from "./learnsectionsubs/learnfivesection";
 import LearnSixSection from "./learnsectionsubs/learnsixsection";
 import LearnSevenSection from "./learnsectionsubs/learnsevensection";
 import VideoBannerSection from "../../homepagecomponents/subcomps/linesection/subcomps/videobannersection";
-import Learn from "@/app/learn/page";
 
 import videoBannerData from "@/app/data/videobannerdata/videobannerdata.json";
 

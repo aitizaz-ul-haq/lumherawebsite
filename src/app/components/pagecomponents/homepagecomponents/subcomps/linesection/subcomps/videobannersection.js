@@ -1,5 +1,6 @@
-export default function VideoBannerSection({ image, title, youtubeUrl }) {
-  return (
+import "./styles/videobannersection.css";
+
+export default function VideoBannerSection({ image, title, youtubeUrl }) {  return (
     <a
       href={youtubeUrl}
       target="_blank"
