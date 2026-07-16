@@ -18,7 +18,7 @@ export default function DesktopHeader({ isScrolled }) {
         />
       </Link>
       <HeaderRightSection />
-      <HeaderContactButton name="WORK WITH US" />
+      <HeaderContactButton name="Talk To Us" />
     </div>
   );
 }
