@@ -5,6 +5,7 @@ export default function RightPartLinkSection({ partOne }) {
     <Link
       href={partOne.ctaLink}
       className="linesection-partone-link-button font-inter"
+      aria-label="Learn more about Lumhera's approach"
     >
       {partOne.ctaText}
     </Link>

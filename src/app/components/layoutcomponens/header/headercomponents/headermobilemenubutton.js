@@ -42,10 +42,13 @@ export default function HeaderMobileMenuButton() {
       <button
         className="header-mobile-menu-button"
         onClick={handleMobileMenuToggle}
+        aria-label={isMenuOpen ? "Close navigation menu" : "Open navigation menu"}
+        aria-expanded={isMenuOpen}
+        aria-controls="mobile-navigation"
       >
         <Image
           src="/images/mobile_menu_icon.png"
-          alt="Mobile Menu Icon"
+          alt=""
           width={40}
           height={40}
         />
@@ -55,20 +58,21 @@ export default function HeaderMobileMenuButton() {
           <button
             className="mobile-menu-close-button"
             onClick={handleMobileMenuToggle}
+            aria-label="Close navigation menu"
           >
             &times;
           </button>
           <div className="mobile-menu-imgcontainer">
             <Image
               src="/images/Lumhera_logo_no_background.png"
-              alt="Mobile Menu Icon"
+              alt="Lumhera"
               width={220}
               height={53}
               className="mobile-menu-logo"
             />
           </div>
 
-          <ul>
+          <ul id="mobile-navigation">
             <li className="font-kaisei">
               <Link href="/" onClick={handleMenuItemClick}>
                 Home

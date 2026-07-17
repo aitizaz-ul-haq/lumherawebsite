@@ -13,10 +13,11 @@ export default function FooterUpperSubsectionTwo() {
       </div>
 
       <div className="footermidbutton-container">
-        <Link href="/contact" className="general-linkage">
-          <button className="footermidbutton-button font-inter">
-            CONTACT US FOR MORE DETAILS →
-          </button>
+        <Link
+          href="/contact"
+          className="footermidbutton-button font-inter general-linkage"
+        >
+          CONTACT US FOR MORE DETAILS →
         </Link>
       </div>
 
@@ -91,11 +92,11 @@ export default function FooterUpperSubsectionTwo() {
                 href="https://www.linkedin.com/"
                 className="general-linkage list-element-color"
                 aria-label="Linkedin"
-                style={{ display: "inline-flex", alignItems: "center" }}
+                style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "48px", height: "48px" }}
               >
                 <Image
                   src="/images/linkedin-lumhera.png"
-                  alt="Linkedin"
+                  alt=""
                   width={32}
                   height={32}
                   style={{ width: "32px", height: "32px", display: "block" }}
@@ -106,11 +107,11 @@ export default function FooterUpperSubsectionTwo() {
                 href="https://www.instagram.com/"
                 className="general-linkage list-element-color"
                 aria-label="Instagram"
-                style={{ display: "inline-flex", alignItems: "center" }}
+                style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "48px", height: "48px" }}
               >
                 <Image
                   src="/images/instagram-lumhera.png"
-                  alt="Instagram"
+                  alt=""
                   width={32}
                   height={32}
                   style={{ width: "32px", height: "32px", display: "block" }}

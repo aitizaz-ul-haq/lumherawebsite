@@ -8,10 +8,10 @@ export default function DesktopHeader({ isScrolled }) {
   return (
     <div className={`header-main-container ${isScrolled ? "scrolled" : ""}`}>
       {/* <HeaderLeftSection /> */}
-      <Link href="/" title="home">
+      <Link href="/" aria-label="Lumhera home">
         <Image
           src="/images/Lumhera_logo_no_background.png"
-          alt="FGK logo"
+          alt="Lumhera"
           width={220}
           height={53}
           // className="header-logo-img"

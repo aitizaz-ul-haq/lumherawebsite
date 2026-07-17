@@ -78,6 +78,9 @@
 }
 
 .mobile-menu a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
   text-decoration: none; /* Remove underline */
   color: var(--darkmaroon);
   font-size: 2rem; /* Large text */
@@ -87,6 +90,7 @@
 }
 
 .submenu-toggle {
+  min-height: 48px;
   text-decoration: none; /* Remove underline */
   color: var(--darkmaroon);
   font-size: 2.5rem; /* Large text */

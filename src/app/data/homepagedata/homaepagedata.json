@@ -172,7 +172,7 @@
     "cards": [
       {
         "imageSrc": "/images/home.png",
-        "imageAlt": "About Page Header Image",
+        "imageAlt": "Learning financial literacy at home",
         "width": 164,
         "height": 164,
         "heading": "Learn at Home",
@@ -182,7 +182,7 @@
       },
       {
         "imageSrc": "/images/school.png",
-        "imageAlt": "About Page Header Image",
+        "imageAlt": "Learning financial literacy at school",
         "width": 164,
         "height": 164,
         "heading": "Learn at School",
@@ -192,7 +192,7 @@
       },
       {
         "imageSrc": "/images/monaco.webp",
-        "imageAlt": "About Page Header Image",
+        "imageAlt": "Monaco, the first Esther the Investor pilot location",
         "width": 164,
         "height": 164,
         "heading": "Monaco Pilot",

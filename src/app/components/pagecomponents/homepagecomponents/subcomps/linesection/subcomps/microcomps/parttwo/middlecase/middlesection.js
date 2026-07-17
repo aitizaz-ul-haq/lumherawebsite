@@ -11,6 +11,7 @@ export default function MiddleSection({ partTwo }) {
       <Link
         href={partTwo.ctaLink}
         className="linesection-partone-link-button font-inter"
+        aria-label={`Learn more about ${partTwo.rightLargeHeading || "Esther the Investor"}`}
       >
         {partTwo.ctaText}
       </Link>

@@ -5,6 +5,7 @@ export default function BottomLearnSectionLinkSection({card}) {
     <Link
       href={card.linkHref}
       className="linesection-partone-link-button font-inter"
+      aria-label={`${card.linkText.replace(/\s*→\s*$/, "")} about ${card.heading}`}
     >
       {card.linkText}
     </Link>

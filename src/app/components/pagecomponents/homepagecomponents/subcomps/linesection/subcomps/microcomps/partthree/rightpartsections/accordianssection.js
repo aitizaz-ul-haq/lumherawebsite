@@ -13,7 +13,7 @@ export default function AccordiansSection({ partThree }) {
                 <span className="acc__icon" aria-hidden>
                   <Image
                     src="/images/plus-button.png"
-                    alt="About Page Header Image"
+                    alt=""
                     width={18}
                     height={18}
                     className="page-header-image"

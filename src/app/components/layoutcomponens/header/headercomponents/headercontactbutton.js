@@ -6,10 +6,10 @@ export default function HeaderContactButton({ name }) {
     <>
       <Link
         href="/contact"
-        className="footer-list-item font-inter"
+        className="header-contact-button font-inria"
         title="Talk To Us Now"
       >
-        <button className="header-contact-button font-inria">{name}</button>
+        {name}
       </Link>
     </>
   );

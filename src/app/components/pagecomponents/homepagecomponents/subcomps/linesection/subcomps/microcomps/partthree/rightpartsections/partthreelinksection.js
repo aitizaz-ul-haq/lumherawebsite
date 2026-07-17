@@ -5,6 +5,7 @@ export default function PartThreeLinkSection({ partThree }) {
     <Link
       href={partThree.ctaLink}
       className="linesection-partone-link-button font-inter"
+      aria-label={`Learn more about ${partThree.largeHeading || "Lumhera's values"}`}
     >
       {partThree.ctaText}
     </Link>

@@ -16,6 +16,7 @@ export default function OurMethodBlockSectionLeftPart({ block }) {
           <Link
             href={block.ctaLink}
             className="linesection-partone-link-button font-inter"
+            aria-label={`Learn more about ${block.subheading}`}
           >
             {block.ctaText}
           </Link>

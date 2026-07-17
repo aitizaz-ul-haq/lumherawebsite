@@ -50,6 +50,9 @@
 
 .header-nobackground-button {
   position: relative;
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
   padding: 0.5rem 1rem;
   cursor: pointer;
   font-size: 20px;

@@ -4,7 +4,7 @@ export default function QuoteSectionImage() {
   return (
     <Image
       src="/images/quote.png"
-      alt="About Page Header Image"
+      alt=""
       width={120}
       height={120}
       className="page-header-image"

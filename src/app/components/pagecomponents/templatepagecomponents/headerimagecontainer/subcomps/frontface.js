@@ -5,7 +5,7 @@ export default function FrontFace() {
     <div className="coin__face coin__face--front">
       <Image
         src="/images/page-coin.webp"
-        alt="Coin front"
+        alt="Lumhera coin"
         width={160}
         height={160}
         className="page-header-image"

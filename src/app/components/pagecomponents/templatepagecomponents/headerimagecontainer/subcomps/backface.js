@@ -5,7 +5,7 @@ export default function BackFace() {
     <div className="coin__face coin__face--back">
       <Image
         src="/images/page-coin.webp"
-        alt="Coin back"
+        alt=""
         width={160}
         height={160}
         className="page-header-image"
