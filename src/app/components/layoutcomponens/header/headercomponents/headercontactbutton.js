@@ -6,7 +6,7 @@ export default function HeaderContactButton({ name }) {
     <>
       <Link
         href="/contact"
-        className="header-contact-button font-inria"
+        className="header-contact-button"
         title="Talk To Us Now"
       >
         {name}
