@@ -62,7 +62,7 @@
   border: none;
   background: none;
   transition: color 0.3s ease;
-  font-family: "__Open_Sans_22f2d6";
+  font-family: var(--font-open-sans), sans-serif;
 }
 
 /* .header-nobackground-button::after {

@@ -9,9 +9,9 @@ export default function FooterUpperSubSectionOne() {
           <Image
             src="/images/LUMHERA_logo_white.png"
             alt="Lumhera"
-            width={280}
-            height={63}
-            // className="header-logo-img"
+            width={220}
+            height={53}
+            className="footer-logo-image"
           />
         </Link>
       </div>

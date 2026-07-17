@@ -234,6 +234,12 @@
   gap: 1rem;
 }
 
+.footer-logo-image {
+  display: block;
+  width: min(280px, 100%);
+  height: auto;
+}
+
 .footerlistcollection-container {
   display: flex;
   flex-direction: row;

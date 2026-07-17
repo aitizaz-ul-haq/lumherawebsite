@@ -16,8 +16,10 @@
   min-height: 48px;
   text-decoration: none;
   color: var(--white-text-color);
+  font-family: var(--font-open-sans), sans-serif;
   font-size: 20px;
   font-weight: 700;
+  line-height: normal;
   background-color: var(--darkmaroon);
   border: none;
   border-radius: 25px;
