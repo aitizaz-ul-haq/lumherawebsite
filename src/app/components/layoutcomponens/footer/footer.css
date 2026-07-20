@@ -940,6 +940,16 @@ li.list-element {
 
 /* Medium laptops (>= 1024px) */
 @media (min-width: 1024px) {
+  .footermidbutton-button {
+    display: inline-flex;
+    width: fit-content;
+    white-space: nowrap;
+  }
+
+  .footermidbutton-container {
+    align-items: flex-start;
+  }
+
   .footer-container {
     /* REMOVE the fixed positioning */
     position: static; /* or: position: relative; */
