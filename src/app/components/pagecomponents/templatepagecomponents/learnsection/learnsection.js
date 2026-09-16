@@ -8,9 +8,6 @@ import LearnPageBannerSection from "./learnsectionsubs/learnpagebannersection";
 import LearnFiveSection from "./learnsectionsubs/learnfivesection";
 import LearnSixSection from "./learnsectionsubs/learnsixsection";
 import LearnSevenSection from "./learnsectionsubs/learnsevensection";
-import VideoBannerSection from "../../homepagecomponents/subcomps/linesection/subcomps/videobannersection";
-
-import videoBannerData from "@/app/data/videobannerdata/videobannerdata.json";
 
 export default function LearnSection({
   showLearn,
@@ -35,11 +32,6 @@ export default function LearnSection({
           <LearnFourthSection learnFourthSection={learnFourthSection} />
           <LearnPageBannerSection />
           <LearnCtaOne learnCtaOne={learnCtaOne} />
-          <VideoBannerSection
-            image={videoBannerData.tutorial.image}
-            title={videoBannerData.tutorial.title}
-            youtubeUrl={videoBannerData.tutorial.youtubeUrl}
-          />
           <LearnFiveSection learnFiveSection={learnFiveSection} />
           <LearnSixSection learnSixSection={learnSixSection} />
           <LearnSevenSection learnSevenSection={learnSevenSection} />

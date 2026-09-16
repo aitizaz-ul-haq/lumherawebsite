@@ -12,7 +12,10 @@ export default function FooterLowerSection() {
           title="Click to view our Privacy Policy and Disclaimer"
         >
           <p className="footer-rights-line font-inter">
-            <b>Privacy&nbsp;|&nbsp;Disclaimer</b>
+            <b>
+              Privacy&nbsp;|&nbsp;Disclaimer&nbsp;|&nbsp;Lumhera&nbsp;|&nbsp;A
+              BiellaVita company
+            </b>
           </p>
 
           <p className="footer-rights-line font-inter">

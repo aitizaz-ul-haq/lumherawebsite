@@ -1,22 +1,23 @@
-/* Clickable video banner (YouTube link) */
 .videobanner-section {
   position: relative;
   display: block;
   width: 50%;
-  margin-top: 8rem;
+  margin-top: 15rem;
   margin-left: auto;
   margin-right: auto;
   border-radius: 25px;
   overflow: hidden;
-  text-decoration: none;
-  cursor: pointer;
   line-height: 0;
+  background-color: #000000;
+  scroll-margin-top: 7rem;
 }
 
-.videobanner-section-image {
+.videobanner-section-video {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 3 / 2;
+  object-fit: contain;
 }
 
 .videobanner-section-overlay {
@@ -26,13 +27,57 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  color: inherit;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
-  transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease, opacity 0.2s ease;
+  z-index: 1;
 }
 
-.videobanner-section:hover .videobanner-section-overlay,
-.videobanner-section:focus-visible .videobanner-section-overlay {
+.videobanner-section-overlay:hover,
+.videobanner-section-overlay:focus-visible {
   background-color: rgba(0, 0, 0, 0.35);
+}
+
+.videobanner-section-overlay:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: -3px;
+}
+
+.videobanner-section-overlay.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.videobanner-section-share {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2;
+  min-height: 40px;
+  padding: 0.65rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 999px;
+  color: #ffffff;
+  background-color: rgba(41, 32, 45, 0.78);
+  font: inherit;
+  font-size: 0.875rem;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(8px);
+}
+
+.videobanner-section-share:hover,
+.videobanner-section-share:focus-visible {
+  background-color: #602537;
+}
+
+.videobanner-section-share:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 2px;
 }
 
 .videobanner-section-content {
@@ -53,14 +98,8 @@
   filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.4));
 }
 
-.videobanner-section-icon svg {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.videobanner-section:hover .videobanner-section-icon,
-.videobanner-section:focus-visible .videobanner-section-icon {
+.videobanner-section-overlay:hover .videobanner-section-icon,
+.videobanner-section-overlay:focus-visible .videobanner-section-icon {
   transform: translateY(16px);
 }
 
@@ -75,8 +114,8 @@
   transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.videobanner-section:hover .videobanner-section-title,
-.videobanner-section:focus-visible .videobanner-section-title {
+.videobanner-section-overlay:hover .videobanner-section-title,
+.videobanner-section-overlay:focus-visible .videobanner-section-title {
   opacity: 1;
   transform: translateY(0);
 }
@@ -110,16 +149,24 @@
   }
 
   .videobanner-section-icon,
-  .videobanner-section:hover .videobanner-section-icon,
-  .videobanner-section:focus-visible .videobanner-section-icon {
+  .videobanner-section-overlay:hover .videobanner-section-icon,
+  .videobanner-section-overlay:focus-visible .videobanner-section-icon {
     width: clamp(80px, 22vw, 130px);
     transform: none;
   }
 
   .videobanner-section-title,
-  .videobanner-section:hover .videobanner-section-title,
-  .videobanner-section:focus-visible .videobanner-section-title {
+  .videobanner-section-overlay:hover .videobanner-section-title,
+  .videobanner-section-overlay:focus-visible .videobanner-section-title {
     opacity: 1;
     transform: none;
+  }
+
+  .videobanner-section-share {
+    top: 0.75rem;
+    right: 0.75rem;
+    min-height: 36px;
+    padding: 0.55rem 0.8rem;
+    font-size: 0.75rem;
   }
 }

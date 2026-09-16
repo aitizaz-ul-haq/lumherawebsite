@@ -22,7 +22,7 @@ export default function HomePageContainer({
       <VideoBannerSection
         image={videoBannerData.trailer.image}
         title={videoBannerData.trailer.title}
-        youtubeUrl={videoBannerData.trailer.youtubeUrl}
+        video={videoBannerData.trailer.video}
       />
 
       <BottomLearnSection

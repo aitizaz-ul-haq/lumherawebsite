@@ -65,5 +65,14 @@
   "aboutctaone": {
     "text": "Born from a personal journey toward independence, built to share that freedom with others.",
     "buttontext": "CONTACT US"
+  },
+
+  "aboutparentcompany": {
+    "paragraphs": [
+      {
+        "id": 1,
+        "content": "Lumhera is part of BiellaVita, its parent company. BiellaVita manages the distribution and commercial operations of Esther the Investor."
+      }
+    ]
   }
 }

@@ -18,6 +18,7 @@ export default function PageTemplate({
   valuesSection = null,
   aboutThirdSection = null, // ← NEW
   aboutCtaOne = null, // ← NEW
+  aboutParentCompany = null,
 
   // Method
   showMethod = false,
@@ -78,6 +79,7 @@ export default function PageTemplate({
         valuesSection={valuesSection}
         aboutThirdSection={aboutThirdSection}
         aboutCtaOne={aboutCtaOne}
+        aboutParentCompany={aboutParentCompany}
       />
 
       {/* METHOD */}

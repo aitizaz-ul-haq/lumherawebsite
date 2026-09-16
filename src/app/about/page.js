@@ -79,6 +79,7 @@ const aboutSection      = Aboutpagedata.aboutfirstsection;
 const valuesSection     = Aboutpagedata.aboutsecondsection;
 const aboutThirdSection = Aboutpagedata.aboutthirdsection; // NEW
 const aboutCtaOne       = Aboutpagedata.aboutctaone;       // NEW
+const aboutParentCompany = Aboutpagedata.aboutparentcompany;
 
 export default function About() {
   return (
@@ -100,6 +101,7 @@ export default function About() {
       valuesSection={valuesSection}
       aboutThirdSection={aboutThirdSection} // NEW
       aboutCtaOne={aboutCtaOne}             // NEW
+      aboutParentCompany={aboutParentCompany}
     />
     </>
   );

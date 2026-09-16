@@ -2,6 +2,7 @@ import AboutSectionFirstSection from "./aboutsectionsubs/aboutsectionfirstsectio
 import AboutValueSection from "./aboutsectionsubs/aboutvaluesection";
 import AboutThirdSection from "./aboutsectionsubs/aboutthirdsection";
 import AboutCtaSection from "./aboutsectionsubs/aboutctasection";
+import HeadingAndParas from "@/app/components/sharedcomponents/headingandparas/headingandparas";
 
 export default function AboutSection({
   showAbout,
@@ -9,6 +10,7 @@ export default function AboutSection({
   valuesSection,
   aboutThirdSection,
   aboutCtaOne,
+  aboutParentCompany,
 }) {
   return (
     <>
@@ -18,6 +20,11 @@ export default function AboutSection({
           <AboutValueSection valuesSection={valuesSection} />
           <AboutThirdSection aboutThirdSection={aboutThirdSection} />
           <AboutCtaSection aboutCtaOne={aboutCtaOne} />
+          {aboutParentCompany && (
+            <HeadingAndParas
+              paragraphs={aboutParentCompany.paragraphs}
+            />
+          )}
         </>
       )}
     </>
