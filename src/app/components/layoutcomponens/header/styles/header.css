@@ -352,8 +352,7 @@
   .header-nobackground-button {
     color: var(--darkmaroon);
     font-size: 20px;
-    /* font-weight: 100; */
-    font-weight: 500;
+    font-weight: 700;
   }
 
   .header-logo-img {

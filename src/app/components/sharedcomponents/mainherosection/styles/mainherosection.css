@@ -725,11 +725,15 @@
   margin-bottom: -100svh;
 }
 
-/* Push the background image down on larger screens so the girl's head sits
-   below the fixed header instead of behind it. */
+/* Keep the subject below the fixed desktop header. Narrower desktop crops
+   need a little more zoom; the 2560px composition remains unchanged. */
 @media (min-width: 1024px) {
   .main-hero {
-    --bg-pos-y: 22%;
+    --bg-pos-y: top;
+  }
+
+  .main-hero-bg {
+    background-size: 165% auto;
   }
 }
 
@@ -758,8 +762,8 @@
 }
 
 @media (min-width: 1440px) {
-  .main-hero {
-    --bg-pos-y: 18%;
+  .main-hero-bg {
+    background-size: 125% auto;
   }
 
   .main-hero-title-container {
@@ -768,11 +772,21 @@
 }
 
 @media (min-width: 1920px) {
-  .main-hero {
-    --bg-pos-y: 15%;
+  .main-hero-bg {
+    background-size: 110% auto;
   }
 
   .main-hero-title-container {
     width: 72%;
+  }
+}
+
+@media (min-width: 2560px) {
+  .main-hero {
+    --bg-pos-y: 15%;
+  }
+
+  .main-hero-bg {
+    background-size: cover;
   }
 }
