@@ -534,3 +534,13 @@ button.cta-button,
 /* Nest Hub Max */
 @media (width: 1280px) and (height: 800px) {
 }
+
+/* Registered trademark mark, sized relative to surrounding text */
+.brand-mark {
+  font-size: 0.5em;
+  line-height: 0;
+  vertical-align: super;
+  margin-left: 0.05em;
+  font-weight: inherit;
+  font-style: normal;
+}

@@ -2,8 +2,11 @@
 import Script from "next/script";
 
 import PageTemplate from "../components/sharedcomponents/pagetemplate/pagetemplate";
-import Toolspagedata from "../data/toolspagedata/toolspagedata.json";
+import RawToolspagedata from "../data/toolspagedata/toolspagedata.json";
+import { brandifyData } from "../components/sharedcomponents/brandmark/brandmark";
 import ToolsPageJsonLd from "../data/jsonld/toolspagejsonld.json";
+
+const Toolspagedata = brandifyData(RawToolspagedata);
 
 export const metadata = {
   title: "Tools We Use | Lumhera",

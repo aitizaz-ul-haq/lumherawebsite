@@ -2,8 +2,11 @@
 import Script from "next/script";
 
 import PageTemplate from "../components/sharedcomponents/pagetemplate/pagetemplate";
-import PrivacyAndDisclaimerData from "../data/privacypolicypagedata/privacypolicypagedata.json";
+import RawPrivacyAndDisclaimerData from "../data/privacypolicypagedata/privacypolicypagedata.json";
+import { brandifyData } from "../components/sharedcomponents/brandmark/brandmark";
 import PrivacyPageJsonLd from "../data/jsonld/privacypagejsonld.json";
+
+const PrivacyAndDisclaimerData = brandifyData(RawPrivacyAndDisclaimerData);
 
 export const metadata = {
   title: "Privacy Policy & Disclaimer | Lumhera",

@@ -1,12 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
+import { BrandMark } from "../../../sharedcomponents/brandmark/brandmark";
 
 export default function FooterUpperSubsectionTwo() {
   return (
     <div className="footer-upper-subsection-two">
       <div className="services-listing">
         <p className="footer-list-item font-inter">
-          Learning by doing is at the heart of Lumhera. Through our interactive
+          Learning by doing is at the heart of Lumhera
+          <BrandMark />. Through our interactive
           game, children don’t just study money they experience it, make
           decisions, and grow in confidence with every play.
         </p>

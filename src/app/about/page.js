@@ -2,8 +2,11 @@
 import Script from "next/script";
 
 import PageTemplate from "../components/sharedcomponents/pagetemplate/pagetemplate";
-import Aboutpagedata from "../data/aboutpagedata/aboutpagedata.json";
+import RawAboutpagedata from "../data/aboutpagedata/aboutpagedata.json";
+import { brandifyData } from "../components/sharedcomponents/brandmark/brandmark";
 import AboutPageJsonLd from "../data/jsonld/aboutpagejsonld.json";
+
+const Aboutpagedata = brandifyData(RawAboutpagedata);
 
 export const metadata = {
   title: "Who We Are | Lumhera",

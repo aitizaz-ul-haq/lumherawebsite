@@ -3,8 +3,11 @@
 import Script from "next/script";
 
 import PageTemplate from "../components/sharedcomponents/pagetemplate/pagetemplate";
-import Learnpagedata from "../data/learnpagedata/learnpagedata.json";
+import RawLearnpagedata from "../data/learnpagedata/learnpagedata.json";
+import { brandifyData } from "../components/sharedcomponents/brandmark/brandmark";
 import LearnPageJsonLd from "../data/jsonld/learnpagejsonld.json";
+
+const Learnpagedata = brandifyData(RawLearnpagedata);
 
 export const dynamic = "force-static";
 export const revalidate = false;

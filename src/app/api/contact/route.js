@@ -94,7 +94,7 @@ export async function POST(req) {
               <td align="right"></td>
             </tr>
           </table>
-          <h1 style="text-align: center; color: #602537; font-size: 24px; font-weight: 300; font-family:inter, serif">Thank You for contacting Lumhera</h1>
+          <h1 style="text-align: center; color: #602537; font-size: 24px; font-weight: 300; font-family:inter, serif">Thank You for contacting Lumhera<sup style="font-size:0.5em; line-height:0;">&reg;</sup></h1>
           <p style="font-size: 16px; color: #602537; text-align: center;">
             We would like to inform you that we have received your email and a member of our team will get back to you as soon as possible.
           </p>
@@ -102,7 +102,7 @@ export async function POST(req) {
           <table width="100%" style="border-collapse: collapse;">
             <tr>
               <td align="left" style="font-size:14px; color:#602537; font-weight:300;">
-                   <strong style="font-size:14px; color:#602537; font-weight:300;">Lumhera Team</strong><br>
+                   <strong style="font-size:14px; color:#602537; font-weight:300;">Lumhera<sup style="font-size:0.5em; line-height:0;">&reg;</sup> Team</strong><br>
                      <a href="#" style="color:#602537; text-decoration:none;">14 Street,</a><br>
                      <a href="#" style="color:#602537; text-decoration:none;">Monaco.</a><br>
               </td>

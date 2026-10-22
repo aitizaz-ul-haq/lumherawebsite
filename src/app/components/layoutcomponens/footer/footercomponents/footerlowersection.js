@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { BrandMark } from "../../../sharedcomponents/brandmark/brandmark";
 
 export default function FooterLowerSection() {
   return (
@@ -13,13 +14,15 @@ export default function FooterLowerSection() {
         >
           <p className="footer-rights-line font-inter">
             <b>
-              Privacy&nbsp;|&nbsp;Disclaimer&nbsp;|&nbsp;Lumhera&nbsp;|&nbsp;A
-              BiellaVita company
+              Privacy&nbsp;|&nbsp;Disclaimer&nbsp;|&nbsp;Lumhera
+              <BrandMark />
+              &nbsp;|&nbsp;A BiellaVita company
             </b>
           </p>
 
           <p className="footer-rights-line font-inter">
-            Lumhera is committed to protecting user privacy, especially for
+            Lumhera
+            <BrandMark /> is committed to protecting user privacy, especially for
             children, and uses limited information to provide, improve, and
             safeguard the learning experience. Esther the Investor is created
             for educational purposes only and introduces financial concepts in a
@@ -28,7 +31,8 @@ export default function FooterLowerSection() {
             upon for real financial decisions. We do not sell personal data, and
             any trusted third-party services are used only to support platform
             performance, safety, analytics, or hosting. Users, parents, or
-            guardians may contact Lumhera to request access, correction, or
+            guardians may contact Lumhera
+            <BrandMark /> to request access, correction, or
             deletion of personal information where applicable.
           </p>
         </Link>

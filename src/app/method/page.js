@@ -2,8 +2,11 @@
 import Script from "next/script";
 
 import PageTemplate from "../components/sharedcomponents/pagetemplate/pagetemplate";
-import Methodpagedata from "../data/methodpagedata/methodpagedata.json";
+import RawMethodpagedata from "../data/methodpagedata/methodpagedata.json";
+import { brandifyData } from "../components/sharedcomponents/brandmark/brandmark";
 import MethodPageJsonLd from "../data/jsonld/methodpagejsonld.json";
+
+const Methodpagedata = brandifyData(RawMethodpagedata);
 
 export const metadata = {
   title: "What We Do | Lumhera",

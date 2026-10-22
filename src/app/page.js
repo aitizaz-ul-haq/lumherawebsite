@@ -4,8 +4,11 @@ import MainHeroSection from "./components/sharedcomponents/mainherosection/mainh
 import HomePageContainer from "./components/pagecomponents/homepagecomponents/homepagecontainer/homepagecontainer";
 
 // ✅ point to the new JSON file (fix the old typo in path/name)
-import Homepagedata from "./data/homepagedata/homaepagedata.json";
+import RawHomepagedata from "./data/homepagedata/homaepagedata.json";
+import { brandifyData } from "./components/sharedcomponents/brandmark/brandmark";
 import HomePageJsonLd from "./data/jsonld/homepagejsonld.json";
+
+const Homepagedata = brandifyData(RawHomepagedata);
 
 export const metadata = {
   title: "Financial Literacy for Children & Families | Lumhera",
