@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { externalLinkProps } from "@/app/data/sitelinks";
 
 export default function OurMehodBlockSectionRightPart({ block }) {
   return (
@@ -15,6 +16,7 @@ export default function OurMehodBlockSectionRightPart({ block }) {
           ))}
           <Link
             href={block.ctaLink}
+            {...externalLinkProps(block.ctaLink)}
             className="linesection-partone-link-button font-inter"
             aria-label={`Learn more about ${block.subheading}`}
           >

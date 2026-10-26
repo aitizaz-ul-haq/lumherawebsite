@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { externalLinkProps } from "@/app/data/sitelinks";
 
 export default function MiddleSection({ partTwo }) {
   return (
@@ -10,6 +11,7 @@ export default function MiddleSection({ partTwo }) {
       ))}
       <Link
         href={partTwo.ctaLink}
+        {...externalLinkProps(partTwo.ctaLink)}
         className="linesection-partone-link-button font-inter"
         aria-label={`Learn more about ${partTwo.rightLargeHeading || "Esther the Investor"}`}
       >

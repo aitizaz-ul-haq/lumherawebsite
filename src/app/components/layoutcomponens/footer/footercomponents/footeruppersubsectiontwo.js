@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { ESTHER_INVESTOR_URL, SOCIAL_LINKS } from "@/app/data/sitelinks";
 import { BrandMark } from "../../../sharedcomponents/brandmark/brandmark";
 
 export default function FooterUpperSubsectionTwo() {
@@ -16,7 +17,9 @@ export default function FooterUpperSubsectionTwo() {
 
       <div className="footermidbutton-container">
         <Link
-          href="/contact"
+          href={ESTHER_INVESTOR_URL}
+          target="_blank"
+          rel="noopener noreferrer"
           className="footermidbutton-button font-inter general-linkage"
         >
           CONTACT US FOR MORE DETAILS →
@@ -90,35 +93,29 @@ export default function FooterUpperSubsectionTwo() {
               className="list-element font-inter"
               style={{ display: "flex", alignItems: "center", gap: "12px" }}
             >
-              <Link
-                href="https://www.linkedin.com/"
-                className="general-linkage list-element-color"
-                aria-label="Linkedin"
-                style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "48px", height: "48px" }}
-              >
-                <Image
-                  src="/images/linkedin-lumhera.png"
-                  alt=""
-                  width={32}
-                  height={32}
-                  style={{ width: "32px", height: "32px", display: "block" }}
-                />
-              </Link>
-
-              <Link
-                href="https://www.instagram.com/"
-                className="general-linkage list-element-color"
-                aria-label="Instagram"
-                style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "48px", height: "48px" }}
-              >
-                <Image
-                  src="/images/instagram-lumhera.png"
-                  alt=""
-                  width={32}
-                  height={32}
-                  style={{ width: "32px", height: "32px", display: "block" }}
-                />
-              </Link>
+              {[
+                { label: "Facebook", href: SOCIAL_LINKS.facebook, src: "/images/facebook-lumhera.svg" },
+                { label: "Instagram", href: SOCIAL_LINKS.instagram, src: "/images/instagram-lumhera.png" },
+                { label: "TikTok", href: SOCIAL_LINKS.tiktok, src: "/images/tiktok-lumhera.svg" },
+              ].map((social) => (
+                <Link
+                  key={social.label}
+                  href={social.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="general-linkage list-element-color"
+                  aria-label={social.label}
+                  style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: "48px", height: "48px" }}
+                >
+                  <Image
+                    src={social.src}
+                    alt=""
+                    width={32}
+                    height={32}
+                    style={{ width: "32px", height: "32px", display: "block" }}
+                  />
+                </Link>
+              ))}
             </li>
           </ul>
         </div>

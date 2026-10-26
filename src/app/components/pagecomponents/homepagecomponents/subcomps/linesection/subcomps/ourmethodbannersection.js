@@ -1,3 +1,5 @@
+import { ESTHER_INVESTOR_URL } from "@/app/data/sitelinks";
+
 export default function OurMethodBannerSection({ ourMethod }) {
   return (
     <div className="methodesection-banner">
@@ -8,9 +10,14 @@ export default function OurMethodBannerSection({ ourMethod }) {
         <p className="methodesection-banner-description font-inter">
           {ourMethod.banner.description}
         </p>
-        <button className="methodesection-banner-button font-inter">
+        <a
+          href={ESTHER_INVESTOR_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="methodesection-banner-button font-inter"
+        >
           {ourMethod.banner.buttonText}
-        </button>
+        </a>
       </div>
     </div>
   );

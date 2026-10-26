@@ -79,7 +79,7 @@
         }
       ],
       "ctaText": "LEARN MORE →",
-      "ctaLink": "/contact"
+      "ctaLink": "/tools"
     },
 
     "partTwo": {
@@ -88,7 +88,7 @@
         "Children follow Esther, a curious 12 year old, as she discovers how money shapes the world — guided by King Croesus and his cat Bucks."
       ],
       "ctaText": "LEARN MORE →",
-      "ctaLink": "/contact",
+      "ctaLink": "/method",
       "rightTinyTag": "Our Tools",
       "rightLargeHeading": "Esther the Investor The Beginning of the Journey"
     },
@@ -123,7 +123,7 @@
         }
       ],
       "ctaText": "LEARN MORE →",
-      "ctaLink": "/contact"
+      "ctaLink": "/about"
     },
 
     "ourMethod": {
@@ -136,7 +136,7 @@
             "Children learn best when they experience what they’re learning. Lumhera turns money into a story — through choices, puzzles, and real consequences that make financial ideas tangible."
           ],
           "ctaText": "LEARN MORE →",
-          "ctaLink": "/contact"
+          "ctaLink": "/method"
         },
         {
           "side": "right",
@@ -146,7 +146,7 @@
             "Through our interactive, story-driven tools, kids explore how money works in ways that feel natural, playful, and empowering."
           ],
           "ctaText": "LEARN MORE →",
-          "ctaLink": "/contact"
+          "ctaLink": "/method"
         },
         {
           "side": "left",
@@ -155,7 +155,7 @@
             "Our curriculum is built on the OECD/INFE Financial Competence Framework for Children & Youth, ensuring that every experience develops real-world financial skills"
           ],
           "ctaText": "LEARN MORE →",
-          "ctaLink": "/contact"
+          "ctaLink": "/method"
         }
       ],
       "banner": {
@@ -198,7 +198,7 @@
         "heading": "Monaco Pilot",
         "description": "Monaco will serve as the first pilot for Esther the Investor and the broader Lumhera vision. By working with families, educators, and local stakeholders, we aim to demonstrate how experiential financial education can build confidence, understanding, and long-term financial capability in the next generation. The lessons learned from Monaco will help shape future deployments in schools and communities around the world.",
         "linkText": "CONTACT US →",
-        "linkHref": "/contact"
+        "linkHref": "https://www.estherinvestor.com/"
       }
     ]
   }
