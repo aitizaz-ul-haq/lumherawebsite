@@ -32,14 +32,23 @@ export async function POST(req) {
       );
     }
 
+    const { EMAIL_USER, EMAIL_PASS } = process.env;
+    if (!EMAIL_USER || !EMAIL_PASS) {
+      console.error("Contact form: EMAIL_USER / EMAIL_PASS env vars are not set.");
+      return new Response(
+        JSON.stringify({ success: false, message: "Email service is not configured." }),
+        { status: 500 }
+      );
+    }
+
     // Create transporter (Gmail with app password recommended)
     const transporter = nodemailer.createTransport({
       host: process.env.SMTP_HOST || "smtp.gmail.com",
       port: Number(process.env.SMTP_PORT || 465),
       secure: true, // 465
       auth: {
-        user: "nemesiswebmail@gmail.com",
-        pass: "uzis nrdp anel ejrs"
+        user: EMAIL_USER,
+        pass: EMAIL_PASS
       }
     });
 
